@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Перекодирование текста в UTF-8.md",
+                "file": "03-Tasks/Разработать программу mantra-srt-validator.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Перекодирование текста в UTF-8"
+              "title": "Разработать программу mantra-srt-validator"
+            }
+          },
+          {
+            "id": "7a5fd6031deb52f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Разработать механизм валидации субтитров.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Разработать механизм валидации субтитров"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,13 +221,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Перекодирование текста в UTF-8.md",
+                "file": "Разработать механизм валидации субтитров.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Перекодирование текста в UTF-8"
+              "title": "Outline of Разработать механизм валидации субтитров"
             }
           },
           {
@@ -211,7 +236,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Перекодирование текста в UTF-8.md",
+                "file": "Разработать механизм валидации субтитров.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -277,24 +302,23 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224407,
+                  "scale": 0.7132754626224399,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Перекодирование текста в UTF-8"
+              "title": "Graph of Разработать механизм валидации субтитров"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 679.5
+    "width": 510.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "timethings:Activate view": false,
-      "obisidian-note-linker:Note Linker": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -302,26 +326,37 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "timethings:Activate view": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "3fef8a7616cdf89a",
+  "active": "7a5fd6031deb52f8",
   "lastOpenFiles": [
-    "Кодировка файла не UTF-8.md",
-    "Перекодирование текста в UTF-8.md",
-    "03-Tasks/Разработать Парсер читающий субтитры.md",
-    "порядок обработки субтитров.md",
-    "01-Goals/01a - Wants/Статистика Субтитров.md",
-    "01-Goals/Автоматическая обработка srt файлов.md",
-    "01-Goals/01a - Wants",
-    "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
-    "06-Resources/Человеческое время работы.md",
-    "04-Solutions/Создание текстового документа.md",
-    "06-Resources/golang standard library.md",
-    "04-Solutions/Исключение BOM.md",
-    "02-Problems/Кодировка файла UTF-8 BOM.md",
+    "03-Tasks/Разработать программу mantra-srt-validator.md",
+    "Разработать механизм валидации субтитров.md",
     "02-Problems/Нет утилиты для автоматической обработки srt.md",
+    "03-Tasks/Разработать Парсер читающий субтитры.md",
+    "06-Resources/Доступное ПО.md",
+    "04-Solutions/Исключение BOM.md",
+    "02-Problems/Кодировка файла UTF BOM.md",
+    "_templates/02 - ПРОБЛЕМА (Шаблон).md",
+    "02-Problems/Отсутствие Спецификации.md",
+    "02-Problems/Кодировка файла не UTF-8.md",
+    "01-Goals/Автоматическая обработка srt файлов.md",
+    "01-Goals/01a - Wants/Статистика Субтитров.md",
+    "04-Solutions/Перекодирование текста в UTF-8.md",
+    "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
+    "04-Solutions/Создание текстового документа.md",
+    "_templates/04 - РЕШЕНИЕ (Шаблон).md",
+    "05-Results/Спецификации оценки контента srt.md",
+    "_templates/03 - ЗАДАЧА (Шаблон).md",
+    "06-Resources/golang library chardet.md",
+    "01-Goals/01a - Wants/порядок обработки субтитров.md",
+    "06-Resources/golang library стандартная.md",
     "03-Tasks/Формализовать правила оценки контента в srt.md",
+    "01-Goals/01a - Wants",
+    "06-Resources/Человеческое время работы.md",
     "06-Resources/Библиотеки Go для работы с субтитрами.md",
     "06-Resources/Текстовой редактор.md",
     "06-Resources/тест ресурса.md",
@@ -334,15 +369,6 @@
     "config.gofa8nJL.bck",
     "config.gob5fIRC.bck",
     "config.goJhrdZQ.bck",
-    "_templates/06 - РЕСУРС (Шаблон).md",
-    "_templates/05 - РЕЗУЛЬТАТ (Шаблон).md",
-    "05-Results/Спецификации оценки контента srt.md",
-    "_templates/03 - ЗАДАЧА (Шаблон).md",
-    "03-Tasks/Разработать программу mantra-srt-validator.md",
-    "02-Problems/Отсутствие Спецификации.md",
-    "_templates/04 - РЕШЕНИЕ (Шаблон).md",
-    "_templates/02 - ПРОБЛЕМА (Шаблон).md",
-    "06-Resources/Рабочий процесс.md",
     "_img/MANTRA Project flowchart.canvas",
     "Pasted image 20251025003643.png",
     "Pasted image 20251025002918.png",

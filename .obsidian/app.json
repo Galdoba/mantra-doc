@@ -1,0 +1,9 @@
+{
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "vimMode": false,
+  "userIgnoreFilters": [
+    "_templates/"
+  ],
+  "alwaysUpdateLinks": true
+}

@@ -1,0 +1,358 @@
+{
+  "main": {
+    "id": "59110a3efe1b7608",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc1e976f80bbf6c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "116ba27f2858be02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Перекодирование текста в UTF-8.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Перекодирование текста в UTF-8"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdd0c3067d82413a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e15a6df07e2db311",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80a8dc3f74496ca9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "633f1ef544685293",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c22fafe1ba0cd6e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "add75788d2d67b87",
+    "type": "split",
+    "children": [
+      {
+        "id": "53d4ac9978aa1863",
+        "type": "tabs",
+        "dimension": 47.87037037037037,
+        "children": [
+          {
+            "id": "4ac4ba438f3c04d2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01-Goals/01a - Wants/Статистика Субтитров.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Статистика Субтитров"
+            }
+          },
+          {
+            "id": "67631ef1614db01f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "154f9bd031bd3b25",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "18063886ff75fd81",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "08b1452ffc804d9d",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "программирование/концепты/Построение URL.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "57d320028d330ff1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "fdc0f1b14809e244",
+        "type": "tabs",
+        "dimension": 52.129629629629626,
+        "children": [
+          {
+            "id": "3fef8a7616cdf89a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Перекодирование текста в UTF-8.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Перекодирование текста в UTF-8"
+            }
+          },
+          {
+            "id": "7348d349bf39ef2b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Перекодирование текста в UTF-8.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "line:(Категория Цель)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 65535
+                      }
+                    },
+                    {
+                      "query": "line:(Категория Проблема)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16711680
+                      }
+                    },
+                    {
+                      "query": "line:(Категория Задача)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16744448
+                      }
+                    },
+                    {
+                      "query": "line:(Категория Решение)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 65280
+                      }
+                    },
+                    {
+                      "query": "line:(Категория результат)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6579455
+                      }
+                    },
+                    {
+                      "query": "line:(Категория Ресурс)",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14606046
+                      }
+                    }
+                  ],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.5,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224407,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Перекодирование текста в UTF-8"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 679.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "timethings:Activate view": false,
+      "obisidian-note-linker:Note Linker": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "3fef8a7616cdf89a",
+  "lastOpenFiles": [
+    "Кодировка файла не UTF-8.md",
+    "Перекодирование текста в UTF-8.md",
+    "03-Tasks/Разработать Парсер читающий субтитры.md",
+    "порядок обработки субтитров.md",
+    "01-Goals/01a - Wants/Статистика Субтитров.md",
+    "01-Goals/Автоматическая обработка srt файлов.md",
+    "01-Goals/01a - Wants",
+    "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
+    "06-Resources/Человеческое время работы.md",
+    "04-Solutions/Создание текстового документа.md",
+    "06-Resources/golang standard library.md",
+    "04-Solutions/Исключение BOM.md",
+    "02-Problems/Кодировка файла UTF-8 BOM.md",
+    "02-Problems/Нет утилиты для автоматической обработки srt.md",
+    "03-Tasks/Формализовать правила оценки контента в srt.md",
+    "06-Resources/Библиотеки Go для работы с субтитрами.md",
+    "06-Resources/Текстовой редактор.md",
+    "06-Resources/тест ресурса.md",
+    "config.gogIPbL2.bck",
+    "config.goroXzSx.bck",
+    "config.go",
+    "config.govCCID2.bck",
+    "config.goSlpV02.bck",
+    "config.goxqlrvM.bck",
+    "config.gofa8nJL.bck",
+    "config.gob5fIRC.bck",
+    "config.goJhrdZQ.bck",
+    "_templates/06 - РЕСУРС (Шаблон).md",
+    "_templates/05 - РЕЗУЛЬТАТ (Шаблон).md",
+    "05-Results/Спецификации оценки контента srt.md",
+    "_templates/03 - ЗАДАЧА (Шаблон).md",
+    "03-Tasks/Разработать программу mantra-srt-validator.md",
+    "02-Problems/Отсутствие Спецификации.md",
+    "_templates/04 - РЕШЕНИЕ (Шаблон).md",
+    "_templates/02 - ПРОБЛЕМА (Шаблон).md",
+    "06-Resources/Рабочий процесс.md",
+    "_img/MANTRA Project flowchart.canvas",
+    "Pasted image 20251025003643.png",
+    "Pasted image 20251025002918.png",
+    "_img/lf_demo_2.png",
+    "_img/lf_demo_1.png",
+    "_img/helix_logo.png",
+    "Pasted image 20251024002713.png",
+    "_img/logo.png",
+    "_img/superfile_demo.png",
+    "_img/superfile-logo.png",
+    "_img/Pasted image 20251023230240.png"
+  ]
+}

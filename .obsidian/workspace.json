@@ -54,9 +54,57 @@
               "icon": "lucide-file",
               "title": "Разработать механизм валидации субтитров"
             }
+          },
+          {
+            "id": "5a6abed4e526c6af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Цикл Валидация-Коррекция SubRip"
+            }
+          },
+          {
+            "id": "5a84ba44ee9233a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Tasks/Разработать механизм валидации субтитров.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Разработать механизм валидации субтитров"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -236,7 +284,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Разработать механизм валидации субтитров.md",
+                "file": "03-Tasks/Разработать механизм валидации субтитров.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -315,7 +363,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 510.5
+    "width": 370.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -331,10 +380,13 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "7a5fd6031deb52f8",
+  "active": "5a84ba44ee9233a9",
   "lastOpenFiles": [
     "03-Tasks/Разработать программу mantra-srt-validator.md",
-    "Разработать механизм валидации субтитров.md",
+    "03-Tasks/Разработать механизм валидации субтитров.md",
+    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+    "06-Resources/DDD архитектура.md",
+    "Untitled.md",
     "02-Problems/Нет утилиты для автоматической обработки srt.md",
     "03-Tasks/Разработать Парсер читающий субтитры.md",
     "06-Resources/Доступное ПО.md",
@@ -357,9 +409,6 @@
     "03-Tasks/Формализовать правила оценки контента в srt.md",
     "01-Goals/01a - Wants",
     "06-Resources/Человеческое время работы.md",
-    "06-Resources/Библиотеки Go для работы с субтитрами.md",
-    "06-Resources/Текстовой редактор.md",
-    "06-Resources/тест ресурса.md",
     "config.gogIPbL2.bck",
     "config.goroXzSx.bck",
     "config.go",

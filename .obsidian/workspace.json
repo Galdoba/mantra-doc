@@ -13,78 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-Tasks/Разработать программу mantra-srt-validator.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Разработать программу mantra-srt-validator"
-            }
-          },
-          {
-            "id": "7a5fd6031deb52f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Разработать механизм валидации субтитров.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Разработать механизм валидации субтитров"
-            }
-          },
-          {
-            "id": "5a6abed4e526c6af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-Problems/Цикл Валидация-Коррекция SubRip.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Цикл Валидация-Коррекция SubRip"
-            }
-          },
-          {
-            "id": "5a84ba44ee9233a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "03-Tasks/Разработать механизм валидации субтитров.md",
                 "mode": "source",
                 "source": false,
@@ -103,8 +31,7 @@
               "title": "Разработать механизм валидации субтитров"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -380,11 +307,11 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "5a84ba44ee9233a9",
+  "active": "116ba27f2858be02",
   "lastOpenFiles": [
     "03-Tasks/Разработать программу mantra-srt-validator.md",
-    "03-Tasks/Разработать механизм валидации субтитров.md",
     "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+    "03-Tasks/Разработать механизм валидации субтитров.md",
     "06-Resources/DDD архитектура.md",
     "Untitled.md",
     "02-Problems/Нет утилиты для автоматической обработки srt.md",

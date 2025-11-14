@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-Tasks/Разработать механизм валидации субтитров.md",
+                "file": "02-Problems/Цикл Валидация-Коррекция SubRip.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Разработать механизм валидации субтитров"
+              "title": "Цикл Валидация-Коррекция SubRip"
             }
           }
         ]
@@ -309,9 +309,9 @@
   },
   "active": "116ba27f2858be02",
   "lastOpenFiles": [
+    "03-Tasks/Разработать механизм валидации субтитров.md",
     "03-Tasks/Разработать программу mantra-srt-validator.md",
     "02-Problems/Цикл Валидация-Коррекция SubRip.md",
-    "03-Tasks/Разработать механизм валидации субтитров.md",
     "06-Resources/DDD архитектура.md",
     "Untitled.md",
     "02-Problems/Нет утилиты для автоматической обработки srt.md",

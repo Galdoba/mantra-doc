@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+                "file": "Алгоритм Валидации Субтитров.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Цикл Валидация-Коррекция SubRip"
+              "title": "Алгоритм Валидации Субтитров"
             }
           }
         ]
@@ -309,11 +309,15 @@
   },
   "active": "116ba27f2858be02",
   "lastOpenFiles": [
+    "Отсутствие Гапов между титрами в SubRip.md",
+    "Переназначение тайм кодов.md",
+    "Алгоритм Валидации Субтитров.md",
+    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+    "04-Solutions/Перекодирование текста в UTF-8.md",
+    "02-Problems/Кодировка файла не UTF-8.md",
     "03-Tasks/Разработать механизм валидации субтитров.md",
     "03-Tasks/Разработать программу mantra-srt-validator.md",
-    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
     "06-Resources/DDD архитектура.md",
-    "Untitled.md",
     "02-Problems/Нет утилиты для автоматической обработки srt.md",
     "03-Tasks/Разработать Парсер читающий субтитры.md",
     "06-Resources/Доступное ПО.md",
@@ -321,10 +325,8 @@
     "02-Problems/Кодировка файла UTF BOM.md",
     "_templates/02 - ПРОБЛЕМА (Шаблон).md",
     "02-Problems/Отсутствие Спецификации.md",
-    "02-Problems/Кодировка файла не UTF-8.md",
     "01-Goals/Автоматическая обработка srt файлов.md",
     "01-Goals/01a - Wants/Статистика Субтитров.md",
-    "04-Solutions/Перекодирование текста в UTF-8.md",
     "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
     "04-Solutions/Создание текстового документа.md",
     "_templates/04 - РЕШЕНИЕ (Шаблон).md",
@@ -333,9 +335,7 @@
     "06-Resources/golang library chardet.md",
     "01-Goals/01a - Wants/порядок обработки субтитров.md",
     "06-Resources/golang library стандартная.md",
-    "03-Tasks/Формализовать правила оценки контента в srt.md",
     "01-Goals/01a - Wants",
-    "06-Resources/Человеческое время работы.md",
     "config.gogIPbL2.bck",
     "config.goroXzSx.bck",
     "config.go",

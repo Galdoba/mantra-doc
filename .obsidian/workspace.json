@@ -8,13 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eae76001f7d9cf1d",
+            "id": "116ba27f2858be02",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Конфигурация программного обеспечения.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Конфигурация программного обеспечения"
             }
           }
         ]
@@ -197,6 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "03-Tasks/Разработать механизм валидации субтитров.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -267,7 +282,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Разработать механизм валидации субтитров"
             }
           }
         ],
@@ -275,7 +290,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 370.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -291,34 +307,34 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "eae76001f7d9cf1d",
+  "active": "116ba27f2858be02",
   "lastOpenFiles": [
-    "04-Solutions/Парсинг subrip.md",
-    "04-Solutions/Перекодирование текста в UTF-8.md",
-    "04-Solutions/Корректировка индексов титров.md",
-    "04-Solutions/Исключение BOM.md",
-    "Untitled.md",
+    "Алгоритм Валидации Субтитров.md",
+    "Конфигурация программного обеспечения.md",
     "06-Resources/mantra-srt-validator.md",
-    "06-Resources/Библиотеки Go для работы с субтитрами.md",
-    "03-Tasks/Разработать программу mantra-srt-validator.md",
-    "02-Problems/Нет утилиты для автоматической обработки srt.md",
-    "05-Results/Спецификации оценки контента srt.md",
-    "04-Solutions/Создание текстового документа.md",
+    "04-Solutions/Парсинг subrip.md",
+    "04-Solutions/Корректировка индексов титров.md",
+    "03-Tasks/Разработать алгоритм коррекции таймкодов.md",
+    "Отсутствие Гапов между титрами в SubRip.md",
+    "Переназначение тайм кодов.md",
+    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
+    "04-Solutions/Перекодирование текста в UTF-8.md",
     "02-Problems/Кодировка файла не UTF-8.md",
-    "02-Problems/Кодировка файла UTF BOM.md",
+    "03-Tasks/Разработать механизм валидации субтитров.md",
+    "03-Tasks/Разработать программу mantra-srt-validator.md",
+    "06-Resources/DDD архитектура.md",
+    "02-Problems/Нет утилиты для автоматической обработки srt.md",
     "03-Tasks/Разработать Парсер читающий субтитры.md",
     "06-Resources/Доступное ПО.md",
-    "06-Resources/Текстовой редактор.md",
-    "06-Resources/DDD архитектура.md",
-    "01-Goals/Автоматическая обработка srt файлов.md",
-    "01-Goals/01a - Wants/порядок обработки субтитров.md",
-    "01-Goals/01a - Wants/Статистика Субтитров.md",
+    "04-Solutions/Исключение BOM.md",
+    "02-Problems/Кодировка файла UTF BOM.md",
+    "_templates/02 - ПРОБЛЕМА (Шаблон).md",
     "02-Problems/Отсутствие Спецификации.md",
-    "06-Resources/Человеческое время работы.md",
-    "03-Tasks/Формализовать правила оценки контента в srt.md",
+    "01-Goals/Автоматическая обработка srt файлов.md",
+    "01-Goals/01a - Wants/Статистика Субтитров.md",
     "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
-    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
-    "Алгоритм Валидации Субтитров.md",
+    "04-Solutions/Создание текстового документа.md",
+    "_templates/04 - РЕШЕНИЕ (Шаблон).md",
     "01-Goals/01a - Wants",
     "config.gogIPbL2.bck",
     "config.goroXzSx.bck",

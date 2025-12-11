@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Конфигурация программного обеспечения.md",
+                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Конфигурация программного обеспечения"
+              "title": "Анализ предметной области"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "add75788d2d67b87",
@@ -183,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "fdc0f1b14809e244",
@@ -196,13 +196,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Разработать механизм валидации субтитров.md",
+                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Разработать механизм валидации субтитров"
+              "title": "Outline of Анализ предметной области"
             }
           },
           {
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "03-Tasks/Разработать механизм валидации субтитров.md",
+                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,7 +282,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Разработать механизм валидации субтитров"
+              "title": "Graph of Анализ предметной области"
             }
           }
         ],
@@ -290,8 +290,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5,
-    "collapsed": true
+    "width": 630.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -307,54 +306,53 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "116ba27f2858be02",
+  "active": "154f9bd031bd3b25",
   "lastOpenFiles": [
-    "Алгоритм Валидации Субтитров.md",
+    "DDD_Hononow_Raw/_tables/Таблица 7.1. Модель, основанная на состоянии.md",
+    "DDD_Hononow_Raw/Моделирование фактора времени.md",
+    "DDD_Hononow_Raw/_image/Таблица 7.1. Модель, основанная на состоянии.png",
+    "DDD_Hononow_Raw/_image/Рис. 7.3. Сегментирование хранилища событий.png",
+    "DDD_Hononow_Raw/_image/Рис. 7.2. Получение среза состояния событий агрегата.png",
+    "Pasted image 20251211190248.png",
+    "DDD_Hononow_Raw/_image/Рис. 7.1. Агрегат, основанный на событиях.png",
+    "DDD_Hononow_Raw/Проработка сложной бизнес-логики.md",
+    "DDD_Hononow_Raw/_image/Рис. 6.6. Процесс публикации событий предметной области.png",
+    "DDD_Hononow_Raw/_image/Рис. 6.5. Корень агрегата.png",
+    "DDD_Hononow_Raw/_image/Рис. 6.4. Агрегат как граница согласованности.png",
+    "DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
+    "DDD_Hononow_Raw/_image/Рис. 6.3. Агрегат как иерархия сущностей.png",
+    "DDD_Hononow_Raw/_image/Рис. 6.2. Введение явного поля идентификации.png",
+    "DDD_Hononow_Raw/Тактический замысел.md",
+    "DDD_Hononow_Raw/Стратегическое проектирование.md",
+    "DDD_Hononow_Raw/Интеграция ограниченных контекстов.md",
+    "DDD_Hononow_Raw/Как осмыслить сложность предметной области.md",
+    "DDD_Hononow_Raw/Анализ предметной области.md",
+    "DDD_Hononow_Raw/Экспертные знания о предметной области.md",
+    "DDD_Hononow_Raw/_tables/Таблица 1.1. Отличия трех типов поддоменов друг от друга.md",
+    "DDD_Hononow_Raw/_tables",
+    "DDD_Hononow_Raw/_image",
+    "DDD_Hononow_Raw",
+    "Логирование.md",
     "Конфигурация программного обеспечения.md",
-    "06-Resources/mantra-srt-validator.md",
-    "04-Solutions/Парсинг subrip.md",
-    "04-Solutions/Корректировка индексов титров.md",
-    "03-Tasks/Разработать алгоритм коррекции таймкодов.md",
-    "Отсутствие Гапов между титрами в SubRip.md",
-    "Переназначение тайм кодов.md",
-    "02-Problems/Цикл Валидация-Коррекция SubRip.md",
-    "04-Solutions/Перекодирование текста в UTF-8.md",
-    "02-Problems/Кодировка файла не UTF-8.md",
-    "03-Tasks/Разработать механизм валидации субтитров.md",
-    "03-Tasks/Разработать программу mantra-srt-validator.md",
+    "Алгоритм Валидации Субтитров.md",
     "06-Resources/DDD архитектура.md",
-    "02-Problems/Нет утилиты для автоматической обработки srt.md",
-    "03-Tasks/Разработать Парсер читающий субтитры.md",
+    "06-Resources/Человеческое время работы.md",
+    "06-Resources/Текстовой редактор.md",
+    "06-Resources/Рабочий процесс.md",
     "06-Resources/Доступное ПО.md",
-    "04-Solutions/Исключение BOM.md",
-    "02-Problems/Кодировка файла UTF BOM.md",
-    "_templates/02 - ПРОБЛЕМА (Шаблон).md",
-    "02-Problems/Отсутствие Спецификации.md",
-    "01-Goals/Автоматическая обработка srt файлов.md",
-    "01-Goals/01a - Wants/Статистика Субтитров.md",
-    "00-EverGreen/Метод Циклического Анализа Операционных Процессов.md",
+    "06-Resources/Библиотеки Go для работы с субтитрами.md",
+    "06-Resources/golang library chardet.md",
+    "Спецификации оценки контента srt.md",
+    "Перекодирование текста в UTF-8.md",
     "04-Solutions/Создание текстового документа.md",
-    "_templates/04 - РЕШЕНИЕ (Шаблон).md",
+    "04-Solutions/Парсинг subrip.md",
+    "_img/MANTRA Project flowchart.canvas",
     "01-Goals/01a - Wants",
     "config.gogIPbL2.bck",
     "config.goroXzSx.bck",
     "config.go",
     "config.govCCID2.bck",
     "config.goSlpV02.bck",
-    "config.goxqlrvM.bck",
-    "config.gofa8nJL.bck",
-    "config.gob5fIRC.bck",
-    "config.goJhrdZQ.bck",
-    "_img/MANTRA Project flowchart.canvas",
-    "Pasted image 20251025003643.png",
-    "Pasted image 20251025002918.png",
-    "_img/lf_demo_2.png",
-    "_img/lf_demo_1.png",
-    "_img/helix_logo.png",
-    "Pasted image 20251024002713.png",
-    "_img/logo.png",
-    "_img/superfile_demo.png",
-    "_img/superfile-logo.png",
-    "_img/Pasted image 20251023230240.png"
+    "config.goxqlrvM.bck"
   ]
 }

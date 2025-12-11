@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Wasp",
-  "theme": "obsidian",
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "moonstone",
   "nativeMenus": true,
-  "accentColor": "#636363"
+  "accentColor": "#d94d12"
 }

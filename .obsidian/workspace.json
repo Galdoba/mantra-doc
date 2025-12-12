@@ -11,24 +11,10 @@
             "id": "116ba27f2858be02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Анализ предметной области"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#chapter9",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 316.5
   },
   "right": {
     "id": "add75788d2d67b87",
@@ -137,7 +123,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -161,9 +147,7 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {
-                "file": "программирование/концепты/Построение URL.md"
-              },
+              "state": {},
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
@@ -196,13 +180,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Анализ предметной области"
+              "title": "Outline"
             }
           },
           {
@@ -211,7 +194,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -277,12 +259,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224399,
+                  "scale": 0.9999999999999961,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Анализ предметной области"
+              "title": "Graph view"
             }
           }
         ],
@@ -290,7 +272,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 437.5
+    "width": 779.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -308,51 +290,52 @@
   },
   "active": "116ba27f2858be02",
   "lastOpenFiles": [
-    "DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
-    "DDD_Hononow_Raw/EventStorming.md",
-    "DDD_Hononow_Raw/_image/Рис. 13.1. Реорганизация модулей ограниченного контекста.png",
-    "DDD_Hononow_Raw/Предметно-ориентированное проектирование на практике.md",
-    "DDD_Hononow_Raw/_image/Рис. 13.5. И старая, и новая система временно работает с одной и той же базой данных.png",
-    "DDD_Hononow_Raw/_image/Рис. 13.4. Слой фасада перенаправляет запрос в зависимости от состояния переноса функциональности из устаревшей системы.png",
-    "DDD_Hononow_Raw/_image/Рис. 13.3. Инжир-душитель.png",
-    "DDD_Hononow_Raw/_image/Рис. 13.2. Извлечение ограниченного контекста путем превращения логической границы в физическую.png",
-    "DDD_Hononow_Raw/_image/Рис. 12.1. Пространство моделирования для проведения EventStorming.png",
-    "DDD_Hononow_Raw/_image/Рис. 12.12. Условные обозначения различных элементов процесса EventStorming.png",
-    "DDD_Hononow_Raw/_image/Рис. 12.11. Возможное разбиение полученной системы на ограниченные контексты.png",
-    "DDD_Hononow_Raw/_image/Рис. 12.9. Внешняя система.png",
-    "DDD_Hononow_Raw/_image/Рис. 12.10. Команды и события предметной области, собранные в агрегат.png",
-    "DDD_Hononow_Raw/Эволюция проектных решений.md",
-    "DDD_Hononow_Raw/Эвристика проектирования.md",
-    "DDD_Hononow_Raw/Применение предметно-ориентированного проектирования на практике.md",
-    "DDD_Hononow_Raw/Паттерны взаимодействия.md",
-    "DDD_Hononow_Raw/Архитектурные паттерны.md",
-    "DDD_Hononow_Raw/Анализ предметной области.md",
+    "Ubiquitous Language.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Экспертные знания о предметной области.md",
+    "03_Distill/Domain Expert.md",
+    "03_Distill/Problem.md",
+    "03_Distill/Domain.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Изучаем DDD - предметно-ориентированное программирование.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Анализ предметной области.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_tables/Таблица 1.1. Отличия трех типов поддоменов друг от друга.md",
+    "поддомен.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Стратегическое проектирование.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.1. Схема реляционной базы данных, описывающая отношения между сущностями в транзакционной модели.png",
+    "02_Organize/04_Archive",
+    "02_Organize/03_Resources",
+    "02_Organize/02_Areas",
+    "02_Organize/01_Projects",
+    "04_Express",
+    "03_Distill",
+    "02_Organize",
+    "01_Capture",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Сеть данных (`Data Mesh`).md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.15. Использование паттерна CQRS для одновременного предоставления аналитических данных.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.14. Группа управления.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.13. Конечные точки данных Polyglo.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.12. Приведение границ владения аналитическими моделями в соответствие с границами ограниченных контекстов.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.10. Архитектура озера данных.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.11. Несколько версий одного и того же ETL-сценария.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.9. Хранилище данных, заполняемое путем извлечения данных.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.8. Архитектура корпоративного хранилища данных, дополненная витринами данных.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image/Рис. 16.7. Типовая архитектура корпоративного хранилища данных.png",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Событийно-ориентированная архитектура.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Микросервисы.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Взаимоотношения с другими методологиями и паттернами.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/EventStorming.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Предметно-ориентированное проектирование на практике.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Эволюция проектных решений.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Эвристика проектирования.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Применение предметно-ориентированного проектирования на практике.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Паттерны взаимодействия.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Архитектурные паттерны.md",
     "DDD_Hononow_Raw/_tables/Таблица 7.1. Модель, основанная на состоянии.md",
-    "DDD_Hononow_Raw/Моделирование фактора времени.md",
-    "DDD_Hononow_Raw/Проработка сложной бизнес-логики.md",
-    "DDD_Hononow_Raw/Тактический замысел.md",
-    "DDD_Hononow_Raw/Стратегическое проектирование.md",
-    "DDD_Hononow_Raw/Интеграция ограниченных контекстов.md",
-    "DDD_Hononow_Raw/Как осмыслить сложность предметной области.md",
-    "DDD_Hononow_Raw/Экспертные знания о предметной области.md",
-    "DDD_Hononow_Raw/_tables/Таблица 1.1. Отличия трех типов поддоменов друг от друга.md",
-    "DDD_Hononow_Raw/_tables",
-    "DDD_Hononow_Raw/_image",
-    "DDD_Hononow_Raw",
-    "Логирование.md",
-    "Конфигурация программного обеспечения.md",
-    "Алгоритм Валидации Субтитров.md",
-    "06-Resources/DDD архитектура.md",
-    "06-Resources/Человеческое время работы.md",
-    "06-Resources/Текстовой редактор.md",
-    "06-Resources/Рабочий процесс.md",
-    "_img/MANTRA Project flowchart.canvas",
-    "01-Goals/01a - Wants",
-    "config.gogIPbL2.bck",
-    "config.goroXzSx.bck",
-    "config.go",
-    "config.govCCID2.bck",
-    "config.goSlpV02.bck",
-    "config.goxqlrvM.bck"
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Моделирование фактора времени.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Проработка сложной бизнес-логики.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Тактический замысел.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_tables",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/_image",
+    "_img/MANTRA Project flowchart.canvas"
   ]
 }

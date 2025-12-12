@@ -11,24 +11,10 @@
             "id": "116ba27f2858be02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Анализ предметной области"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -211,7 +197,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -282,7 +267,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Анализ предметной области"
+              "title": "Graph view"
             }
           }
         ],
@@ -290,7 +275,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 630.5
+    "width": 437.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -306,27 +292,31 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "154f9bd031bd3b25",
+  "active": "116ba27f2858be02",
   "lastOpenFiles": [
+    "DDD_Hononow_Raw/_image/Рис. 10.1. Изменение, затрагивающее сразу несколько ограниченных контекстов.png",
+    "DDD_Hononow_Raw/Эвристика проектирования.md",
+    "DDD_Hononow_Raw/_image/Рис. 10.7. Дерево тактических проектных решений.png",
+    "DDD_Hononow_Raw/_image/Рис. 10.6. Дерево решений по стратегии тестирования.png",
+    "DDD_Hononow_Raw/_image/Рис. 10.5. Стратегии тестирования.png",
+    "DDD_Hononow_Raw/_image/Рис. 10.4. Дерево решений по выбору архитектурного паттерна.png",
+    "DDD_Hononow_Raw/_image/Рис. 10.3. Дерево решений для выбора паттерна реализации бизнес-логики.png",
+    "DDD_Hononow_Raw/_image/Рис. 10.2. Широкие границы ограниченного контекста.png",
+    "DDD_Hononow_Raw/Применение предметно-ориентированного проектирования на практике.md",
+    "DDD_Hononow_Raw/_image/Рис. 9.1. Преобразование моделей через прокси.png",
+    "DDD_Hononow_Raw/Паттерны взаимодействия.md",
+    "DDD_Hononow_Raw/_image/Рис. 9.15. Диспетчер бронирования.png",
+    "DDD_Hononow_Raw/_image/Рис. 9.14. Диспетчер процессов.png",
+    "DDD_Hononow_Raw/Архитектурные паттерны.md",
+    "DDD_Hononow_Raw/Анализ предметной области.md",
     "DDD_Hononow_Raw/_tables/Таблица 7.1. Модель, основанная на состоянии.md",
     "DDD_Hononow_Raw/Моделирование фактора времени.md",
-    "DDD_Hononow_Raw/_image/Таблица 7.1. Модель, основанная на состоянии.png",
-    "DDD_Hononow_Raw/_image/Рис. 7.3. Сегментирование хранилища событий.png",
-    "DDD_Hononow_Raw/_image/Рис. 7.2. Получение среза состояния событий агрегата.png",
-    "Pasted image 20251211190248.png",
-    "DDD_Hononow_Raw/_image/Рис. 7.1. Агрегат, основанный на событиях.png",
     "DDD_Hononow_Raw/Проработка сложной бизнес-логики.md",
-    "DDD_Hononow_Raw/_image/Рис. 6.6. Процесс публикации событий предметной области.png",
-    "DDD_Hononow_Raw/_image/Рис. 6.5. Корень агрегата.png",
-    "DDD_Hononow_Raw/_image/Рис. 6.4. Агрегат как граница согласованности.png",
     "DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
-    "DDD_Hononow_Raw/_image/Рис. 6.3. Агрегат как иерархия сущностей.png",
-    "DDD_Hononow_Raw/_image/Рис. 6.2. Введение явного поля идентификации.png",
     "DDD_Hononow_Raw/Тактический замысел.md",
     "DDD_Hononow_Raw/Стратегическое проектирование.md",
     "DDD_Hononow_Raw/Интеграция ограниченных контекстов.md",
     "DDD_Hononow_Raw/Как осмыслить сложность предметной области.md",
-    "DDD_Hononow_Raw/Анализ предметной области.md",
     "DDD_Hononow_Raw/Экспертные знания о предметной области.md",
     "DDD_Hononow_Raw/_tables/Таблица 1.1. Отличия трех типов поддоменов друг от друга.md",
     "DDD_Hononow_Raw/_tables",
@@ -342,10 +332,6 @@
     "06-Resources/Доступное ПО.md",
     "06-Resources/Библиотеки Go для работы с субтитрами.md",
     "06-Resources/golang library chardet.md",
-    "Спецификации оценки контента srt.md",
-    "Перекодирование текста в UTF-8.md",
-    "04-Solutions/Создание текстового документа.md",
-    "04-Solutions/Парсинг subrip.md",
     "_img/MANTRA Project flowchart.canvas",
     "01-Goals/01a - Wants",
     "config.gogIPbL2.bck",

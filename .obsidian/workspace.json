@@ -11,10 +11,24 @@
             "id": "116ba27f2858be02",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Анализ предметной области"
             }
           }
         ]
@@ -197,6 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "DDD_Hononow_Raw/Анализ предметной области.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -267,7 +282,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Анализ предметной области"
             }
           }
         ],
@@ -275,8 +290,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 437.5,
-    "collapsed": true
+    "width": 437.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -294,25 +308,28 @@
   },
   "active": "116ba27f2858be02",
   "lastOpenFiles": [
-    "DDD_Hononow_Raw/_image/Рис. 10.1. Изменение, затрагивающее сразу несколько ограниченных контекстов.png",
+    "DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
+    "DDD_Hononow_Raw/EventStorming.md",
+    "DDD_Hononow_Raw/_image/Рис. 13.1. Реорганизация модулей ограниченного контекста.png",
+    "DDD_Hononow_Raw/Предметно-ориентированное проектирование на практике.md",
+    "DDD_Hononow_Raw/_image/Рис. 13.5. И старая, и новая система временно работает с одной и той же базой данных.png",
+    "DDD_Hononow_Raw/_image/Рис. 13.4. Слой фасада перенаправляет запрос в зависимости от состояния переноса функциональности из устаревшей системы.png",
+    "DDD_Hononow_Raw/_image/Рис. 13.3. Инжир-душитель.png",
+    "DDD_Hononow_Raw/_image/Рис. 13.2. Извлечение ограниченного контекста путем превращения логической границы в физическую.png",
+    "DDD_Hononow_Raw/_image/Рис. 12.1. Пространство моделирования для проведения EventStorming.png",
+    "DDD_Hononow_Raw/_image/Рис. 12.12. Условные обозначения различных элементов процесса EventStorming.png",
+    "DDD_Hononow_Raw/_image/Рис. 12.11. Возможное разбиение полученной системы на ограниченные контексты.png",
+    "DDD_Hononow_Raw/_image/Рис. 12.9. Внешняя система.png",
+    "DDD_Hononow_Raw/_image/Рис. 12.10. Команды и события предметной области, собранные в агрегат.png",
+    "DDD_Hononow_Raw/Эволюция проектных решений.md",
     "DDD_Hononow_Raw/Эвристика проектирования.md",
-    "DDD_Hononow_Raw/_image/Рис. 10.7. Дерево тактических проектных решений.png",
-    "DDD_Hononow_Raw/_image/Рис. 10.6. Дерево решений по стратегии тестирования.png",
-    "DDD_Hononow_Raw/_image/Рис. 10.5. Стратегии тестирования.png",
-    "DDD_Hononow_Raw/_image/Рис. 10.4. Дерево решений по выбору архитектурного паттерна.png",
-    "DDD_Hononow_Raw/_image/Рис. 10.3. Дерево решений для выбора паттерна реализации бизнес-логики.png",
-    "DDD_Hononow_Raw/_image/Рис. 10.2. Широкие границы ограниченного контекста.png",
     "DDD_Hononow_Raw/Применение предметно-ориентированного проектирования на практике.md",
-    "DDD_Hononow_Raw/_image/Рис. 9.1. Преобразование моделей через прокси.png",
     "DDD_Hononow_Raw/Паттерны взаимодействия.md",
-    "DDD_Hononow_Raw/_image/Рис. 9.15. Диспетчер бронирования.png",
-    "DDD_Hononow_Raw/_image/Рис. 9.14. Диспетчер процессов.png",
     "DDD_Hononow_Raw/Архитектурные паттерны.md",
     "DDD_Hononow_Raw/Анализ предметной области.md",
     "DDD_Hononow_Raw/_tables/Таблица 7.1. Модель, основанная на состоянии.md",
     "DDD_Hononow_Raw/Моделирование фактора времени.md",
     "DDD_Hononow_Raw/Проработка сложной бизнес-логики.md",
-    "DDD_Hononow_Raw/Реализация простой бизнес-логики.md",
     "DDD_Hononow_Raw/Тактический замысел.md",
     "DDD_Hononow_Raw/Стратегическое проектирование.md",
     "DDD_Hononow_Raw/Интеграция ограниченных контекстов.md",
@@ -329,9 +346,6 @@
     "06-Resources/Человеческое время работы.md",
     "06-Resources/Текстовой редактор.md",
     "06-Resources/Рабочий процесс.md",
-    "06-Resources/Доступное ПО.md",
-    "06-Resources/Библиотеки Go для работы с субтитрами.md",
-    "06-Resources/golang library chardet.md",
     "_img/MANTRA Project flowchart.canvas",
     "01-Goals/01a - Wants",
     "config.gogIPbL2.bck",

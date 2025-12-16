@@ -1,6 +1,8 @@
 {
-  "cssTheme": "Obsidian gruvbox",
-  "theme": "moonstone",
+  "cssTheme": "Primary",
+  "theme": "obsidian",
   "nativeMenus": true,
-  "accentColor": "#d94d12"
+  "accentColor": "#ab4726",
+  "baseFontSizeAction": true,
+  "baseFontSize": 17
 }

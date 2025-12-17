@@ -11,24 +11,10 @@
             "id": "0dec4b26833a786d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Capture/Анализ операций шаблонов для универсализации.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Анализ операций шаблонов для универсализации"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -187,15 +173,13 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "01_Capture/Анализ операций шаблонов для универсализации.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for Анализ операций шаблонов для универсализации"
+              "title": "File properties"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       },
       {
         "id": "fdc0f1b14809e244",
@@ -208,13 +192,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Capture/Анализ операций шаблонов для универсализации.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Анализ операций шаблонов для универсализации"
+              "title": "Outline"
             }
           },
           {
@@ -223,18 +206,17 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01_Capture/Анализ операций шаблонов для универсализации.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
                   "showTags": true,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": false,
+                  "collapse-color-groups": true,
                   "colorGroups": [
                     {
                       "query": "line:(Категория Цель)",
@@ -279,7 +261,7 @@
                       }
                     }
                   ],
-                  "collapse-display": false,
+                  "collapse-display": true,
                   "showArrow": true,
                   "textFadeMultiplier": -0.5,
                   "nodeSizeMultiplier": 1,
@@ -294,11 +276,10 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Анализ операций шаблонов для универсализации"
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -315,17 +296,21 @@
       "bases:Create new base": false,
       "markdown-importer:Open format converter": false,
       "timethings:Activate view": false,
-      "obisidian-note-linker:Note Linker": false,
-      "rpg-manager:RPG Manager": false,
-      "solo-rpg-toolkit:Solo RPG Toolkit": false
+      "obisidian-note-linker:Note Linker": false
     }
   },
   "active": "0dec4b26833a786d",
   "lastOpenFiles": [
-    "01_Capture/Перечень решений, принимаемых в шаблонах скриптов.md",
-    "01_Capture/Описание архитектурных блоков bash-скрипта.md",
-    "01_Capture/Построение объединенного скрипта.md",
-    "01_Capture/Шаблоны скриптов.md",
+    "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Шаблоны скриптов.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Анализ операций шаблонов для универсализации.md",
+    "01_Capture/Массивы строк в bash.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Построение объединенного скрипта.md",
+    "03_Distill/Domain Event.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Описание архитектурных блоков bash-скрипта.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Перечень решений, принимаемых в шаблонах скриптов.md",
+    "02_Organize/01_Projects/universal_transcodding_script",
     "03_Distill/Степень свободы.md",
     "03_Distill/ValueObject.md",
     "03_Distill/Domain Service.md",
@@ -357,17 +342,11 @@
     "Imperium.md",
     "My Ego.md",
     "Fly from planet.md",
-    "First Day.md",
-    "Fuel Cell.md",
-    "start.md",
-    "03_Distill/Domain Expert.md",
-    "03_Distill/Domain Model.md",
     "02_Organize/03_Resources/DDD_Hononow_Raw/_tables",
     "02_Organize/03_Resources/DDD_Hononow_Raw/_image",
     "02_Organize/03_Resources/DDD_Hononow_Raw",
     "02_Organize/04_Archive",
     "02_Organize/03_Resources",
-    "02_Organize/02_Areas",
     "_img/MANTRA Project flowchart.canvas"
   ]
 }

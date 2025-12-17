@@ -6,7 +6,7 @@
   "showFiles": false,
   "showLinks": false,
   "showWords": true,
-  "showSize": false,
+  "showSize": true,
   "showQuality": false,
-  "showTags": true
+  "showTags": false
 }

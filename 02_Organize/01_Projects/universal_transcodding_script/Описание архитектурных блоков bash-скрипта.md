@@ -1,5 +1,7 @@
 ---
-updated_at: 2025-12-16T14:48:04.662+10:00
+updated_at: 2025-12-17T12:28:36.896+10:00
+tags:
+  - universal_transcoding_script
 ---
 ## БЛОК 1: ОБЪЯВЛЕНИЕ ПЕРЕМЕННЫХ
 

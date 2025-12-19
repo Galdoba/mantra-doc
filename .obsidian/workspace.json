@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
+                "file": "02_Organize/01_Projects/work/glossary/Проект.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Current Template"
+              "title": "Проект"
+            }
+          },
+          {
+            "id": "03e4e58200117a1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Рабочая таблица.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Рабочая таблица"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,13 +231,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
+                "file": "Рабочая таблица.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Current Template"
+              "title": "Outline of Рабочая таблица"
             }
           },
           {
@@ -221,6 +246,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Рабочая таблица.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -291,10 +317,11 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Рабочая таблица"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -314,29 +341,38 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0dec4b26833a786d",
+  "active": "03e4e58200117a1d",
   "lastOpenFiles": [
-    "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
+    "Рабочая таблица.md",
+    "02_Organize/01_Projects/work/glossary/Проект.md",
+    "Источник истины.md",
+    "02_Organize/01_Projects/work/glossary/Исходник.md",
+    "02_Organize/01_Projects/work/glossary/Stream.md",
+    "02_Organize/01_Projects/work/glossary/Медиафайл.md",
+    "02_Organize/01_Projects/work/glossary/Кодек.md",
+    "02_Organize/01_Projects/work/glossary/Байт.md",
+    "02_Organize/01_Projects/work/glossary/Контейнер.md",
+    "02_Organize/01_Projects/work/glossary/Edit Masters.md",
+    "02_Organize/01_Projects/work/glossary/Транскодирование.md",
+    "02_Organize/01_Projects/work/Глоссарий.md",
+    "02_Organize/01_Projects/work/glossary/Метадата.md",
+    "02_Organize/01_Projects/work/glossary/Продукт.md",
+    "02_Organize/01_Projects/work/glossary/Диск.md",
+    "02_Organize/01_Projects/work/glossary/Файл.md",
+    "02_Organize/01_Projects/work/glossary/Видео.md",
+    "02_Organize/01_Projects/work/glossary/Субтитры.md",
+    "02_Organize/01_Projects/work/glossary/Аудио.md",
+    "02_Organize/01_Projects/work/glossary",
+    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
+    "02_Organize/01_Projects/work",
     "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
+    "02_Organize/01_Projects/ffencoder",
+    "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
     "02_Organize/01_Projects/universal_transcodding_script/Шаблоны скриптов.md",
     "02_Organize/01_Projects/universal_transcodding_script/Анализ операций шаблонов для универсализации.md",
     "01_Capture/Массивы строк в bash.md",
     "02_Organize/01_Projects/universal_transcodding_script/Построение объединенного скрипта.md",
-    "03_Distill/Domain Event.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Описание архитектурных блоков bash-скрипта.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Перечень решений, принимаемых в шаблонах скриптов.md",
     "02_Organize/01_Projects/universal_transcodding_script",
-    "03_Distill/Степень свободы.md",
-    "03_Distill/ValueObject.md",
-    "03_Distill/Domain Service.md",
-    "03_Distill/Event Store.md",
-    "03_Distill/Problem Domain.md",
-    "03_Distill/Ubiquitous Language.md",
-    "03_Distill/Event Sourcing.md",
-    "02_Organize/03_Resources/DDD_Hononow_Raw/Паттерны взаимодействия.md",
-    "Tables/Table test.md",
-    "Tables/Table test.md",
-    "sdf.md",
     "Tables",
     "Decks/Tarot/21-TheWorld.png",
     "Decks/Tarot/20-Judgement.png",
@@ -351,17 +387,8 @@
     "Decks/Tarot",
     "Decks/Standard",
     "Decks",
-    "03_Distill/Domain.md",
-    "04_Express/что-то пошло не так....md",
-    "Drinax_Trojan Reaches 2223.md",
-    "Imperium.md",
-    "My Ego.md",
-    "Fly from planet.md",
     "02_Organize/03_Resources/DDD_Hononow_Raw/_tables",
     "02_Organize/03_Resources/DDD_Hononow_Raw/_image",
-    "02_Organize/03_Resources/DDD_Hononow_Raw",
-    "02_Organize/04_Archive",
-    "02_Organize/03_Resources",
     "_img/MANTRA Project flowchart.canvas"
   ]
 }

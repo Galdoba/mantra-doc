@@ -1,5 +1,5 @@
 ---
-updated_at: 2025-12-17T17:56:05.373+10:00
+updated_at: 2025-12-19T19:22:45.648+10:00
 ---
 ```bash
 #!/bin/bash
@@ -749,4 +749,491 @@ at now + ${ARCHIVE_DELAY} <<< "mv ${FULL_DONE_PATH}/${INPUT_FILE} ${ARCHIVE_OUTP
 # Очистка и архивация скрипта
 clear
 mv "$0" "${SCRIPT_ARCHIVE_DIR}/"
+```
+
+---
+
+```bash
+#!/bin/bash
+
+# ============================================================================
+# ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ И МАССИВЫ
+# ============================================================================
+
+#Пути
+
+ROOT_EXTERNAL="/mnt/pemaltynov/ROOT"
+
+DESTINATION_ROOT="${ROOT_EXTERNAL}/EDIT"
+ARCHIVE_ROOT="${ROOT_EXTERNAL}/IN"
+
+ROOT_LOCAL="/home/pemaltynov/IN"
+DIR_SOURCE="${ROOT_LOCAL}"
+DIR_IN_PROGRESS="${ROOT_LOCAL}/_IN_PROGRESS"
+DIR_DONE="${ROOT_LOCAL}/_DONE"
+DIR_NOTIFICATIONS="${ROOT_LOCAL}/notifications"
+
+
+
+# Основные параметры кодирования
+MEDIA_AGENT="amedia"
+VIDEO_FRAMERATE=24
+VIDEO_ENABLED=true
+VIDEO_PROXY_ENABLED=true
+AUDIO_ENABLED=true
+AUDIO_PROXY_ENABLED=false
+
+# Массивы фильтров filter_complex
+declare -a VIDEO_FILTER_COMPLEX_MAIN=(
+    "scale=1920:-2"
+    "setsar=1/1"
+    "unsharp=3:3:0.3:3:3:0"
+    "pad=1920:1080:-1:-1"
+)
+declare -a VIDEO_FILTER_COMPLEX_PROXY=(
+    "scale=iw/2:ih"
+    "setsar=(1/1)*2"
+)
+
+declare -a AUDIO_FILTER_COMPLEX_MAIN=(
+    "aresample=48000"
+    "atempo=25/(__)"
+)
+declare -a AUDIO_FILTER_COMPLEX_PROXY=(
+    "aresample=44100"
+    "atempo=25/(__)"
+)
+
+
+# Массивы фильтров вывода потоков
+declare -a VIDEO_OUTSTREAM_FILTERS_MAIN=(
+	"-c:v" "libx264" "-preset" "medium" "-crf" "16" "-pix_fmt" "yuv420p" "-g" "0"
+)
+declare -a VIDEO_OUTSTREAM_FILTERS_PROXY=(
+	"-c:v" "libx264" "-x264opts" "interlaced=1" "-preset" "superfast"
+	"-pix_fmt" "yuv420p" "-b:v" "2000k" "-maxrate" "2000k"
+)
+
+declare -a AUDIO_OUTSTREAM_FILTERS_MAIN=(
+    "-c:a" "alac" "-compression_level" "0"
+)
+declare -a AUDIO_OUTSTREAM_FILTERS_PROXY=(
+    "-c:a" "ac3" "-b:a" "128k"
+)
+
+# Массивы кодов потоков из входных файлов
+declare -a STREAM_CODES_VIDEO=(
+    "[0:v:0]"
+)
+declare -a STREAM_CODES_AUDIO=(
+    "[0:a:1]"
+    "[0:a:3]"
+)
+
+declare -a OUTPUT_CODES
+
+#Словарь "Код выходного потока -> имя файла"
+declare -A OUTPUT_CODE_TO_FILENAME
+
+# Команда ffmpeg и входные файлы
+declare -a FFMPEG_COMMAND=(
+    "ffmpeg"
+)
+declare -a FFMPEG_INPUT_FILES=(
+    "file1.mp4"
+    "file2.mp4"
+)
+
+# ============================================================================
+# ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
+# ============================================================================
+
+# Функция добавления элементов в массив по ссылке
+# Принимает имя массива и произвольное количество значений для добавления
+# Проверяет наличие минимум 2 аргументов и добавляет только непустые строки
+append() {
+    if [[ $# -lt 2 ]]; then
+        echo "Ошибка: функция ожидает минимум 2 аргумента - имя массива и строки" >&2
+        return 1
+    fi
+
+    local -n arr_ref="$1"
+    shift
+    
+    local value
+    for value in "$@"; do
+        if [[ -n "$value" ]]; then
+            arr_ref+=("$value")
+        fi
+    done
+}
+
+# Функция объединения элементов массива в строку с заданным разделителем
+# Принимает имя массива и строку-разделитель, возвращает объединенную строку
+# Обрабатывает случаи пустого массива и массива с одним элементом
+join_array() {
+    if [[ $# -lt 2 ]]; then
+        echo "Ошибка: ожидается имя массива и разделитель" >&2
+        return 1
+    fi
+    
+    local -n arr_ref="$1"
+    local delimiter="$2"
+    
+    if [[ ${#arr_ref[@]} -eq 0 ]]; then
+        echo ""
+        return 0
+    fi
+    
+    if [[ ${#arr_ref[@]} -eq 1 ]]; then
+        echo "${arr_ref[0]}"
+        return 0
+    fi
+    
+    local first_element="${arr_ref[0]}"
+    printf "%s" "$first_element"
+    
+    for element in "${arr_ref[@]:1}"; do
+        printf "%s%s" "$delimiter" "$element"
+    done
+    
+    echo ""
+}
+
+# Функция извлечения меток выходных потоков из строки filter_complex
+# Принимает строку filter_complex и имя массива для результатов
+# Находит все вхождения вида [out_*] и добавляет их в результирующий массив
+extract_out_labels() {
+    local filter_complex="$1"
+    local -n array_ref="$2"
+    
+    array_ref=()
+    
+    # Используем while для чтения, обрабатывая пустые строки
+    while IFS= read -r match || [[ -n "$match" ]]; do
+        # Пропускаем пустые строки
+        [[ -z "$match" ]] && continue
+        array_ref+=("$match")
+    done < <(printf '%s' "$filter_complex" | grep -oE '\[out_[^]]+\]')
+}
+
+# ============================================================================
+# ФУНКЦИИ ПОСТРОЕНИЯ VIDEO ЧАСТИ FILTER_COMPLEX
+# ============================================================================
+
+# Функция создания цепочки фильтров для одного видеопотока
+# Строит последовательность фильтров с опциональным разделением на основной и прокси потоки
+# Принимает код входного потока и индекс видеопотока, возвращает строку фильтров
+build_filter_complex_video_filter() {
+    local stream_code="$1"
+    local video_index="$2"
+    
+    local video_filter=""
+    video_filter+="${stream_code}"
+    
+    # Добавление основных фильтров видео
+    if [[ ${#VIDEO_FILTER_COMPLEX_MAIN[@]} -gt 0 ]]; then
+        local filters_joined
+        filters_joined=$(join_array VIDEO_FILTER_COMPLEX_MAIN ",")
+        video_filter+="${filters_joined}"
+    fi
+
+    local main_out_code="[out_vm_${video_index}]"
+	append OUTPUT_CODES "$main_out_code"
+    
+    # Проверка необходимости создания прокси видео
+    if [[ "${VIDEO_PROXY_ENABLED}" == "true" ]] && [[ ${#VIDEO_FILTER_COMPLEX_PROXY[@]} -gt 0 ]]; then
+        local proxy_out_code="[out_vp_${video_index}]"
+        # Разделение потока на основной и прокси
+        video_filter+=",split=2"
+        video_filter+="${main_out_code}[in_proxy_${video_index}]"
+        video_filter+=";"
+        video_filter+="[in_proxy_${video_index}]"
+        
+        # Добавление фильтров прокси видео
+        if [[ ${#VIDEO_FILTER_COMPLEX_PROXY[@]} -gt 0 ]]; then
+            local filters_joined
+            filters_joined=$(join_array VIDEO_FILTER_COMPLEX_PROXY ",")
+            video_filter+="${filters_joined}"
+        fi
+        
+        video_filter+="${proxy_out_code}"
+		append OUTPUT_CODES "$proxy_out_code"
+    else
+        # Только основной поток без прокси
+        video_filter+="${main_out_code}"
+		append OUTPUT_CODES "$main_out_code"
+    fi
+    
+    echo "$video_filter"
+}
+
+# Функция построения видео части filter_complex для всех видеопотоков
+# Обрабатывает все видеопотоки, объединяя их фильтры через точку с запятой
+# Работает с длиной массива STREAM_CODES_VIDEO
+build_filter_complex_videos() {
+    local -a video_filters_array=()
+    local video_filter
+    local result=""
+    
+    # Обработка всех видеопотоков из массива
+    for ((i=0; i<${#STREAM_CODES_VIDEO[@]}; i++)); do
+        local video_index=$i
+        local stream_code="${STREAM_CODES_VIDEO[i]}"
+        video_filter=$(build_filter_complex_video_filter "$stream_code" "$video_index")
+        
+        # Добавление фильтра в массив, если он не пустой
+        if [[ -n "$video_filter" ]]; then
+            append video_filters_array "$video_filter"
+        fi
+    done
+    
+    # Объединение всех видеофильтров через точку с запятой
+    if [[ ${#video_filters_array[@]} -gt 0 ]]; then
+        result=$(join_array video_filters_array ";")
+    fi
+    
+    echo "$result"
+}
+
+# ============================================================================
+# ФУНКЦИИ ПОСТРОЕНИЯ AUDIO ЧАСТИ FILTER_COMPLEX
+# ============================================================================
+
+# Функция создания цепочки фильтров для одного аудиопотока
+# Строит последовательность фильтров с опциональным разделением на основной и прокси потоки
+# Принимает код входного потока и индекс аудиопотока, возвращает строку фильтров
+build_filter_complex_audio_filter() {
+    local stream_code="$1"
+    local audio_index="$2"
+    
+    local audio_filter=""
+    audio_filter+="${stream_code}"
+    
+    # Добавление основных фильтров аудио
+    if [[ ${#AUDIO_FILTER_COMPLEX_MAIN[@]} -gt 0 ]]; then
+        local filters_joined
+        filters_joined=$(join_array AUDIO_FILTER_COMPLEX_MAIN ",")
+        audio_filter+="${filters_joined}"
+    fi
+
+    local main_out_code="[out_am_${audio_index}]"
+	append OUTPUT_CODES "$main_out_code"
+    
+    # Проверка необходимости создания прокси аудио
+    if [[ "${AUDIO_PROXY_ENABLED}" == "true" ]] && [[ ${#AUDIO_FILTER_COMPLEX_PROXY[@]} -gt 0 ]]; then
+        local proxy_out_code="[out_ap_${audio_index}]"
+        # Разделение аудиопотока на основной и прокси
+        audio_filter+=",asplit=2"
+        audio_filter+="${main_out_code}[pr_raw_a_${audio_index}]"
+        audio_filter+=";"
+        audio_filter+="[pr_raw_a_${audio_index}]"
+        
+        # Добавление фильтров прокси аудио
+        if [[ ${#AUDIO_FILTER_COMPLEX_PROXY[@]} -gt 0 ]]; then
+            local filters_joined
+            filters_joined=$(join_array AUDIO_FILTER_COMPLEX_PROXY ",")
+            audio_filter+="${filters_joined}"
+        fi
+        
+        audio_filter+="${proxy_out_code}"
+		append OUTPUT_CODES "$proxy_out_code"
+    else
+        # Только основной поток без прокси
+        audio_filter+="${main_out_code}"
+		append OUTPUT_CODES "$main_out_code"
+    fi
+    
+    echo "$audio_filter"
+}
+
+# Функция построения аудио части filter_complex для всех аудиопотоков
+# Обрабатывает все аудиопотоки, объединяя их фильтры через точку с запятой
+# Работает с длиной массива STREAM_CODES_AUDIO
+build_filter_complex_audios() {
+    local -a audio_filters_array=()
+    local audio_filter
+    local result=""
+    
+    # Обработка всех аудиопотоков из массива
+    for ((i=0; i<${#STREAM_CODES_AUDIO[@]}; i++)); do
+        local audio_index=$i
+        local stream_code="${STREAM_CODES_AUDIO[i]}"
+        audio_filter=$(build_filter_complex_audio_filter "$stream_code" "$audio_index")
+        
+        # Добавление фильтра в массив, если он не пустой
+        if [[ -n "$audio_filter" ]]; then
+            append audio_filters_array "$audio_filter"
+        fi
+    done
+    
+    # Объединение всех аудиофильтров через точку с запятой
+    if [[ ${#audio_filters_array[@]} -gt 0 ]]; then
+        result=$(join_array audio_filters_array ";")
+    fi
+    
+    echo "$result"
+}
+
+# ============================================================================
+# ФУНКЦИЯ ПОСТРОЕНИЯ ПОЛНОГО FILTER_COMPLEX
+# ============================================================================
+
+# Основная функция сборки полной строки filter_complex для ffmpeg
+# Объединяет видео и аудио части, обеспечивая правильный синтаксис разделения
+# Работает с длинами массивов STREAM_CODES_VIDEO и STREAM_CODES_AUDIO
+build_filter_complex() {
+    local video_part=""
+    local audio_part=""
+    local result=""
+    
+    # Построение видео части
+    if [[ ${#STREAM_CODES_VIDEO[@]} -gt 0 ]]; then
+        video_part=$(build_filter_complex_videos)
+        if [[ $? -ne 0 ]]; then
+            echo "Ошибка при построении видео части filter_complex" >&2
+            return 1
+        fi
+    fi
+    
+    # Построение аудио части
+    if [[ ${#STREAM_CODES_AUDIO[@]} -gt 0 ]]; then
+        audio_part=$(build_filter_complex_audios)
+        if [[ $? -ne 0 ]]; then
+            echo "Ошибка при построении аудио части filter_complex" >&2
+            return 1
+        fi
+    fi
+    
+    # Объединение видео и аудио частей
+    if [[ -n "$video_part" ]] && [[ -n "$audio_part" ]]; then
+        result="${video_part};${audio_part}"
+    elif [[ -n "$video_part" ]]; then
+        result="$video_part"
+    elif [[ -n "$audio_part" ]]; then
+        result="$audio_part"
+    fi
+    
+    echo "$result"
+}
+
+
+# Функция для получения фильтров по коду
+get_stream_filters() {
+    local code="$1"
+    local -n target_array_ref="$2"  # -n создает ссылку на массив
+    
+    # Очищаем целевой массив
+    target_array_ref=()
+    
+    # Определяем источник на основе кода
+    case "$code" in
+        *vm*) 
+            target_array_ref=("${VIDEO_OUTSTREAM_FILTERS_MAIN[@]}")
+            ;;
+        *vp*) 
+            target_array_ref=("${VIDEO_OUTSTREAM_FILTERS_PROXY[@]}")
+            ;;
+        *am*) 
+            target_array_ref=("${AUDIO_OUTSTREAM_FILTERS_MAIN[@]}")
+            ;;
+        *ap*) 
+            target_array_ref=("${AUDIO_OUTSTREAM_FILTERS_PROXY[@]}")
+            ;;
+        *) 
+            # Оставляем массив пустым
+            echo "Неизвестный код: $code" >&2
+            return 1
+            ;;
+    esac
+    
+    return 0
+}
+
+
+# ============================================================================
+# ФУНКЦИЯ ПОСТРОЕНИЯ КОМАНДЫ FFMPEG
+# ============================================================================
+
+# Функция формирования полной команды ffmpeg для выполнения
+# Собирает массив аргументов из глобальных переменных и переданного filter_complex
+# Выводит готовую команду построчно для удобства чтения и использования
+build_ffmpeg_command() {
+    local filter_complex_value="$1"
+    
+    local -a cmd=()
+    
+    # Базовые параметры команды
+    cmd+=("${FFMPEG_COMMAND[@]}")
+    cmd+=("-r" "${VIDEO_FRAMERATE}")
+    
+    # Входные файлы
+    for input_file in "${FFMPEG_INPUT_FILES[@]}"; do
+        cmd+=("-i" "${input_file}")
+    done
+    
+    # Добавление filter_complex
+    cmd+=("-filter_complex" "${filter_complex_value}")
+	declare -a output_labels
+    extract_out_labels "$filter_complex_value" output_labels
+
+    for outstream_code in "${output_labels[@]}"; do
+        cmd+=("${outstream_code}")
+		
+		declare -a outstream_filters
+		if get_stream_filters "${outstream_code}" "outstream_filters"; then
+			for i in "${!outstream_filters[@]}"; do
+				cmd+=("${outstream_filters[$i]}")
+			done
+		cmd+=("-map_metadata" "-1" "-map_chapters" "-1")
+		
+		cmd+=("${outstream_code}_OUT_FILE_NAME")
+		
+	fi
+		
+		
+		
+		
+		
+    done
+    
+    printf '%s ' "${cmd[@]}"
+	
+}
+
+# ============================================================================
+# ОСНОВНАЯ ФУНКЦИЯ
+# ============================================================================
+
+# Главная функция скрипта, координирующая процесс построения и вывода результатов
+# Последовательно выполняет построение filter_complex, извлечение меток и формирование команды
+# Выводит диагностическую информацию и итоговую команду для выполнения
+main() {
+    ffmpeg_command=$(build_filter_complex)
+    
+    if [[ $? -ne 0 ]]; then
+        echo "Ошибка при построении filter_complex" >&2
+        return 1
+    fi
+
+    
+    
+    echo ""
+    echo "Результат filter_complex:"
+    echo "$ffmpeg_command"
+    
+    echo ""
+    echo "Команда ffmpeg:"
+    build_ffmpeg_command "$ffmpeg_command"
+	
+	
+    
+    return 0
+}
+
+# Запуск основной функции при прямом выполнении скрипта
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    main "$@"
+fi
+
 ```

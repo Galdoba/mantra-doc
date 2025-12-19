@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
+                "file": "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "build_filter_complex"
+              "title": "Current Template"
             }
           }
         ]
@@ -206,13 +206,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
+                "file": "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of build_filter_complex"
+              "title": "Outline of Current Template"
             }
           },
           {
@@ -316,8 +316,8 @@
   },
   "active": "0dec4b26833a786d",
   "lastOpenFiles": [
-    "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
     "02_Organize/01_Projects/universal_transcodding_script/build_filter_complex.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Current Template.md",
     "02_Organize/01_Projects/universal_transcodding_script/Шаблоны скриптов.md",
     "02_Organize/01_Projects/universal_transcodding_script/Анализ операций шаблонов для универсализации.md",
     "01_Capture/Массивы строк в bash.md",

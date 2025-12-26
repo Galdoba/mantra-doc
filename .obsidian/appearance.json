@@ -1,8 +1,10 @@
 {
-  "cssTheme": "Primary",
+  "cssTheme": "Wasp",
   "theme": "moonstone",
   "nativeMenus": true,
   "accentColor": "#ab4726",
   "baseFontSizeAction": true,
-  "baseFontSize": 17
+  "baseFontSize": 17,
+  "interfaceFontFamily": "",
+  "textFontFamily": "Inter"
 }

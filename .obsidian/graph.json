@@ -1,65 +1,22 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [
-    {
-      "query": "line:(Категория Цель)",
-      "color": {
-        "a": 1,
-        "rgb": 65535
-      }
-    },
-    {
-      "query": "line:(Категория Проблема)",
-      "color": {
-        "a": 1,
-        "rgb": 16711680
-      }
-    },
-    {
-      "query": "line:(Категория Задача)",
-      "color": {
-        "a": 1,
-        "rgb": 16744448
-      }
-    },
-    {
-      "query": "line:(Категория Решение)",
-      "color": {
-        "a": 1,
-        "rgb": 65280
-      }
-    },
-    {
-      "query": "line:(Категория результат)",
-      "color": {
-        "a": 1,
-        "rgb": 6579455
-      }
-    },
-    {
-      "query": "line:(Категория Ресурс)",
-      "color": {
-        "a": 1,
-        "rgb": 14606046
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": true,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": true,
-  "centerStrength": 0.252604166666667,
-  "repelStrength": 10.2604166666667,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 0.13427284062265196,
-  "close": true
+  "linkDistance": 250,
+  "scale": 0.3628873693012104,
+  "close": false
 }

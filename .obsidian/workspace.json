@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0dec4b26833a786d",
+            "id": "43855b5ea65cfcc2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+                "file": "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Проектный Скрипт Подготовки"
+              "title": "Медиафайлы"
+            }
+          },
+          {
+            "id": "01e76c8024c28211",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Элементарный стрим.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Элементарный стрим"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,12 +109,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 259
+    "width": 259,
+    "collapsed": true
   },
   "right": {
     "id": "add75788d2d67b87",
@@ -207,13 +232,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+                "file": "Элементарный стрим.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Проектный Скрипт Подготовки"
+              "title": "Outline of Элементарный стрим"
             }
           },
           {
@@ -222,7 +247,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+                "file": "Элементарный стрим.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -293,7 +318,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Проектный Скрипт Подготовки"
+              "title": "Graph of Элементарный стрим"
             }
           }
         ],
@@ -301,7 +326,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 531.5
+    "width": 531.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -317,14 +343,25 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0dec4b26833a786d",
+  "active": "01e76c8024c28211",
   "lastOpenFiles": [
-    "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
-    "02_Organize/01_Projects/work/glossary/Проект.md",
-    "Рабочая таблица.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Рабочая таблица.md",
+    "Элементарный стрим.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
     "Источник истины.md",
+    "03_Distill/Domain.md",
+    "03_Distill/Bounded Context.md",
+    "03_Distill/Domain Service.md",
+    "03_Distill/ValueObject.md",
+    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
+    "Рабочая таблица.md",
+    "Правила наименования файлов.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Рабочая таблица.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Рабочий проект.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Ключ-префикс.md",
+    "02_Organize/01_Projects/work/glossary/Проект.md",
     "02_Organize/01_Projects/work/glossary/Файл.md",
     "02_Organize/01_Projects/work/glossary/Транскодирование.md",
     "02_Organize/01_Projects/work/glossary/Субтитры.md",
@@ -334,20 +371,9 @@
     "02_Organize/01_Projects/work/glossary/Кодек.md",
     "02_Organize/01_Projects/work/glossary/Исходник.md",
     "02_Organize/01_Projects/work/glossary/Диск.md",
-    "02_Organize/01_Projects/work/glossary/Видео.md",
-    "02_Organize/01_Projects/work/glossary/Байт.md",
-    "02_Organize/01_Projects/work/glossary/Аудио.md",
-    "02_Organize/01_Projects/work/glossary/Stream.md",
-    "02_Organize/01_Projects/work/glossary/Edit Masters.md",
-    "02_Organize/01_Projects/work/Глоссарий.md",
     "02_Organize/01_Projects/work/glossary",
     "02_Organize/01_Projects/work",
-    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
     "02_Organize/01_Projects/ffencoder",
-    "02_Organize/01_Projects/universal_transcodding_script/Привязка к проекту.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Рабочий проект.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Ключ-префикс.md",
     "02_Organize/01_Projects/file_linker",
     "02_Organize/01_Projects/universal_transcodding_script",
     "Tables",

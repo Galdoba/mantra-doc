@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Wasp",
-  "theme": "moonstone",
+  "cssTheme": "Primary",
+  "theme": "obsidian",
   "nativeMenus": true,
   "accentColor": "#ab4726",
   "baseFontSizeAction": true,

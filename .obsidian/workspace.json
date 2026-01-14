@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+                "file": "03_Distill/Слоистая архитектура.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Проектный Скрипт Подготовки"
+              "title": "Слоистая архитектура"
             }
           }
         ]
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -207,13 +206,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Проектный Скрипт Подготовки"
+              "title": "Outline"
             }
           },
           {
@@ -222,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+                "file": "03_Distill/Слоистая архитектура.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -288,12 +286,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224399,
+                  "scale": 0.09392927902846944,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Проектный Скрипт Подготовки"
+              "title": "Graph of Слоистая архитектура"
             }
           }
         ],
@@ -319,6 +317,19 @@
   },
   "active": "0dec4b26833a786d",
   "lastOpenFiles": [
+    "03_Distill/Слоистая архитектура.md",
+    "03_Distill/Aggregate.md",
+    "03_Distill/Active Transaction.md",
+    "03_Distill/Domain Service.md",
+    "03_Distill/Степень свободы.md",
+    "03_Distill/Event Store.md",
+    "03_Distill/Объект-значение.md",
+    "03_Distill/Домен.md",
+    "03_Distill/Domain Model.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Архитектурные паттерны.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Изучаем DDD - предметно-ориентированное программирование.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Паттерны взаимодействия.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
     "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
     "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
     "02_Organize/01_Projects/work/glossary/Проект.md",
@@ -332,22 +343,9 @@
     "02_Organize/01_Projects/work/glossary/Метадата.md",
     "02_Organize/01_Projects/work/glossary/Контейнер.md",
     "02_Organize/01_Projects/work/glossary/Кодек.md",
-    "02_Organize/01_Projects/work/glossary/Исходник.md",
-    "02_Organize/01_Projects/work/glossary/Диск.md",
-    "02_Organize/01_Projects/work/glossary/Видео.md",
-    "02_Organize/01_Projects/work/glossary/Байт.md",
-    "02_Organize/01_Projects/work/glossary/Аудио.md",
-    "02_Organize/01_Projects/work/glossary/Stream.md",
-    "02_Organize/01_Projects/work/glossary/Edit Masters.md",
-    "02_Organize/01_Projects/work/Глоссарий.md",
     "02_Organize/01_Projects/work/glossary",
     "02_Organize/01_Projects/work",
-    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
     "02_Organize/01_Projects/ffencoder",
-    "02_Organize/01_Projects/universal_transcodding_script/Привязка к проекту.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Рабочий проект.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Ключ-префикс.md",
     "02_Organize/01_Projects/file_linker",
     "02_Organize/01_Projects/universal_transcodding_script",
     "Tables",

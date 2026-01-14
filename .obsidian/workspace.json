@@ -13,7 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
+=======
+                "file": "03_Distill/Слоистая архитектура.md",
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,6 +32,7 @@
                 }
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Медиафайлы"
             }
           },
@@ -53,6 +58,9 @@
               },
               "icon": "lucide-file",
               "title": "Элементарный стрим"
+=======
+              "title": "Слоистая архитектура"
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
             }
           }
         ],
@@ -232,13 +240,20 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "Элементарный стрим.md",
+=======
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+<<<<<<< HEAD
               "title": "Outline of Элементарный стрим"
+=======
+              "title": "Outline"
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
             }
           },
           {
@@ -247,7 +262,11 @@
             "state": {
               "type": "localgraph",
               "state": {
+<<<<<<< HEAD
                 "file": "Элементарный стрим.md",
+=======
+                "file": "03_Distill/Слоистая архитектура.md",
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -313,12 +332,16 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224399,
+                  "scale": 0.09392927902846944,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
+<<<<<<< HEAD
               "title": "Graph of Элементарный стрим"
+=======
+              "title": "Graph of Слоистая архитектура"
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
             }
           }
         ],
@@ -345,6 +368,7 @@
   },
   "active": "01e76c8024c28211",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Элементарный стрим.md",
     "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
     "Источник истины.md",
@@ -353,6 +377,24 @@
     "03_Distill/Domain Service.md",
     "03_Distill/ValueObject.md",
     "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
+=======
+    "03_Distill/Слоистая архитектура.md",
+    "03_Distill/Aggregate.md",
+    "03_Distill/Active Transaction.md",
+    "03_Distill/Domain Service.md",
+    "03_Distill/Степень свободы.md",
+    "03_Distill/Event Store.md",
+    "03_Distill/Объект-значение.md",
+    "03_Distill/Домен.md",
+    "03_Distill/Domain Model.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Архитектурные паттерны.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Изучаем DDD - предметно-ориентированное программирование.md",
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Паттерны взаимодействия.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
+    "02_Organize/01_Projects/work/glossary/Проект.md",
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
     "Рабочая таблица.md",
     "Правила наименования файлов.md",
     "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
@@ -369,8 +411,11 @@
     "02_Organize/01_Projects/work/glossary/Метадата.md",
     "02_Organize/01_Projects/work/glossary/Контейнер.md",
     "02_Organize/01_Projects/work/glossary/Кодек.md",
+<<<<<<< HEAD
     "02_Organize/01_Projects/work/glossary/Исходник.md",
     "02_Organize/01_Projects/work/glossary/Диск.md",
+=======
+>>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
     "02_Organize/01_Projects/work/glossary",
     "02_Organize/01_Projects/work",
     "02_Organize/01_Projects/ffencoder",

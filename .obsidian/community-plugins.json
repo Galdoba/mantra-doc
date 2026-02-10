@@ -1,8 +1,9 @@
 [
-  "tag-wrangler",
-  "obsidian-style-settings",
-  "hyperlink-remover",
-  "obisidian-note-linker",
   "timethings",
-  "vault-full-statistics"
+  "vault-full-statistics",
+  "tag-wrangler",
+  "obisidian-note-linker",
+  "hyperlink-remover",
+  "smart-connections",
+  "obsidian-style-settings"
 ]

@@ -5,6 +5,5 @@
   "userIgnoreFilters": [
     "_templates/"
   ],
-  "alwaysUpdateLinks": true,
-  "propertiesInDocument": "visible"
+  "alwaysUpdateLinks": true
 }

@@ -8,6 +8,14 @@
     }
   ],
   "editor:toggle-checklist-status": [],
+  "note-composer:split-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
+  ],
   "markdown:toggle-preview": [
     {
       "modifiers": [
@@ -28,6 +36,7 @@
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "."
@@ -36,17 +45,10 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
+        "Alt",
         "Mod"
       ],
-      "key": "E"
-    }
-  ],
-  "note-composer:split-file": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "E"
+      "key": ","
     }
   ]
 }

@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "dc1e976f80bbf6c3",
+        "id": "3fa510b4496e9004",
         "type": "tabs",
         "children": [
           {
-            "id": "43855b5ea65cfcc2",
+            "id": "f9948a6e3e442841",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-<<<<<<< HEAD
-                "file": "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
-=======
-                "file": "03_Distill/Слоистая архитектура.md",
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "Медиафайлы"
-            }
-          },
-          {
-            "id": "01e76c8024c28211",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Элементарный стрим.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Элементарный стрим"
-=======
-              "title": "Слоистая архитектура"
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#artifact",
+                "query": "tag:#database",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259,
-    "collapsed": true
+    "width": 265.5
   },
   "right": {
     "id": "add75788d2d67b87",
@@ -131,7 +83,7 @@
       {
         "id": "53d4ac9978aa1863",
         "type": "tabs",
-        "dimension": 47.87037037037037,
+        "dimension": 47.534246575342465,
         "children": [
           {
             "id": "4ac4ba438f3c04d2",
@@ -139,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-Goals/01a - Wants/Статистика Субтитров.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +100,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Статистика Субтитров"
+              "title": "Backlinks"
             }
           },
           {
@@ -158,11 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
@@ -171,7 +123,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -195,15 +147,13 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {
-                "file": "01_Capture/Анализ операций шаблонов для универсализации.md"
-              },
+              "state": {},
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
           },
           {
-            "id": "78bef543df857efa",
+            "id": "57d320028d330ff1",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -217,22 +167,22 @@
             }
           },
           {
-            "id": "4779c53013b65420",
+            "id": "dd916c2aa2b881d7",
             "type": "leaf",
             "state": {
-              "type": "file-properties",
+              "type": "smart-connections-view",
               "state": {},
-              "icon": "lucide-info",
-              "title": "File properties"
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       },
       {
         "id": "fdc0f1b14809e244",
         "type": "tabs",
-        "dimension": 52.129629629629626,
+        "dimension": 52.465753424657535,
         "children": [
           {
             "id": "3fef8a7616cdf89a",
@@ -240,20 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "Элементарный стрим.md",
-=======
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-<<<<<<< HEAD
-              "title": "Outline of Элементарный стрим"
-=======
-              "title": "Outline"
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -262,11 +205,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-<<<<<<< HEAD
-                "file": "Элементарный стрим.md",
-=======
-                "file": "03_Distill/Слоистая архитектура.md",
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -278,50 +216,7 @@
                   "showAttachments": false,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
-                  "colorGroups": [
-                    {
-                      "query": "line:(Категория Цель)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 65535
-                      }
-                    },
-                    {
-                      "query": "line:(Категория Проблема)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16711680
-                      }
-                    },
-                    {
-                      "query": "line:(Категория Задача)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 16744448
-                      }
-                    },
-                    {
-                      "query": "line:(Категория Решение)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 65280
-                      }
-                    },
-                    {
-                      "query": "line:(Категория результат)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 6579455
-                      }
-                    },
-                    {
-                      "query": "line:(Категория Ресурс)",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14606046
-                      }
-                    }
-                  ],
+                  "colorGroups": [],
                   "collapse-display": true,
                   "showArrow": true,
                   "textFadeMultiplier": -0.5,
@@ -332,16 +227,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.09392927902846944,
+                  "scale": 0.5507103050916845,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-<<<<<<< HEAD
-              "title": "Graph of Элементарный стрим"
-=======
-              "title": "Graph of Слоистая архитектура"
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
+              "title": "Graph view"
             }
           }
         ],
@@ -349,8 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 531.5,
-    "collapsed": true
+    "width": 465.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -363,79 +253,60 @@
       "bases:Create new base": false,
       "markdown-importer:Open format converter": false,
       "timethings:Activate view": false,
-      "obisidian-note-linker:Note Linker": false
+      "obisidian-note-linker:Note Linker": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "01e76c8024c28211",
+  "active": "f9948a6e3e442841",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Элементарный стрим.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
+    "Prjojects/Programming/gslog.md",
+    "Resources/Packages/urfave cli v3.md",
+    "Resources/Packages",
+    "Resources/Theory/Programming/Log Level.md",
+    "Resources/Theory/Programming/YAGNI.md",
+    "Resources/Theory/Programming/Structured Logger.md",
+    "Resources/Theory/Programming/Serialization.md",
+    "Resources/Theory/Programming/Obfuscation.md",
+    "Untitled.md",
+    "Resources/Tips/bash - array of strings.md",
+    "Resources/Theory/Programming/Log Levels - (AI Summary).md",
+    "Resources/Theory",
+    "Resources/Tips/Programming/Untitled",
+    "Resources/Theory/Programming/Logger.md",
     "Источник истины.md",
-    "03_Distill/Domain.md",
-    "03_Distill/Bounded Context.md",
-    "03_Distill/Domain Service.md",
-    "03_Distill/ValueObject.md",
-    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
-=======
-    "03_Distill/Слоистая архитектура.md",
+    "File Naming Rules.md",
+    "Resources/Theory/Programming",
+    "Resources/Tips",
+    "Prjojects/TTRPG",
+    "Prjojects/Programming",
+    "Resources",
+    "Prjojects",
+    "Input",
     "03_Distill/Aggregate.md",
-    "03_Distill/Active Transaction.md",
-    "03_Distill/Domain Service.md",
     "03_Distill/Степень свободы.md",
-    "03_Distill/Event Store.md",
-    "03_Distill/Объект-значение.md",
-    "03_Distill/Домен.md",
-    "03_Distill/Domain Model.md",
-    "02_Organize/03_Resources/DDD_Hononow_Raw/Архитектурные паттерны.md",
-    "02_Organize/03_Resources/DDD_Hononow_Raw/Изучаем DDD - предметно-ориентированное программирование.md",
-    "02_Organize/03_Resources/DDD_Hononow_Raw/Паттерны взаимодействия.md",
+    "03_Distill/Domain.md",
     "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
-    "02_Organize/01_Projects/work/glossary/Проект.md",
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
-    "Рабочая таблица.md",
-    "Правила наименования файлов.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Конечный продукт.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Проектный Скрипт Подготовки.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Исходный материал.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Рабочая таблица.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Рабочий проект.md",
-    "02_Organize/01_Projects/universal_transcodding_script/Ключ-префикс.md",
-    "02_Organize/01_Projects/work/glossary/Проект.md",
-    "02_Organize/01_Projects/work/glossary/Файл.md",
-    "02_Organize/01_Projects/work/glossary/Транскодирование.md",
-    "02_Organize/01_Projects/work/glossary/Субтитры.md",
-    "02_Organize/01_Projects/work/glossary/Продукт.md",
-    "02_Organize/01_Projects/work/glossary/Метадата.md",
-    "02_Organize/01_Projects/work/glossary/Контейнер.md",
-    "02_Organize/01_Projects/work/glossary/Кодек.md",
-<<<<<<< HEAD
-    "02_Organize/01_Projects/work/glossary/Исходник.md",
-    "02_Organize/01_Projects/work/glossary/Диск.md",
-=======
->>>>>>> d5728370e39a4a26dbe81e9f5c09606a7b2a534c
-    "02_Organize/01_Projects/work/glossary",
-    "02_Organize/01_Projects/work",
-    "02_Organize/01_Projects/ffencoder",
-    "02_Organize/01_Projects/file_linker",
-    "02_Organize/01_Projects/universal_transcodding_script",
-    "Tables",
-    "Decks/Tarot/21-TheWorld.png",
-    "Decks/Tarot/20-Judgement.png",
-    "Decks/Tarot/19-TheSun.png",
-    "Decks/Tarot/18-TheMoon.png",
-    "Decks/Tarot/17-TheStar.png",
-    "Decks/Tarot/16-TheTower.png",
-    "Decks/Tarot/15-TheDevil.png",
-    "Decks/Tarot/14-Temperance.png",
-    "Decks/Tarot/13-Death.png",
-    "Decks/Tarot/12-TheHangedMan.png",
-    "Decks/Tarot",
-    "Decks/Standard",
-    "Decks",
-    "02_Organize/03_Resources/DDD_Hononow_Raw/_tables",
-    "_img/MANTRA Project flowchart.canvas"
+    "02_Organize/03_Resources/DDD_Hononow_Raw/Взаимоотношения с другими методологиями и паттернами.md",
+    "02_Organize/01_Projects/universal_transcodding_script/Медиафайлы.md",
+    "02_Organize/01_Projects/ffencoder/Задача инструмента.md",
+    "03_Distill/Event Sourcing.md",
+    "03_Distill/Ubiquitous Language.md",
+    "04_Express/что-то пошло не так....md",
+    "Rules/Spaceships/Repair.md",
+    "Rules/Spaceships/Materials.md",
+    "Rules/Spaceships/Components.md",
+    "_img/formula_RU.png",
+    "_img/table_Trade_Codes.png",
+    "Pasted image 20260126224614.png",
+    "_img/04_Drifter_1.png",
+    "_img/Career_Summary_Table.png",
+    "_img/04_Drifter_2.png",
+    "Pasted image 20251129141918.png",
+    "_img/ffmpeg-logo.png",
+    "_img/MANTRA Project flowchart.canvas",
+    "_img/superfile_demo.png",
+    "_img/superfile-logo.png"
   ]
 }

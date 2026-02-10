@@ -1,10 +1,9 @@
 {
-  "cssTheme": "Primary",
+  "cssTheme": "Everforest Enchanted",
   "theme": "obsidian",
   "nativeMenus": true,
-  "accentColor": "#ab4726",
-  "baseFontSizeAction": true,
-  "baseFontSize": 17,
-  "interfaceFontFamily": "",
-  "textFontFamily": "Inter"
+  "accentColor": "#636363",
+  "textFontFamily": "Terminess Nerd Font Mono",
+  "monospaceFontFamily": "Terminess Nerd Font Mono",
+  "baseFontSize": 16
 }

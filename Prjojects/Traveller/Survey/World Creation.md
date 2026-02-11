@@ -1,0 +1,342 @@
+---
+updated_at: 2026-02-06T20:24:17.436+10:00
+---
+# Master Checklist
+Упорядоченное техническое задание для полной генерации звездной системы.
+
+Может принимать данные предустановленные данные из [[t5ss]]
+## Star System Creation
+- [x] 1. **Determine primary star type and class from chart** (*import if available*)
+  - [x] a. Determine numeric subtype (*import if available*)
+  - [x] b. Determine star mass, temperature, age and diameter from chart and interpolation
+  - [x] c. Determine luminosity from formula
+  - [x] d. Determine initial system age based on primary star
+  - [x] e. Determine actual system age based on primary star mass and class
+- [x] 2. **Determine if system has multiple stars, if yes, then:**
+  - [x] a. Determine Orbit#s of secondary and companion stars
+  - [x] b. Determine eccentricity of secondary stars and check for overlaps
+  - [x] c. Determine secondary and companion star types
+  - [ ] d. Adjust system age to account for post-stellar objects (if any)
+  - [x] e. Determine star orbital periods
+- [ ] 3. **Determine system's worlds** (*import if available*)
+  - [ ] a. Determine gas giant (GG) presence and quantity from table
+  - [ ] b. Determine planetoid belt (PB) presence and quantity from table
+  - [ ] c. Determine terrestrial planet (TP) quantity
+  - [ ] d. Record total worlds (GG + PB + TP)
+- [ ] 4. **Determine allowable planetary Orbit#s**
+  - [ ] a. Determine a star's minimum allowable Orbit# from table
+  - [ ] b. In multiple star systems, follow process to exclude orbital ranges
+- [ ] 5. **For each star or star and Companion pair, determine the habitable zone centre Orbit# (HZCO)**
+  - [ ] a. Use formula or table for AU value
+  - [ ] b. Convert AUs into Orbit#s using the table
+  - [ ] c. Determine habitable zone breadth
+- [ ] 6. **Place Worlds**
+  - [ ] a. Step 1: Allocate worlds by star (multi-star systems only)
+  - [ ] b. Step 2: Determine system baseline number
+  - [ ] c. Step 3: Determine system baseline Orbit# one of these conditions:
+    - [ ] i. Step 3a: Baseline number is in habitable zone
+    - [ ] ii. Step 3b: Baseline is less than 1 (cold system: all worlds outside HZCO)
+    - [ ] iii. Step 3c: Baseline is greater than total worlds (hot system: all worlds inside HZCO)
+  - [ ] d. Step 4: Determine empty orbits from table and assign orbital slot
+  - [ ] e. Step 5: Determine system spread:
+   - [ ] i. Adjust maximum spread and secondary spread if necessary
+  - [ ] f. Step 6: Place Orbit#s, starting with Inner World Orbit
+  - [ ] g. Step 7: Determine anomalous orbits from table and assign type and orbit
+  - [ ] h. Step 8: Place worlds in orbits
+    - [ ] i. In order: Empty orbits, gas giants, planetoid belts, terrestrial planets
+  - [ ] i. Step 9: Determine eccentricity for planets
+- [ ] 7. **Determine Orbital periods (year length):**
+  - [ ] a. Planets orbiting single stars
+  - [ ] b. Planets orbiting multiple stars
+  - [ ] c. Large planets orbiting stars
+- [ ] 8. **Determine basic world sizing:**
+  - [ ] a. Terrestrial world size from table
+  - [ ] b. Gas giant size from table
+- [ ] 9. **Determine significant moon enumeration from table**
+  - [ ] a. Significant moon sizing from tables
+- [ ] 10. **Determine system mainworld candidates**
+  - [ ] a. *replace size if conflicting with imported data*
+
+## Physical Characteristics
+- [ ] 1. **Begin with Size from the expanded method, import UWP or generate now:**
+- [ ] 2. **Determine Size (from above, or 2D-2, or 2D-2 with A as 9+1D, or as B on a 1D result of 4+, and so on)**
+  - [ ] a. **For Size 0 worlds (asteroid and planetoid belts):**
+    - [ ] 1. **Determine belt span**
+      - [ ] a. Belt Span
+    - [ ] 2. **Determine belt composition percentages from table**
+    - [ ] 3. **Determine belt bulk**
+      - [ ] a. Belt Bulk
+    - [ ] 4. **Determine belt resource rating (1 minimum)**
+      - [ ] a. Resource Rating
+    - [ ] 5. **Determine belt significant bodies, Size 1 and S and their Orbit#s**
+      - [ ] a. Determine exact diameter, density and other physical characteristics if necessary
+    - [ ] 6. **Record belt profile**
+    - [ ] **Then skip to step 13**
+  - [ ] b. **For worlds with Size > 0:**
+    - [ ] i. Determine precise diameter
+    - [ ] ii. Determine composition
+    - [ ] iii. Determine density from table based using composition column
+    - [ ] iv. Determine gravity, mass and escape velocities based on density and diameter
+      - [ ] 1. Gravity
+      - [ ] 2. Mass
+      - [ ] 3. Escape Velocity
+    - [ ] v. Record Size profile
+- [ ] 3. **Determine characteristics of significant moons and rings**
+  - [ ] a. Determine the Hill sphere and the Hill sphere moon limit in planetary diameters (PD)
+    - [ ] i. Hill Sphere
+    - [ ] ii. Hill Sphere (PD)
+    - [ ] iii. Hill Sphere Moon Limit
+  - [ ] b. Determine the Roche Limit:
+    - [ ] i. Assume 1.5 PD in most circumstances
+  - [ ] c. Determine moon orbit range (MOR)
+  - [ ] d. Determine moon orbit locations in PD by rolls and table and optional variance
+  - [ ] e. Determine moon period
+  - [ ] f. Determine moon eccentricity and orbital direction (prograde or retrograde)
+  - [ ] g. Determine ring width and centre location, adjusting as necessary:
+    - [ ] i. Ring Centre Location (PD)
+    - [ ] ii. Ring Width (PD)
+    - [ ] iii. Record ring profile
+- [ ] 4. **Determine Atmosphere (or import)**
+  - [ ] a. Modify roll with variants if desired
+  - [ ] b. Optional: Check for runaway greenhouse
+  - [ ] c. Choose between habitable zone atmosphere and non-habitable zone atmospheres generation
+  - [ ] d. Determine total atmospheric pressure (bar)
+    - [ ] i. Total Atmospheric Pressure
+    - [ ] ii. Total Atmospheric Pressure (Alternative)
+  - [ ] e. If Atmospheres 2-9, D or E, determine oxygen fraction and partial pressure of oxygen (ppo)
+    - [ ] i. Oxygen Fraction
+    - [ ] ii. Partial pressure of oxygen (ppo) bar
+  - [ ] f. Determine scale height and note the pressure at altitude formula:
+    - [ ] i. Scale Height(H)
+    - [ ] ii. Pressure(a)
+  - [ ] g. If Atmosphere is Tainted (2, 4, 7 or 9) determine taint type, severity and persistence from tables
+  - [ ] h. If Atmosphere is Exotic (A) determine type, any irritants using taint tables and gas composition from tables
+  - [ ] i. If Atmosphere is Corrosive or Insidious (B or C) determine type and possible effects from tables
+  - [ ] j. If Atmosphere is Very Dense (D) determine bad ratios and minimum safe altitude:
+    - [ ] i. Bad Ratio
+    - [ ] ii. Minimum Safe Altitude
+  - [ ] k. If Atmosphere is Low (E) determine low bad ratio for oxygen and safe altitude below mean:
+    - [ ] i. Low Bad Ratio
+    - [ ] ii. Safe Altitude Below Mean Baseline Altitude
+  - [ ] l. If Atmosphere is Unusual (F) determine type(s) from table
+  - [ ] m. For non-habitable zone worlds, determine Atmosphere codes, subtypes and composition from tables
+  - [ ] n. Record atmosphere profile (varies – see text)
+- [ ] 5. **Determine Hydrographics (or import)**
+  - [ ] a. Determine any temperature DMs
+  - [ ] b. Determine precise % for Hydrographics
+  - [ ] c. Modify outer system icy world rolls if desired
+  - [ ] d. Determine surface feature distribution
+    - [ ] i. Determine number of major and minor bodies
+  - [ ] e. For worlds with exotic liquids, determine composition
+  - [ ] f. Record Hydrographics profile
+- [ ] 6. **Determine world's rotation period (sidereal):**
+  - [ ] a. Basic Rotation Rate (hours)
+    - [ ] i. If more than 40 hours, add results of another determination on 1D roll of 5+, and repeat...
+    - [ ] ii. Add minutes and seconds (1D-1 + D10) to final hour figure
+  - [ ] b. Determine days in a year and solar day:
+    - [ ] i. Days in a year
+    - [ ] ii. Solar Days(hours)
+  - [ ] c. Determine axial tilt from tables
+  - [ ] d. Determine tidal lock status from table with many DMs for these cases:
+    - [ ] i. Planet lock to star
+    - [ ] ii. Moon lock to planet
+    - [ ] iii. Planet lock to its moon
+    - [ ] iv. Recompute day, axial tilt and eccentricity for locked conditions, if necessary
+  - [ ] e. Determine surface tidal effects:
+    - [ ] i. Star Tidal Effect
+    - [ ] ii. Moon Tidal Effect
+    - [ ] iii. Planet Tidal Effect
+    - [ ] iv. Moon to Moon Tidal Effect
+- [ ] 7. **Determine mean temperature, with component additions based on:**
+  - [ ] a. Basic temperature table or by formula
+  - [ ] b. Determine albedo from table
+  - [ ] c. Determine greenhouse factor
+  - [ ] d. Determine mean temperature (K)
+  - [ ] e. Optional: Recheck for runaway greenhouse if mean temperature is above 303K
+- [ ] 8. **Determine high and low temperatures with additional temperature factors:**
+  - [ ] a. Basic axial tilt factor
+  - [ ] b. Rotation factor
+  - [ ] c. Geographic factor
+  - [ ] d. Variance factors
+  - [ ] e. Atmospheric factor
+  - [ ] f. Luminosity modifier
+  - [ ] g. High luminosity
+  - [ ] h. Low luminosity
+  - [ ] i. Near AU
+  - [ ] j. Far AU
+  - [ ] k. High temperature (K)
+  - [ ] l. Low temperature (K)
+  - [ ] m. Determine temperature modifications based on various scenarios: Tidally locked, multiple stars, etc.
+  - [ ] n. If relevant, compute gas giant residual temperature
+- [ ] 9. **Determine seismology characteristics**
+  - [ ] a. Determine residual seismic stress
+  - [ ] b. Determine tidal stress factor
+  - [ ] c. Determine tidal heating factor
+  - [ ] d. Determine total seismic stress
+    - [ ] i. Total seismic stress
+  - [ ] e. Adjust temperatures by totals seismic stress value
+    - [ ] i. New Temperature
+  - [ ] f. Determine number of major tectonic plates
+- [ ] 10. **Determine native lifeforms ratings:**
+  - [ ] a. Biomass rating
+    - [ ] i. If necessary, adjust for biologic taint (at least biomass = 1) or life as we do not know it (undo atmosphere DMs)
+  - [ ] b. Biocomplexity Rating
+    - [ ] i. Only for Biocomplexity 8+: check for current or extinct native sophonts
+    - [ ] ii. Native Sophonts: Current Native Sophont Exists on 13+: roll 2D + Biocomplexity – 7
+    - [ ] iii. Extinct Sophonts: Extinct Native Sophont Existed on 13+: roll 2D + Biocomplexity – 7 + DMs
+  - [ ] c. Determine Biodiversity Rating
+  - [ ] d. Determine Compatibility Rating
+  - [ ] e. Record native lifeform profile
+- [ ] 11. **Determine resource rating**
+- [ ] 12. **Determine habitability rating**
+  - [ ] a. Use alternate DMs if detailed temperature or gravity not computed
+- [ ] 13. **Finalise mainworld determination**
+
+## Social Characteristics
+- [ ] 1. **Complete UWP if not already established**
+  - [ ] a. Use modified procedures for native sophonts
+- [ ] 2. **Determine Population code by 2D-2 or from existing UWP**
+  - [ ] a. Determine P value of 1–9
+    - [ ] i. Variant: modify P value determination for Population code A
+  - [ ] b. Add significant digits with D10
+  - [ ] c. Determine or record any demographic information
+  - [ ] d. Determine population concentration rating (PCR) from table
+  - [ ] e. Determine urbanisation % from table and,
+  - [ ] f. Determine total urban population:
+    - [ ] i. Total urban population = Total World Population x Urbanisation %
+  - [ ] g. Determine number of major cities depending on Population and PCR
+  - [ ] h. Determine major city population
+  - [ ] i. Detail major city populations based on cases (PCR = 0, = 9, # of Major Cities)
+  - [ ] j. Determine or note any unusual cities from table
+  - [ ] k. Record population profile:
+  - [ ] l. Record city information: Name (Codes): Population: Port Hosting
+  - [ ] m. Determine secondary world populations (if any)
+- [ ] 3. **Determine Government code by 2D-7 + Population or from existing UWP**
+  - [ ] a. Determine factions or nations for balkanised (7) governments
+  - [ ] b. Determine centralization (Confederal, Federal or Unitary)
+  - [ ] c. Determine government primary authority (Legislative, Executive, Judicial or Balanced)
+  - [ ] d. Determine government structure from procedure or table
+  - [ ] e. Record government profile
+  - [ ] f. Determine factions within a government
+    - [ ] i. Determine number of factions
+    - [ ] ii. For each faction determine government type, strength, and relationships
+    - [ ] iii. Record faction profiles and relationships: I-G-S and I+II=#
+  - [ ] g. Determine secondary world governments (if any)
+- [ ] 4. **Determine Law Level code by 2D-7 + Government or from existing UWP**
+  - [ ] a. For balkanization (7) repeat for each balkanised faction or nation
+  - [ ] b. Determine primary judicial system(P) from table (Inquisitional, Adversarial, Traditional)
+  - [ ] c. Determine if a secondary(S) system exists for economic or regulatory offenses
+  - [ ] d. Determine uniformity of law(U) from table (Personal, Territorial, Universal)
+    - [ ] i. Decide how to apply differences (if any)
+  - [ ] e. Determine presumption of Innocence(I)
+  - [ ] f. Determine if death penalty exists (D)
+  - [ ] g. Record justice system profile
+  - [ ] h. Determine Law Level sub-classifications from overall Law Level (O):
+    - [ ] i. Weapons and armour Law Level (W)
+    - [ ] ii. Economic Law Level (E)
+    - [ ] iii. Criminal Law Level (C)
+    - [ ] iv. Private Law Level (P)
+    - [ ] v. Personal Rights Law Level (R)
+  - [ ] i. Record Law Level Profile
+  - [ ] j. Determine secondary world Law Levels (if any)
+- [ ] 5. **Determine Tech Levels from table or import from existing UWP**
+  - [ ] a. Determine world's minimum sustainable Tech Level
+    - [ ] i. Optional: Kill population if TL below sustainable
+    - [ ] ii. Adjust TL to minimum sustainable
+  - [ ] b. Determine general Tech Level bounds for region, polity or universe
+  - [ ] c. Determine high common Tech Level
+  - [ ] d. Determine low common Tech Level
+  - [ ] e. Determine balkanised world factional or national High and Low Common TLs
+  - [ ] f. Determine quality of life Tech Levels within (upper, lower) bounds for:
+    - [ ] i. Energy
+    - [ ] ii. Electronics
+    - [ ] iii. Manufacturing
+    - [ ] iv. Medical
+    - [ ] v. Environmental
+  - [ ] g. Determine transportation Tech Levels within bounds for:
+    - [ ] i. Land
+    - [ ] ii. Sea
+    - [ ] iii. Air
+    - [ ] iv. Space
+  - [ ] h. Determine military Tech Levels within bounds for:
+    - [ ] i. Personal military equipment
+    - [ ] ii. Heavy military equipment
+  - [ ] i. Determine novelty Tech Level (see procedure)
+  - [ ] j. Record technology profile
+  - [ ] k. Determine secondary world Tech Levels (if any)
+- [ ] 6. **Determine cultural characteristics**
+  - [ ] a. Determine diversity (*can be imported*)
+  - [ ] b. Determine xenophilia (*can be imported*)
+  - [ ] c. Determine uniqueness (*can be imported*)
+  - [ ] d. Determine symbology (*can be imported*)
+  - [ ] e. Determine cohesion
+  - [ ] f. Determine progressiveness
+  - [ ] g. Determine expansionism
+  - [ ] h. Determine militancy
+  - [ ] i. Record cultural profile
+  - [ ] j. Determine secondary world cultures (if any and only if they differ from the mainworld)
+- [ ] 7. **Determine economic characteristics**
+  - [ ] a. Determine trade codes
+  - [ ] b. Determine importance
+  - [ ] c. Determine resource factor from previous resource rating and DMs
+  - [ ] d. Determine labour factor
+  - [ ] e. Determine infrastructure
+  - [ ] f. Determine efficiency factor
+  - [ ] g. Determine resource units
+  - [ ] h. Determine GWP from GWP per capita from factors and modifiers:
+    - [ ] i. Base Value
+    - [ ] ii. Tech Level modifier
+    - [ ] iii. Determine port, government, and trade code modifiers from tables
+    - [ ] iv. Determine GWP per capita:
+      - [ ] 1. If efficiency 1+: = 
+      - [ ] 2. If efficiency -1-: =
+    - [ ] v. World GWP = GWP per capita x Total World Population
+  - [ ] i. Determine world trade number (WTN)
+  - [ ] j. Determine inequality rating
+  - [ ] k. Determine development score
+  - [ ] l. Determine tariff rates
+  - [ ] m. Determine secondary world economic characteristics (if any)
+- [ ] 8. **Determine starport characteristics from table or existing UWP**
+  - [ ] a. Determine starport facilities if not determined earlier (*can be imported*)
+    - [ ] i. Roll for highport and bases as appropriate
+    - [ ] ii. Determine spaceports for secondary worlds (if any)
+    - [ ] iii. Arbitrarily determine if cities have spaceports
+    - [ ] iv. Arbitrarily determine and assign private ports
+    - [ ] v. Arbitrarily determine and assign freeports
+  - [ ] b. Determine starport traffic based on importance and WTN
+  - [ ] c. Determine highport total docking capacity (if any)
+    - [ ] i. Determine % of enclosed bays and largest bay size
+  - [ ] d. Determine downport total docking capacity (if any)
+    - [ ] i. Determine % of enclosed pads and largest pad size
+  - [ ] e. Determine shipyard capacity (if any)
+    - [ ] i. Determine largest yard bay size
+    - [ ] ii. Determine annual ship output
+  - [ ] f. Optionally add starport (or other port) details from "Companion"
+- [ ] 9. **Determine the world's military branches, budget and state of readiness modifiers:**
+  - [ ] a. Determine which branches exist and to what effect (and record Effect):
+    - [ ] i. Enforcement (always exists)
+    - [ ] ii. Militia
+    - [ ] iii. Army
+    - [ ] iv. Wet Navy
+    - [ ] v. Air Force
+    - [ ] vi. System Defence
+    - [ ] vii. Navy
+    - [ ] viii. Marines
+  - [ ] b. Determine total effective military budget
+    - [ ] i. Basic Military Budget%
+    - [ ] ii. Determine state of readiness modifiers
+    - [ ] iii. Total Military Budget
+  - [ ] c. Record military profile
+  - [ ] d. Determine ownership and details of system bases (if any)
+    - [ ] i. Navy
+    - [ ] ii. Scout
+    - [ ] iii. Military
+    - [ ] iv. Corsair
+- [ ] 10. **Determine system and world Travel Zones** (*can be imported*)
+  - [ ] a. Determine if Amber Zone warranted
+  - [ ] b. Assign or determine Red Zones
+
+
+# Дополнительные задачи
+- [x] реализовать универсальный эмулятор игральных костей.
+- [x] реализовать менеджер [[Управление игровыми таблицами|управления игровыми таблицами]].

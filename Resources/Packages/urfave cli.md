@@ -1,5 +1,7 @@
 ---
-updated_at: 2026-02-11T12:19:48.209+10:00
+updated_at: 2026-02-12T22:07:51.328+10:00
+tags:
+  - package
 ---
 https://github.com/urfave/cli - библиотека для быстрого создания cli утилит.
 

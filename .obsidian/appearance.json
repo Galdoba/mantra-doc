@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Material Gruvbox",
+  "cssTheme": "Primary",
   "theme": "moonstone",
   "nativeMenus": true,
-  "accentColor": "#636363",
+  "accentColor": "#262626",
   "textFontFamily": "Terminess Nerd Font Mono",
   "monospaceFontFamily": "Terminess Nerd Font Mono",
   "baseFontSize": 16

@@ -1,5 +1,7 @@
 ---
-updated_at: 2026-02-06T01:00:28.751+10:00
+updated_at: 2026-02-07T16:35:45.814+10:00
+aliases:
+  - Gas Giant
 ---
 Skimming fuel from a gas giant is a common practice, requiring a rapid transit through the upper atmosphere to force gases into a scoop. These are then processed to extract hydrogen which is compressed until sufficient liquid hydrogen is available for use as fuel. Skimming is a common means of refuelling a fleet before advancing to attack a target world – going into action with dry tanks means the fleet cannot escape by jumping away from a bad situation. 
 

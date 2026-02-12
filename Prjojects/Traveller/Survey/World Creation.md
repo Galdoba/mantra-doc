@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-06T20:24:17.436+10:00
+updated_at: 2026-02-12T19:43:45.338+10:00
 ---
 # Master Checklist
 Упорядоченное техническое задание для полной генерации звездной системы.
@@ -19,7 +19,7 @@ updated_at: 2026-02-06T20:24:17.436+10:00
   - [ ] d. Adjust system age to account for post-stellar objects (if any)
   - [x] e. Determine star orbital periods
 - [ ] 3. **Determine system's worlds** (*import if available*)
-  - [ ] a. Determine gas giant (GG) presence and quantity from table
+  - [x] a. Determine gas giant (GG) presence and quantity from table
   - [ ] b. Determine planetoid belt (PB) presence and quantity from table
   - [ ] c. Determine terrestrial planet (TP) quantity
   - [ ] d. Record total worlds (GG + PB + TP)

@@ -1,0 +1,7 @@
+{
+  "entry-point@@color-scheme-selector": "color-scheme-default",
+  "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-karaka",
+  "everforest-enchanted-theme@@highlighted-folders": true,
+  "everforest-enchanted-theme@@enable-menu-blur": true,
+  "everforest-enchanted-theme@@disable-menu-animations": false
+}

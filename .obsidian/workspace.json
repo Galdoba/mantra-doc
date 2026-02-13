@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Repair.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Repair"
+              "title": "Constructing and Upgrading Vessels"
             }
           }
         ]
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Repair.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Repair"
+              "title": "Backlinks for Constructing and Upgrading Vessels"
             }
           },
           {
@@ -205,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Constructing and Upgrading Vessels"
             }
           },
           {
@@ -220,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Repair.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -248,11 +248,10 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Repair"
+              "title": "Graph of Constructing and Upgrading Vessels"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -278,6 +277,11 @@
   },
   "active": "f9948a6e3e442841",
   "lastOpenFiles": [
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Prjojects/Traveller/Rules/Spaceships/Materials.md",
+    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+    "Prjojects/Traveller/Rules/Spaceships/Repair.md",
+    "Prjojects/Traveller/Rules/Spaceships/Supply Unit (SU).md",
     "Resources/Packages/urfave cli.md",
     "Resources/Programming/Theory/Aggregate.md",
     "Resources/Programming/Theory/API Gateway.md",
@@ -299,11 +303,6 @@
     "Resources/Programming/Theory/Singleton.md",
     "Resources/Programming/Theory/Single Responsibility Principle.md",
     "Resources/Programming/Theory/Service.md",
-    "Resources/Programming/Theory/Server.md",
-    "Resources/Programming/Theory/Separation of Concerns.md",
-    "Resources/Programming/Theory/Secret.md",
-    "Resources/Programming/Theory/Schema.md",
-    "Resources/Programming/Theory/SOLID.md",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
     "Prjojects/Traveller/Rules/Spaceships",

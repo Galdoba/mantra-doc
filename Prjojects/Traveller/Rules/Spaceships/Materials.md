@@ -1,13 +1,14 @@
 ---
-updated_at: 2026-02-08T17:31:55.930+10:00
+updated_at: 2026-02-13T10:08:11.002+10:00
 tags:
   - Cluster_Truck
   - High_Guard
+  - brewed
 ---
 # Production 
 Materials can be produced by spaceship crew in necessary tools and components are available.
 
-Once mining ship find asteroid it is considered [Mineral]. Ship's or station's [Mineral Refinery] can crush the ores and other by-products sorted, and waste released back into space. The produce is split between 50% Common Ore, 30% Uncommon Ore, 15% Crystals and Gems and 5% Precious Metals (as defined on page 244 of the Traveller Core Rulebook). For example, for every 100 tons of produce from the refinery, 50 tons is Basic Ore, 30 tons is Uncommon Ore, 15 tons
+Once mining ship find asteroid it is considered [Mineral]. Ship's or station's [Mineral Refinery] can crush the ores and other by-products sorted, and waste released back into space. The produce is split between 50% [Common Ore], 30% [Uncommon Ore], 15% [Crystals and Gems] and 5% [Precious Metals] (as defined on page 244 of the Traveller Core Rulebook). For example, for every 100 tons of produce from the refinery, 50 tons is Basic Ore, 30 tons is Uncommon Ore, 15 tons
 Crystals & Gems and five tons Precious Metals.
 
 Ores are the normal end-product of a mineral refinery but many stations also conduct onboard processing to create more valuable materials. A [[smelter]] allows Common Ores to be processed into Common Raw Materials and Uncommon Ores into Uncommon Raw Materials. Each ton of smelter allows the processing of 0.2 tons of Ores into 0.1 tons of Raw

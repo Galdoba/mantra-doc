@@ -11,9 +11,19 @@
             "id": "f9948a6e3e442841",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "eb52852f793ee788",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +38,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Constructing and Upgrading Vessels"
+              "title": "imed_db (MOC)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,13 +216,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Constructing and Upgrading Vessels"
+              "title": "Outline of imed_db (MOC)"
             }
           },
           {
@@ -220,11 +231,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 5,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -243,12 +254,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5507103050916845,
+                  "scale": 0.7720864293675987,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Constructing and Upgrading Vessels"
+              "title": "Graph of imed_db (MOC)"
             }
           }
         ]
@@ -269,40 +280,37 @@
       "markdown-importer:Open format converter": false,
       "timethings:Activate view": false,
       "obisidian-note-linker:Note Linker": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Lookup: Open lookup view": false,
-      "smart-connections:Smart Connections: Open random connection": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f9948a6e3e442841",
+  "active": "eb52852f793ee788",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Prjojects/Contentcom/Чат Deepseek.md",
+    "Prjojects/Contentcom/imed_db (MOC).md",
+    "Prjojects/Traveller/Rules/Spaceships/Life Support Supplies (LSS).md",
+    "Ship Operations - MOC.md",
+    "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
+    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
+    "Workshop.md",
     "Prjojects/Traveller/Rules/Spaceships/Materials.md",
+    "Resources/Programming/Theory/API Gateway.md",
+    "Resources/Programming/Theory/Create.md",
+    "Resources/Programming/Theory/Refactoring.md",
+    "Test-Driven Development.md",
+    "Resources/Programming/Theory/Domain Model.md",
+    "Resources/Programming/Theory/Repository.md",
+    "Resources/Programming/Theory/Delete.md",
+    "Resources/Programming/Theory/CRUD.md",
+    "Resources/Programming/Theory/Update.md",
+    "Resources/Programming/Theory/Read.md",
+    "Resources/Programming/Theory/Domain.md",
+    "Resources/Programming/Theory/Domain-Driven Design.md",
+    "Resources/Programming/Theory/Aggregate.md",
+    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
     "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair.md",
     "Prjojects/Traveller/Rules/Spaceships/Supply Unit (SU).md",
     "Resources/Packages/urfave cli.md",
-    "Resources/Programming/Theory/Aggregate.md",
-    "Resources/Programming/Theory/API Gateway.md",
-    "Prjojects/Traveller/High Guard.md",
-    "Resources/Programming/Theory/Signal.md",
-    "Resources/Programming/Theory/WARN.md",
-    "Resources/Programming/Theory/Value Object.md",
-    "Resources/Programming/Theory/Validation.md",
-    "Resources/Programming/Theory/Ubiquitous Language.md",
-    "Resources/Programming/Theory/Twelve-Factor App.md",
-    "Resources/Programming/Theory/Test Double.md",
-    "Resources/Programming/Theory/TRACE.md",
-    "Resources/Programming/Theory/Structured Logging.md",
-    "Resources/Programming/Theory/Structured Data.md",
-    "Resources/Programming/Theory/Stateless Service.md",
-    "Resources/Programming/Theory/Stateless Process.md",
-    "Resources/Programming/Theory/Source Code.md",
-    "Resources/Programming/Theory/Socket.md",
-    "Resources/Programming/Theory/Singleton.md",
-    "Resources/Programming/Theory/Single Responsibility Principle.md",
-    "Resources/Programming/Theory/Service.md",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
     "Prjojects/Traveller/Rules/Spaceships",

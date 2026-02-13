@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-13T10:08:11.002+10:00
+updated_at: 2026-02-13T12:30:45.565+10:00
 tags:
   - Cluster_Truck
   - High_Guard
@@ -14,7 +14,7 @@ Crystals & Gems and five tons Precious Metals.
 Ores are the normal end-product of a mineral refinery but many stations also conduct onboard processing to create more valuable materials. A [[smelter]] allows Common Ores to be processed into Common Raw Materials and Uncommon Ores into Uncommon Raw Materials. Each ton of smelter allows the processing of 0.2 tons of Ores into 0.1 tons of Raw
 Materials per day. A smelter costs MCr0.5 and requires 1 Power per ton.
 
-Raw Materials (common and uncommon) are used to produce [[Materials]] in production plant or [[workshop]] with folowwing ratio:
+Raw Materials (common and uncommon) are used to produce [[Materials]] in production plant or [[Workshop]] with following ratio:
 
 | Material Type | Production Input                                                                                     | Production Output |
 | ------------- | ---------------------------------------------------------------------------------------------------- | ----------------- |

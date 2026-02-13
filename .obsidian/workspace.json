@@ -11,19 +11,9 @@
             "id": "f9948a6e3e442841",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "eb52852f793ee788",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Contentcom/imed_db (MOC).md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,11 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "imed_db (MOC)"
+              "title": "Fuel"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Contentcom/imed_db (MOC).md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of imed_db (MOC)"
+              "title": "Outline of Fuel"
             }
           },
           {
@@ -231,11 +220,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Contentcom/imed_db (MOC).md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 5,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -254,19 +243,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7720864293675987,
+                  "scale": 0.5507103050916845,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of imed_db (MOC)"
+              "title": "Graph of Fuel"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 629
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -283,34 +273,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb52852f793ee788",
+  "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Prjojects/Contentcom/Чат Deepseek.md",
-    "Prjojects/Contentcom/imed_db (MOC).md",
-    "Prjojects/Traveller/Rules/Spaceships/Life Support Supplies (LSS).md",
-    "Ship Operations - MOC.md",
-    "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
-    "Workshop.md",
+    "Prjojects/Traveller/Rules/Spaceships/Gas Giant Operations.md",
+    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
+    "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
+    "Prjojects/Traveller/Rules/Spaceships/components",
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
     "Prjojects/Traveller/Rules/Spaceships/Materials.md",
-    "Resources/Programming/Theory/API Gateway.md",
-    "Resources/Programming/Theory/Create.md",
-    "Resources/Programming/Theory/Refactoring.md",
-    "Test-Driven Development.md",
-    "Resources/Programming/Theory/Domain Model.md",
-    "Resources/Programming/Theory/Repository.md",
-    "Resources/Programming/Theory/Delete.md",
-    "Resources/Programming/Theory/CRUD.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Workshop.md",
+    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
+    "Resources/Programming/Theory/Single Responsibility Principle.md",
+    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+    "Prjojects/Traveller/Rules/Spaceships/Jump Travel.md",
+    "Prjojects/Traveller/Survey/Импортируемые данные.md",
+    "Resources/Programming/Theory/Server.md",
     "Resources/Programming/Theory/Update.md",
     "Resources/Programming/Theory/Read.md",
     "Resources/Programming/Theory/Domain.md",
-    "Resources/Programming/Theory/Domain-Driven Design.md",
-    "Resources/Programming/Theory/Aggregate.md",
-    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Resources/Programming/Theory/Delete.md",
+    "Resources/Programming/Theory/Create.md",
+    "Resources/Programming/Theory/CRUD.md",
+    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
+    "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
     "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+    "Prjojects/Traveller/Rules/Spaceships/Repair.md",
     "Prjojects/Traveller/Rules/Spaceships/Supply Unit (SU).md",
-    "Resources/Packages/urfave cli.md",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
     "Prjojects/Traveller/Rules/Spaceships",
@@ -322,7 +313,6 @@
     "Prjojects/Traveller/Lore",
     "Prjojects/Traveller/Generic",
     "Prjojects/Traveller",
-    "Prjojects/Contentcom",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",

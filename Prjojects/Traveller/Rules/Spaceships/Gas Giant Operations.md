@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-07T16:35:45.814+10:00
+updated_at: 2026-02-14T00:36:54.888+10:00
 aliases:
   - Gas Giant
 ---
@@ -33,7 +33,7 @@ All gas giants have a turbulent atmosphere. One that is unusually active will im
 ### Crossing the layers 
 The layers of a gas giant’s atmosphere may expand and contract depending on local temperature conditions, causing the boundaries to move considerably. It is possible for a layer boundary to move rapidly up or down, causing it to impinge upon a starship maintaining a constant altitude. However, more commonly a ship will deliberately cross from one layer to another to avoid detection or reach a suitable altitude for fuel skimming. 
 
-Crossing from one layer to another, up or down, requires an Average (8+) Pilot check with the largest negative DM for depth applied. Success indicates the ship has successfully crossed to the new layer without much more than some buffeting. In the event of failure, the ship fails to cross the layer and is bounced back with considerable violence. A second Pilot check, this one at Difficult (10+) difficulty and subject to the DM for the layer the ship is currently in, is required to avoid damage. If this check is failed, the ship suffers a number of dice in damage equal to the number of the layer it is trying to enter. So, a ship trying to enter the Deep layer and failing, suffers 4D Hull damage unless the pilot can succeed the second check. 
+Crossing from one layer to another, up or down, requires an Average (8+) Pilot check *(Drinax Companion: ship’s Thrust rating as a DM)* with the largest negative DM for depth applied. Success indicates the ship has successfully crossed to the new layer without much more than some buffeting. In the event of failure, the ship fails to cross the layer and is bounced back with considerable violence. A second Pilot check, this one at Difficult (10+) difficulty and subject to the DM for the layer the ship is currently in, is required to avoid damage. If this check is failed, the ship suffers a number of dice in damage equal to the number of the layer it is trying to enter. So, a ship trying to enter the Deep layer and failing, suffers 4D Hull damage unless the pilot can succeed the second check. 
 
 ### Fuel skimming 
 Fuel skimming takes a number of ‘passes’, during which the ship opens its scoops and forces gas into them by moving fast through the atmosphere – or by simply pointing into the wind. A ship can skim fuel equal to 1% of its hull tonnage per pass, with a pass typically requiring 2D minutes. Thus, a vessel wanting to obtain 20% of its hull tonnage in fuel in the Deep layer will need 20 passes averaging about seven minutes each, for a total of 140 minutes. Skimming would take twice as long in the Shallow layer but would also be safer. 

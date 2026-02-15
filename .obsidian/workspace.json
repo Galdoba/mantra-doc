@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3fa510b4496e9004",
+        "id": "3e5e8d1320ca4923",
         "type": "tabs",
         "children": [
           {
-            "id": "f9948a6e3e442841",
+            "id": "28e3cf2af725eb3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
+                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fuel"
+              "title": "Star System Profile"
             }
           }
         ]
@@ -205,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
+                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fuel"
+              "title": "Outline of Star System Profile"
             }
           },
           {
@@ -220,11 +220,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
+                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -243,16 +243,15 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5507103050916845,
+                  "scale": 0.8260654576375266,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Fuel"
+              "title": "Graph of Star System Profile"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -275,33 +274,33 @@
   },
   "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Rules/Spaceships/Gas Giant Operations.md",
-    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
+    "Prjojects/Traveller/Survey/ISS CLASS 0 SECTOR SURVEY.md",
+    "Prjojects/Traveller/Survey/Star System Profile.md",
+    "Prjojects/Traveller/Lore/IISS Procedural.md",
+    "Prjojects/Traveller/Survey/Survey Index.md",
+    "Prjojects/Traveller/Survey/Stellar.md",
+    "Prjojects/Traveller/High Guard.md",
+    "Prjojects/Traveller/Survey/Bases.md",
+    "Prjojects/Contentcom/imed_db (MOC).md",
+    "Prjojects/Traveller/Survey/World Creation.md",
+    "Buying Ship.md",
     "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
-    "Prjojects/Traveller/Rules/Spaceships/components",
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
-    "Prjojects/Traveller/Rules/Spaceships/Materials.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Workshop.md",
-    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
-    "Resources/Programming/Theory/Single Responsibility Principle.md",
-    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
-    "Prjojects/Traveller/Rules/Spaceships/Jump Travel.md",
-    "Prjojects/Traveller/Survey/Импортируемые данные.md",
-    "Resources/Programming/Theory/Server.md",
-    "Resources/Programming/Theory/Update.md",
-    "Resources/Programming/Theory/Read.md",
-    "Resources/Programming/Theory/Domain.md",
-    "Resources/Programming/Theory/Delete.md",
-    "Resources/Programming/Theory/Create.md",
-    "Resources/Programming/Theory/CRUD.md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
     "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair.md",
-    "Prjojects/Traveller/Rules/Spaceships/Supply Unit (SU).md",
+    "Resources/Programming/Theory/DTO.md",
+    "Resources/Programming/Theory/Stateless Service.md",
+    "Resources/Programming/Theory/Correlation ID.md",
+    "Thread-local storage.md",
+    "Resources/Programming/Tips/Go 1.26.0.md",
+    "Resources/Programming/Tips/jsonschema.md",
+    "Resources/Programming/Theory/Validation.md",
+    "Resources/Programming/Theory/REST API vs WebSocket comparisons and aproaches.md",
+    "Resources/Programming/Theory/Serialization.md",
+    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Workshop.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
+    "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
     "Prjojects/Traveller/Rules/Spaceships",

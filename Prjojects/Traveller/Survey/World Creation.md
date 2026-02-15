@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-12T19:43:45.338+10:00
+updated_at: 2026-02-16T00:12:04.569+10:00
 ---
 # Master Checklist
 Упорядоченное техническое задание для полной генерации звездной системы.
@@ -16,13 +16,13 @@ updated_at: 2026-02-12T19:43:45.338+10:00
   - [x] a. Determine Orbit#s of secondary and companion stars
   - [x] b. Determine eccentricity of secondary stars and check for overlaps
   - [x] c. Determine secondary and companion star types
-  - [ ] d. Adjust system age to account for post-stellar objects (if any)
+  - [!] d. Adjust system age to account for post-stellar objects (if any)
   - [x] e. Determine star orbital periods
-- [ ] 3. **Determine system's worlds** (*import if available*)
+- [x] 3. **Determine system's worlds** (*import if available*)
   - [x] a. Determine gas giant (GG) presence and quantity from table
-  - [ ] b. Determine planetoid belt (PB) presence and quantity from table
-  - [ ] c. Determine terrestrial planet (TP) quantity
-  - [ ] d. Record total worlds (GG + PB + TP)
+  - [x] b. Determine planetoid belt (PB) presence and quantity from table
+  - [x] c. Determine terrestrial planet (TP) quantity
+  - [x] d. Record total worlds (GG + PB + TP)
 - [ ] 4. **Determine allowable planetary Orbit#s**
   - [ ] a. Determine a star's minimum allowable Orbit# from table
   - [ ] b. In multiple star systems, follow process to exclude orbital ranges

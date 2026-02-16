@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3e5e8d1320ca4923",
+        "id": "b7b808e99a965b46",
         "type": "tabs",
         "children": [
           {
-            "id": "28e3cf2af725eb3d",
+            "id": "583c54ca5df3473e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Star System Profile"
+              "title": "imed_db (MOC)"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#database",
+                "query": "iiss",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Constructing and Upgrading Vessels"
+              "title": "Backlinks for imed_db (MOC)"
             }
           },
           {
@@ -124,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled"
+              "title": "Outgoing links from imed_db (MOC)"
             }
           },
           {
@@ -205,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Star System Profile"
+              "title": "Outline of imed_db (MOC)"
             }
           },
           {
@@ -220,11 +220,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Survey/Star System Profile.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -243,19 +243,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8260654576375266,
+                  "scale": 0.28018041322637066,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Star System Profile"
+              "title": "Graph of imed_db (MOC)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 629
+    "width": 465.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -274,32 +275,32 @@
   },
   "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Survey/ISS CLASS 0 SECTOR SURVEY.md",
-    "Prjojects/Traveller/Survey/Star System Profile.md",
     "Prjojects/Traveller/Lore/IISS Procedural.md",
-    "Prjojects/Traveller/Survey/Survey Index.md",
-    "Prjojects/Traveller/Survey/Stellar.md",
-    "Prjojects/Traveller/High Guard.md",
-    "Prjojects/Traveller/Survey/Bases.md",
-    "Prjojects/Contentcom/imed_db (MOC).md",
-    "Prjojects/Traveller/Survey/World Creation.md",
-    "Buying Ship.md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
-    "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
-    "Resources/Programming/Theory/DTO.md",
-    "Resources/Programming/Theory/Stateless Service.md",
-    "Resources/Programming/Theory/Correlation ID.md",
-    "Thread-local storage.md",
-    "Resources/Programming/Tips/Go 1.26.0.md",
-    "Resources/Programming/Tips/jsonschema.md",
-    "Resources/Programming/Theory/Validation.md",
-    "Resources/Programming/Theory/REST API vs WebSocket comparisons and aproaches.md",
-    "Resources/Programming/Theory/Serialization.md",
-    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Workshop.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
+    "Schema Migration.md",
+    "Sharding.md",
+    "Replication.md",
+    "Recovery.md",
+    "Persistence.md",
+    "Object-Relational Mapping.md",
+    "Object-Relational Impedance Mismatch.md",
+    "Isolation Level.md",
+    "Database Management System.md",
+    "Constraint.md",
+    "Connection Pool.md",
+    "Cloud Database.md",
+    "CAP Theorem.md",
+    "BASE.md",
+    "Backup.md",
+    "ACID.md",
+    "Resources/Programming/Theory/Database.md",
+    "Resources/Programming/Theory/YAGNI.md",
+    "Configuration as Code.md",
+    "Self-Healing.md",
+    "Reproducibility.md",
+    "Policy as Code.md",
+    "Plan.md",
+    "Infrastructure as Code.md",
+    "Imperative Configuration.md",
     "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",

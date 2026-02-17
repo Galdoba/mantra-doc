@@ -1,7 +1,11 @@
 {
   "entry-point@@color-scheme-selector": "color-scheme-default",
-  "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-karaka",
+  "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-koowhai",
   "everforest-enchanted-theme@@highlighted-folders": true,
   "everforest-enchanted-theme@@enable-menu-blur": true,
-  "everforest-enchanted-theme@@disable-menu-animations": false
+  "everforest-enchanted-theme@@disable-menu-animations": false,
+  "obsidian-chameleon-theme@@color-schemes-light": "color-scheme-gruvbox-soft",
+  "obsidian-chameleon-theme@@color-schemes-dark": "color-scheme-gruvbox-soft",
+  "primary-theme@@graph-node-unresolved-opacity": 0.5,
+  "primary-theme@@graph-line@@dark": "#FFDCA369"
 }

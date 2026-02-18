@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Programming/Theory/Default Value.md",
+                "file": "Prjojects/Programming/middleware.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Default Value"
+              "title": "middleware"
             }
           }
         ]
@@ -220,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Resources/Programming/Theory/Default Value.md",
+                "file": "Prjojects/Programming/middleware.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -244,11 +244,11 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 0.8531400531448426,
-                  "close": true
+                  "close": false
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Default Value"
+              "title": "Graph of middleware"
             }
           }
         ],
@@ -273,10 +273,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8cc34219505a541f",
+  "active": "74e7ec5016071e5c",
   "lastOpenFiles": [
-    "Parameter.md",
+    "Non-blocking I/O.md",
+    "Resources/Programming/Theory/Separation of Concerns.md",
+    "Metric.md",
     "Resources/Programming/Theory/Default Value.md",
+    "Parameter.md",
     "Referential Integrity.md",
     "Soft Delete.md",
     "Purge.md",
@@ -298,9 +301,6 @@
     "Default Method.md",
     "Decoupling.md",
     "API.md",
-    "Resources/Programming/Theory/Interface.md",
-    "Stub.md",
-    "Testability.md",
     "Non-blocking I",
     "TLS",
     "CI",

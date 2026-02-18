@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Programming/Theory/Lazy Initialization.md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lazy Initialization"
+              "title": "Default Value"
             }
           }
         ]
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prjojects/Contentcom/imed_db (MOC).md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for imed_db (MOC)"
+              "title": "Backlinks for Default Value"
             }
           },
           {
@@ -124,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources/Programming/Theory/Lazy Initialization.md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Lazy Initialization"
+              "title": "Outgoing links from Default Value"
             }
           },
           {
@@ -220,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Resources/Programming/Theory/Lazy Initialization.md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -243,12 +243,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6085238660886235,
+                  "scale": 0.8531400531448426,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Lazy Initialization"
+              "title": "Graph of Default Value"
             }
           }
         ],
@@ -275,32 +275,34 @@
   },
   "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Initialization-on-demand Holder.md",
-    "Resources/Programming/Theory/Lazy Initialization.md",
-    "Double-Checked Locking.md",
-    "Lazy Holder.md",
-    "First Use Penalty.md",
-    "Resources/Programming/Theory/Singleton.md",
-    "Resources/Programming/Theory/Bounded Context.md",
-    "Resources/Programming/Theory/Logging.md",
+    "Parameter.md",
+    "Resources/Programming/Theory/Default Value.md",
+    "Referential Integrity.md",
+    "Soft Delete.md",
+    "Purge.md",
+    "Mass Assignment.md",
+    "Irreversibility.md",
+    "GDPR.md",
+    "Event Sourcing.md",
+    "Compliance.md",
+    "CCPA.md",
+    "Cascade Delete.md",
+    "Audit Trail.md",
+    "Archive.md",
+    "Resources/Programming/Theory/Delete.md",
+    "Marker Interface.md",
+    "Role Interface.md",
+    "Java.md",
+    "Functional Interface.md",
+    "Design by Contract.md",
+    "Default Method.md",
+    "Decoupling.md",
+    "API.md",
+    "Resources/Programming/Theory/Interface.md",
+    "Stub.md",
     "Testability.md",
-    "Use Case.md",
-    "Onion Architecture.md",
-    "Interface Adapter.md",
-    "Frameworks and Drivers.md",
-    "Dependency Rule.md",
-    "Boundary Control Entity.md",
-    "Resources/Programming/Theory/Clean Architecture.md",
-    "Resources/Programming/Theory/Configuration.md",
-    "Prjojects/Traveller/Rules/Spaceships/Maintenance (Spaceship).md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
-    "Shared Storage.md",
-    "Unit Test.md",
-    "Redis.md",
-    "Over-Engineering.md",
-    "Module.md",
-    "Memcached.md",
-    "Function.md",
+    "Non-blocking I",
+    "TLS",
     "CI",
     "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
@@ -311,8 +313,6 @@
     "Prjojects/Traveller/Worlds",
     "Prjojects/Traveller/Rules",
     "Prjojects/Traveller/POD",
-    "Prjojects/Traveller/Lore",
-    "Prjojects/Traveller/Generic",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",

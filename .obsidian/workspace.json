@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Programming/middleware.md",
+                "file": "handlers.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "middleware"
+              "title": "handlers"
             }
           }
         ]
@@ -220,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Programming/middleware.md",
+                "file": "handlers.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -248,7 +248,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of middleware"
+              "title": "Graph of handlers"
             }
           }
         ],
@@ -275,9 +275,13 @@
   },
   "active": "74e7ec5016071e5c",
   "lastOpenFiles": [
+    "deepseek_mermaid_20260220_eb23a6.png",
+    "Prjojects/Programming/middleware.md",
+    "handlers.md",
+    "TLS/SSL.md",
+    "Metric.md",
     "Non-blocking I/O.md",
     "Resources/Programming/Theory/Separation of Concerns.md",
-    "Metric.md",
     "Resources/Programming/Theory/Default Value.md",
     "Parameter.md",
     "Referential Integrity.md",
@@ -297,10 +301,6 @@
     "Role Interface.md",
     "Java.md",
     "Functional Interface.md",
-    "Design by Contract.md",
-    "Default Method.md",
-    "Decoupling.md",
-    "API.md",
     "Non-blocking I",
     "TLS",
     "CI",

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "33ad61663bf942e0",
+        "id": "40f150c75efe2bda",
         "type": "tabs",
         "children": [
           {
-            "id": "74e7ec5016071e5c",
+            "id": "fea58379f2fbb2da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "handlers.md",
+                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "handlers"
+              "title": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
             }
           }
         ]
@@ -205,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources/Programming/Theory/Lazy Initialization.md",
+                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Lazy Initialization"
+              "title": "Outline of Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
             }
           },
           {
@@ -220,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "handlers.md",
+                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -244,15 +244,14 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 0.8531400531448426,
-                  "close": false
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of handlers"
+              "title": "Graph of Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -273,11 +272,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "74e7ec5016071e5c",
+  "active": "fea58379f2fbb2da",
   "lastOpenFiles": [
-    "deepseek_mermaid_20260220_eb23a6.png",
-    "Prjojects/Programming/middleware.md",
+    "Разработка REST-серверов на Go. Часть 2.. применение маршрутизатора gorilla.mux.md",
+    "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
+    "Разработка REST-серверов на Go. Часть 1.. стандартная библиотека.md",
     "handlers.md",
+    "deepseek_mermaid_20260220_eb23a6.png",
+    "Resources/Articles/Организация middleware в Go без зависимостей.md",
+    "Resources/Articles",
+    "Untitled",
+    "middleware",
+    "Prjojects/Programming/middleware.md",
     "TLS/SSL.md",
     "Metric.md",
     "Non-blocking I/O.md",
@@ -298,9 +304,6 @@
     "Archive.md",
     "Resources/Programming/Theory/Delete.md",
     "Marker Interface.md",
-    "Role Interface.md",
-    "Java.md",
-    "Functional Interface.md",
     "Non-blocking I",
     "TLS",
     "CI",
@@ -310,9 +313,6 @@
     "Prjojects/Traveller/Rules/Spaceships",
     "Prjojects/Traveller/_img",
     "Prjojects/Traveller/Survey",
-    "Prjojects/Traveller/Worlds",
-    "Prjojects/Traveller/Rules",
-    "Prjojects/Traveller/POD",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",
@@ -320,7 +320,6 @@
     "_img/Career_Summary_Table.png",
     "_img/04_Drifter_2.png",
     "Pasted image 20251129141918.png",
-    "_img/ffmpeg-logo.png",
     "_img/MANTRA Project flowchart.canvas"
   ]
 }

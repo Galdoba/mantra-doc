@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-22T09:48:06.087+10:00
+updated_at: 2026-03-10T11:52:16.342+10:00
 ---
 Статьи с Хабра:
 [[Roiting with Go standard library]]

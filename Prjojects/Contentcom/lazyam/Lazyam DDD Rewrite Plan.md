@@ -1,3 +1,6 @@
+---
+updated_at: 2026-03-10T12:12:58.336+10:00
+---
 # Lazyam DDD Rewrite Plan
 
 ## Domain Model

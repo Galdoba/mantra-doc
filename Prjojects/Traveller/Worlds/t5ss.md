@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-01-20T11:25:53.004+10:00
+updated_at: 2026-02-22T09:57:55.171+10:00
 tags:
   - objectvalue
 ---
@@ -661,7 +661,7 @@ _Imperial travel codes are provided by the Journal of the Travellers' Aid Societ
 
 The first [eHex](https://travellermap.com/doc/secondsurvey#ehex) digit is the population multiplier. Together with the [population exponent](https://travellermap.com/doc/secondsurvey#population_exponent) in the [UWP](https://travellermap.com/doc/secondsurvey#uwp) field, the world population can be computed as:
 
-population = multiplier × 10exponent
+population = multiplier × 10 exponent
 
 Some legacy files may erroneously have `0` for the population multiplier but non-zero for the population exponent. Treat the multiplier as `1` in these cases.
 

@@ -1,14 +1,10 @@
 ---
-updated_at: 2026-02-21T01:43:55.384+10:00
+updated_at: 2026-03-02T07:55:03.470+10:00
 tags:
   - middleware
-  - go_stdlib
+  - stdlib
   - routing
   - handlers
-  - function_composition
-  - route_grouping
-  - dependencies
-  - article
 ---
 Источник:
 https://habr.com/ru/companies/otus/articles/988234/

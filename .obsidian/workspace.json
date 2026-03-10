@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "40f150c75efe2bda",
+        "id": "33ad61663bf942e0",
         "type": "tabs",
         "children": [
           {
-            "id": "fea58379f2fbb2da",
+            "id": "74e7ec5016071e5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
+                "file": "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,49 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
+              "title": "Паттерны конкурентности в Go. Worker pool"
+            }
+          },
+          {
+            "id": "bb690b97c5e6e3c5",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://habr.com/ru/articles/1003418/",
+                "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр"
+            }
+          },
+          {
+            "id": "34afadb85ed59b54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prjojects/Traveller/Rules/Spaceships/Components.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Components"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#operation",
+                "query": "tag:#route_grouping",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resources/Programming/Theory/Default Value.md",
+                "file": "Prjojects/Contentcom/imed_db (MOC).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +154,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Default Value"
+              "title": "Backlinks for imed_db (MOC)"
             }
           },
           {
@@ -124,12 +163,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources/Programming/Theory/Default Value.md",
+                "file": "Resources/Programming/Theory/Lazy Initialization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Default Value"
+              "title": "Outgoing links from Lazy Initialization"
             }
           },
           {
@@ -205,13 +244,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Components.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
+              "title": "Outline of Components"
             }
           },
           {
@@ -220,11 +259,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Components.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -243,19 +282,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8531400531448426,
+                  "scale": 0.6085238660886233,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
+              "title": "Graph of Components"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 469.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -272,40 +311,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fea58379f2fbb2da",
+  "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Разработка REST-серверов на Go. Часть 2.. применение маршрутизатора gorilla.mux.md",
-    "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
-    "Разработка REST-серверов на Go. Часть 1.. стандартная библиотека.md",
+    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
+    "Untitled.md",
+    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
+    "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool.md",
+    "Pasted image 20260306202402.png",
+    "Prjojects/Contentcom/lazyam/Tree.md",
+    "Structured Logging.md",
+    "Serialization.md",
+    "Prjojects/Programming/gslog.md",
+    "Prjojects/Traveller/Lore/IISS Procedural.md",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
+    "Prjojects/Programming/molog/molog.md",
+    "Prjojects/Programming/molog/base.md",
+    "Prjojects/Programming/molog/asyncModule.md",
     "handlers.md",
+    "Prjojects/Programming/molog",
     "deepseek_mermaid_20260220_eb23a6.png",
-    "Resources/Articles/Организация middleware в Go без зависимостей.md",
+    "Development of REST-servers in Go (MOC).md",
+    "Prjojects/Traveller/trv_chars.md",
+    "Prjojects/Traveller/trv_encounter.md",
+    "Prjojects/Traveller/High Guard.md",
+    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
+    "Prjojects/Traveller/Worlds/World.md",
+    "Prjojects/Traveller/Worlds/WorldDTO.md",
+    "Prjojects/Traveller/Worlds/Экономика.md",
+    "Prjojects/Traveller/Worlds/orbit.md",
+    "Prjojects/Traveller/Worlds/import (trv_worlds).md",
+    "Prjojects/Contentcom/lazyam",
     "Resources/Articles",
-    "Untitled",
-    "middleware",
-    "Prjojects/Programming/middleware.md",
-    "TLS/SSL.md",
-    "Metric.md",
-    "Non-blocking I/O.md",
-    "Resources/Programming/Theory/Separation of Concerns.md",
-    "Resources/Programming/Theory/Default Value.md",
-    "Parameter.md",
-    "Referential Integrity.md",
-    "Soft Delete.md",
-    "Purge.md",
-    "Mass Assignment.md",
-    "Irreversibility.md",
-    "GDPR.md",
-    "Event Sourcing.md",
-    "Compliance.md",
-    "CCPA.md",
-    "Cascade Delete.md",
-    "Audit Trail.md",
-    "Archive.md",
-    "Resources/Programming/Theory/Delete.md",
-    "Marker Interface.md",
-    "Non-blocking I",
-    "TLS",
     "CI",
     "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
@@ -313,13 +351,14 @@
     "Prjojects/Traveller/Rules/Spaceships",
     "Prjojects/Traveller/_img",
     "Prjojects/Traveller/Survey",
+    "Prjojects/Traveller/Worlds",
+    "Prjojects/Traveller/Rules",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",
     "_img/04_Drifter_1.png",
     "_img/Career_Summary_Table.png",
     "_img/04_Drifter_2.png",
-    "Pasted image 20251129141918.png",
     "_img/MANTRA Project flowchart.canvas"
   ]
 }

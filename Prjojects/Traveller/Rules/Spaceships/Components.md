@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-08T21:04:56.645+10:00
+updated_at: 2026-03-10T08:59:35.420+10:00
 tags:
   - Cluster_Truck
 aliases:
@@ -74,3 +74,49 @@ Machinery includes all systems that require considerable amounts of electronics 
 ### Drives 
 Drives include all types of manoeuvre drive and the jump drive. They are expensive items to maintain and upgrade due to their requirement for a great deal of technical materials. 
 
+## Refined Component Type Descriptions
+
+**1. Structural**
+- **Core Identity:** The Skeleton and Skin.
+- **Function:** Provides the physical framework, volume, and passive protection of the ship. These components define the ship's basic shape and durability. They are the platform to which everything else is attached.
+- **Key Characteristic:** Passive and foundational. They don't *do* anything actively; they simply *are*. They are the canvas, not the paint.
+- **Test Question:** "Is this the ship's physical body or a permanent, armoured part of it?"
+- **Examples:** Hull, Internal Bulkheads, Armour, Vault.
+
+**2. Utility**
+- **Core Identity:** The Furniture and Tools.
+- **Function:** Provides living space, storage, and specialized non-mechanized functionality for the crew, passengers, or cargo. These are the "fit-out" items that make the ship habitable and useful but don't require significant power or complex machinery to operate.
+- **Key Characteristic:** Passive or low-power functionality. They are spaces or simple tools. While they *enable* activities (science, smuggling, boarding), they are not the active machinery performing the work.
+- **Test Question:** "Is this a room, a container, or a simple manual/remote tool for handling things or people?"
+- **Examples:** Staterooms, Briefing Rooms, Cargo Holds, Docking Clamps, Collapsible Fuel Tanks, Laboratories, Breaching Tubes, Grappling Arms, Cargo Nets, Mining Drones, Concealed Compartments, UNREP System.
+
+**3. Control**
+- **Core Identity:** The Brain and Senses.
+- **Function:** The electronics-heavy systems responsible for processing information, commanding the ship, and operating tactical systems. This is the nerve center that collects data and issues instructions.
+- **Key Characteristic:** Information-centric. They handle data, computation, communication, and targeting. Even if they control a physical object (like a turret), their primary value is the electronic targeting and firing mechanism.
+- **Test Question:** "Does this component process information, allow the crew to command the ship, or operate a weapon/sensor?"
+- **Examples:** Bridge, Computers, Sensors, Turrets (and the weapons mounted in them), Fire Control, Electronic Warfare Suites.
+
+**4. Machinery**
+- **Core Identity:** The Organs and Heavy Industry.
+- **Function:** High-power, active mechanical and industrial systems. These are the "plant" and "heavy equipment" of the ship. They generate, store, or use significant power to perform physical work or transform materials.
+- **Key Characteristic:** Power-intensive and mechanically complex. They are the active workshops, power stations, and heavy-lift systems. This is the key differentiator from **Utility**: Utility *stores* or *holds*; Machinery *processes*, *builds*, or *generates*.
+- **Test Question:** "Does this component require significant power to actively manufacture, repair, generate power, or process a large amount of material?"
+- **Examples:** Power Plant, Fuel Processor, Construction Deck, Full Hangar (due to the integrated repair machinery), High-Efficiency Batteries.
+
+**5. Drives**
+- **Core Identity:** The Legs and Engines.
+- **Function:** The specialized, high-cost systems dedicated to moving the ship through space and across dimensions. They are a sub-type of machinery but are categorized separately due to their singular purpose and unique material requirements.
+- **Key Characteristic:** Propulsion-focused. If it makes the ship as a whole change location (manoeuvre) or jump between systems, it's a Drive.
+- **Test Question:** "Does this system propel the ship through normal space or jump space?"
+- **Examples:** Manoeuvre Drive, Jump Drive.
+
+### Summary of the Decision Logic
+
+To classify a component, ask these questions in order:
+
+1.  **Is it for propulsion?** (Manoeuvre/Jump Drives) -> **DRIVES**
+2.  **Is it the physical body or armour?** -> **STRUCTURAL**
+3.  **Is it the "brain" for data, command, or weapons?** -> **CONTROL**
+4.  **If it's an active, power-hungry system that *does work* (generates power, builds things, processes materials)...** -> **MACHINERY**
+5.  **If it's a passive space, container, or simple tool for crew/cargo functionality...** -> **UTILITY**

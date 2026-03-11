@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
+                "file": "Prjojects/Contentcom/Нужно доустановить.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -66,7 +66,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Buying Ship"
+              "title": "Нужно доустановить"
             }
           }
         ],
@@ -244,13 +244,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
+                "file": "Prjojects/Contentcom/Нужно доустановить.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Buying Ship"
+              "title": "Outline of Нужно доустановить"
             }
           },
           {
@@ -259,7 +259,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Components.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -287,7 +287,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Buying Ship"
+              "title": "Graph of Components"
             }
           }
         ]
@@ -313,35 +313,35 @@
   },
   "active": "34afadb85ed59b54",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
-    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
-    "Resources/Articles/Development of REST-servers in Go (MOC).md",
-    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
+    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
+    "Prjojects/Contentcom/Нужно доустановить.md",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
     "Untitled.md",
+    "Resources/Articles/Development of REST-servers in Go (MOC).md",
+    "deepseek_mermaid_20260220_eb23a6.png",
+    "handlers.md",
+    "Pasted image 20260306202402.png",
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
     "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
     "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
     "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool.md",
-    "Pasted image 20260306202402.png",
     "Prjojects/Contentcom/lazyam/Tree.md",
     "Structured Logging.md",
     "Serialization.md",
     "Prjojects/Programming/gslog.md",
     "Prjojects/Traveller/Lore/IISS Procedural.md",
-    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
     "Prjojects/Programming/molog/molog.md",
     "Prjojects/Programming/molog/base.md",
     "Prjojects/Programming/molog/asyncModule.md",
-    "handlers.md",
     "Prjojects/Programming/molog",
-    "deepseek_mermaid_20260220_eb23a6.png",
-    "Development of REST-servers in Go (MOC).md",
     "Prjojects/Traveller/trv_chars.md",
     "Prjojects/Traveller/trv_encounter.md",
     "Prjojects/Traveller/High Guard.md",
     "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
+    "Prjojects/Traveller/Worlds/World.md",
+    "Prjojects/Traveller/Worlds/WorldDTO.md",
+    "Prjojects/Traveller/Worlds/Экономика.md",
     "Prjojects/Contentcom/lazyam",
     "Resources/Articles",
     "CI",

@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-16T12:55:16.038+10:00
+updated_at: 2026-03-11T00:06:02.756+10:00
 ---
 # Corebook
 
@@ -46,3 +46,57 @@ Many ships serve for decades or even centuries before being scrapped. Travellers
 | 11  | Ship is a famous and respected trader, with a good reputation.                                   | Ship served with distinction, and has a good reputation in the navy.              | Library computer contains secret or unusual information.                                 |
 | 12  | Upgrade computer to next best type.                                                              | Add a weapon costing up to MCr2.                                                  | Upgrade sensors to next best type.                                                       |
 
+# High Guard
+The ship construction system detailed in this chapter is your gateway to creating your own ship designs or modifying existing ones, limited only by your imagination and the laws of physics in the far future.
+
+Spacecraft are large and complicated vehicles, capable of crossing vast regions of space and unleashing weapons of terrifying power. The ship design rules presented here allow you to specify each component within a spacecraft but make sure to go through the design process step-by-step. If you get lost or confused, simply return to the checklist on page 9 to see where to go next.
+
+Throughout the design process, keep track of two key numbers – the total tonnage of the ship (and how much the components you have added have consumed) and the total cost. The mathematics required to create a ship are not complex but you may find it handy to have a calculator close by.
+
+## STANDARD DESIGNS VS. NEW DESIGNS
+Some ship designs have been used for centuries and have become standard across the stars. Plans for such spacecraft are freely available and components can be purchased in bulk by shipyards, reducing the cost of the ship’s construction by 10%. This reduced cost does not include ammunition for weapons or fuel, which must be bought at full price.
+
+If a buyer needs a new type of ship, a starship architect must be employed to design it. The architect’s fees are an additional 1% of the final cost of the ship.
+
+## CONSTRUCTION TIMES
+Construction times vary widely, depending on the size and complexity of the spacecraft and the capabilities of the shipyard.
+
+On average, assume that it takes one day per million Credits to build a spacecraft at an average commercial shipyard. At the Referee’s discretion, very large ships can be built in a modular fashion allowing simultaneous construction. This means the total construction time can be reduced by up to 90%. This is typically done only on ships exceeding 50,000 tons.
+
+High-tech shipyards have superior automation and faster-working processes, reducing construction and customisation times. See the Construction Time Reduction table for the multiple for each Tech Level.
+
+### Construction Time Reduction
+
+| Tech Level | Construction Time |
+| :--------: | :---------------: |
+|     12     |        90%        |
+|     13     |        80%        |
+|     14     |        70%        |
+|     15     |        60%        |
+|     16     |        50%        |
+## COSTS
+Spacecraft are extremely expensive and once options start being added, their cost can easily eclipse the simple designs found in the Traveller Core Rulebook. The construction of new spacecraft can be funded using finance options, as detailed starting on page 149 of the Traveller Core Rulebook.
+
+## TECH LEVEL
+Before you start building your ship, decide on the Tech Level of the shipyard that will construct it. This is the maximum Tech Level available for any given component you add and also serves as the overall Tech Level of the ship itself.
+
+## SHIP DESIGN CHECKLIST
+1. Create a Hull
+	a. Choose Hull Configuration
+	b. Install Armour
+	a. Install Hull Options
+2. Install Drives
+3. Install Fuel Tanks
+4. Install Power Plant
+	- *Providing enough power for drives, weapons, sensors and optional systems.*
+5. Install Bridge
+6. Install Computer
+7. Install Weapon
+8. Install Sensors
+9. Install Optional Systems
+	- *Such as smaller craft and fuel purification plants.*
+10. Determine Crew
+11. Allocate Cargo Space
+12. Install Staterooms
+	- *Including low berths, briefing rooms and armories.*
+13. Finalise Design

@@ -4,73 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "33ad61663bf942e0",
+        "id": "40f150c75efe2bda",
         "type": "tabs",
         "children": [
           {
-            "id": "74e7ec5016071e5c",
+            "id": "fea58379f2fbb2da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Паттерны конкурентности в Go. Worker pool"
-            }
-          },
-          {
-            "id": "bb690b97c5e6e3c5",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://habr.com/ru/articles/1003418/",
-                "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр"
-            }
-          },
-          {
-            "id": "34afadb85ed59b54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prjojects/Contentcom/Нужно доустановить.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Нужно доустановить"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#route_grouping",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -127,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 265.5,
+    "collapsed": true
   },
   "right": {
     "id": "add75788d2d67b87",
@@ -144,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prjojects/Contentcom/imed_db (MOC).md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +102,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for imed_db (MOC)"
+              "title": "Backlinks for Default Value"
             }
           },
           {
@@ -163,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resources/Programming/Theory/Lazy Initialization.md",
+                "file": "Resources/Programming/Theory/Default Value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Lazy Initialization"
+              "title": "Outgoing links from Default Value"
             }
           },
           {
@@ -177,7 +125,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -244,13 +192,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Contentcom/Нужно доустановить.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Нужно доустановить"
+              "title": "Outline"
             }
           },
           {
@@ -259,11 +206,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Components.md",
+                "file": "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
@@ -282,19 +229,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6085238660886233,
+                  "scale": 0.8531400531448426,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Components"
+              "title": "Graph of Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 469.5
+    "width": 465.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -311,54 +258,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34afadb85ed59b54",
+  "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
-    "Prjojects/Contentcom/Нужно доустановить.md",
-    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
-    "Untitled.md",
-    "Resources/Articles/Development of REST-servers in Go (MOC).md",
-    "deepseek_mermaid_20260220_eb23a6.png",
-    "handlers.md",
-    "Pasted image 20260306202402.png",
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
-    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
-    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Prjojects/Traveller/Books/INTRODUCTION.md",
+    "Prjojects/Traveller/Generic/ehex.md",
+    "Prjojects/Traveller/Books",
+    "Разработка REST-серверов на Go. Часть 3.. Использование веб-фреймворка Gin.md",
     "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
-    "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool.md",
-    "Prjojects/Contentcom/lazyam/Tree.md",
-    "Structured Logging.md",
-    "Serialization.md",
-    "Prjojects/Programming/gslog.md",
-    "Prjojects/Traveller/Lore/IISS Procedural.md",
+    "Resources/Articles/Using web-framework Gin.md",
+    "Resources/Articles/Routing with gorilla.mux.md",
+    "Resources/Articles/Roiting with Go standard library.md",
+    "Resources/Articles/Development of REST-servers in Go (MOC).md",
     "Prjojects/Programming/molog/molog.md",
     "Prjojects/Programming/molog/base.md",
     "Prjojects/Programming/molog/asyncModule.md",
     "Prjojects/Programming/molog",
-    "Prjojects/Traveller/trv_chars.md",
-    "Prjojects/Traveller/trv_encounter.md",
-    "Prjojects/Traveller/High Guard.md",
-    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
-    "Prjojects/Traveller/Worlds/World.md",
-    "Prjojects/Traveller/Worlds/WorldDTO.md",
-    "Prjojects/Traveller/Worlds/Экономика.md",
+    "Prjojects/Contentcom/Нужно доустановить.md",
+    "Prjojects/Contentcom/lazyam/Tree.md",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
     "Prjojects/Contentcom/lazyam",
+    "Разработка REST-серверов на Go. Часть 2.. применение маршрутизатора gorilla.mux.md",
+    "Разработка REST-серверов на Go. Часть 1.. стандартная библиотека.md",
+    "handlers.md",
+    "deepseek_mermaid_20260220_eb23a6.png",
+    "Resources/Articles/Организация middleware в Go без зависимостей.md",
     "Resources/Articles",
+    "Untitled",
+    "middleware",
+    "Prjojects/Programming/middleware.md",
+    "TLS/SSL.md",
+    "Metric.md",
+    "Non-blocking I/O.md",
+    "Resources/Programming/Theory/Separation of Concerns.md",
+    "Resources/Programming/Theory/Default Value.md",
+    "Parameter.md",
+    "Non-blocking I",
+    "TLS",
     "CI",
     "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
-    "Prjojects/Traveller/Rules/Spaceships",
-    "Prjojects/Traveller/_img",
-    "Prjojects/Traveller/Survey",
-    "Prjojects/Traveller/Worlds",
-    "Prjojects/Traveller/Rules",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",
     "_img/04_Drifter_1.png",
     "_img/Career_Summary_Table.png",
     "_img/04_Drifter_2.png",
+    "Pasted image 20251129141918.png",
     "_img/MANTRA Project flowchart.canvas"
   ]
 }

@@ -1,7 +1,7 @@
 ---
 updated_at: 2026-02-06T12:05:36.542+10:00
 tags:
-  - Corebook
+  - Core_Rulebook
   - Companion
 ---
 Jump travel covers the method by which ships can travel the enormous distances needed to journey to other star systems with relative speed. Other methods of star travel are covered in [[High Guard]].

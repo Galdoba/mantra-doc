@@ -1,12 +1,18 @@
 ---
-updated_at: 2026-03-05T04:47:05.811+10:00
+updated_at: 2026-03-13T08:13:20.680+10:00
 tags:
+  - logger
+  - modular
 ---
 # Async Module - Non-Blocking Logger Implementation
 
 ## Overview
 
-This document describes the implementation plan for the non-blocking (async) logging mode in molog. When enabled, log records are sent to a channel and processed by background worker routines instead of blocking the main thread.
+The async module provides non-blocking logging for molog. When enabled, log records are sent to a channel and processed by background worker routines instead of blocking the main thread.
+
+## Status: ✅ Prototype
+
+The async module is at prototype level with comprehensive test coverage.
 
 ## Architecture
 
@@ -18,37 +24,38 @@ When async mode is enabled:
 3. The main thread returns immediately without blocking
 
 When async mode is disabled:
-1. The main logging call processes the record synchronously
-2. The handler writes to the output immediately (blocking behavior)
+1. The main logging call returns `false` to indicate async should not be used
+2. The base logger processes the record synchronously
 
 ## Data Structures
 
-### Configuration Structure (asyncModule)
+### Module Structure (asyncm.Module)
 
 ```go
-type asyncModule struct {
-    enabled      bool           // whether async mode is active
-    routines     int            // number of worker routines (default: 1)
-    buffer       int            // channel buffer size (default: 0 - unbuffered)
-    logOverflow  bool           // log when channel buffer is full
-    mu           sync.Mutex     // protects enabled state
-    recordCh     chan Record    // channel for passing records to workers
-    stopCh       chan struct{}  // signal to stop workers
+type Module struct {
+    enabled      bool             // whether async mode is active
+    routines     int              // number of worker routines (default: 1)
+    buffer      int              // channel buffer size (default: 0 - unbuffered)
+    logOverflow bool             // log when channel buffer is full
+    mu          sync.Mutex       // protects enabled state
+    recordCh    chan slog.Record // channel for passing records to workers
+    stopCh      chan struct{}    // signal to stop workers
+    wg          sync.WaitGroup   // waits workers to finish
 }
 ```
 
 ### Placement
 
-The `asyncModule` struct is embedded within the `modulesConfiguration`:
+The `asyncm.Module` is a pointer in `modulesConfiguration`:
 
 ```go
 type modulesConfiguration struct {
-    base         base
-    asyncModule asyncModule  // NEW - async configuration
+    base  base
+    async *asyncm.Module
 }
 ```
 
-Note: The asyncModule is at the modulesConfiguration level, not inside base, to keep it separate from the core logger configuration.
+The module is located in `internal/modules/asyncm/async.go`.
 
 ## Options API
 
@@ -154,29 +161,29 @@ User call (Debug/Info/Warn/Error)
 ## Worker Routine Behavior
 
 ```go
-func (l *loggerBase) startWorkers() {
-    // Create channels
-    l.cfg.asyncModule.recordCh = make(chan Record, l.cfg.asyncModule.buffer)
-    l.cfg.asyncModule.stopCh = make(chan struct{})
-    
-    // Start worker routines
-    for i := 0; i < l.cfg.asyncModule.routines; i++ {
-        go l.worker()
+func (m *Module) startWorkers(l *slog.Logger) {
+    m.recordCh = make(chan slog.Record, m.buffer)
+    m.stopCh = make(chan struct{})
+
+    for i := 0; i < m.routines; i++ {
+        m.wg.Add(1)
+        go m.worker(l)
     }
 }
 
-func (l *loggerBase) worker() {
+func (m *Module) worker(l *slog.Logger) {
+    defer m.wg.Done()
+
     for {
         select {
-        case record := <-l.cfg.asyncModule.recordCh:
-            // Process the record
-            l.slog.Handler().Handle(context.Background(), record)
-        case <-l.cfg.asyncModule.stopCh:
+        case record := <-m.recordCh:
+            l.Handler().Handle(context.Background(), record)
+        case <-m.stopCh:
             // Drain remaining records then exit
             for {
                 select {
-                case record := <-l.cfg.asyncModule.recordCh:
-                    l.slog.Handler().Handle(context.Background(), record)
+                case record := <-m.recordCh:
+                    l.Handler().Handle(context.Background(), record)
                 default:
                     return
                 }
@@ -189,24 +196,20 @@ func (l *loggerBase) worker() {
 ## ToggleAsync Implementation
 
 ```go
-func (l *loggerBase) ToggleAsync(enabled bool) {
-    l.cfg.asyncModule.mu.Lock()
-    defer l.cfg.asyncModule.mu.Unlock()
-    
-    // Already in desired state
-    if enabled == l.cfg.asyncModule.enabled {
+func (m *Module) ToggleAsync(l *slog.Logger, enabled bool) {
+    m.mu.Lock()
+    defer m.mu.Unlock()
+
+    if enabled == m.enabled {
         return
     }
-    
-    if enabled {
-        // Enable: start workers
-        l.startWorkers()
+    m.enabled = enabled
+
+    if m.enabled {
+        m.startWorkers(l)
     } else {
-        // Disable: stop workers
-        l.stopWorkers()
+        m.stopWorkers()
     }
-    
-    l.cfg.asyncModule.enabled = enabled
 }
 ```
 
@@ -214,31 +217,22 @@ func (l *loggerBase) ToggleAsync(enabled bool) {
 
 ```go
 func (l *loggerBase) AsyncReconfigure(params ...int) {
-    l.cfg.asyncModule.mu.Lock()
-    defer l.cfg.asyncModule.mu.Unlock()
-    
-    // Parse parameters
-    newRoutines := l.cfg.asyncModule.routines
-    newBuffer := l.cfg.asyncModule.buffer
-    
-    if len(params) > 0 && params[0] > 0 {
-        newRoutines = params[0]
+    if l.cfg.async == nil {
+        return
     }
-    if len(params) > 1 && params[1] > 0 {
-        newBuffer = params[1]
+    initialState := l.cfg.async.IsEnabled()
+    l.cfg.async.ToggleAsync(l.slog, false)
+    for i, value := range params {
+        switch i {
+        case 0:
+            l.cfg.async.SetRoutines(value)
+        case 1:
+            l.cfg.async.SetBuffer(value)
+        case 2:
+            l.cfg.async.SetLogOverflow(asyncm.LogOverflowSetting(value))
+        }
     }
-    
-    // If async is currently enabled, restart with new settings
-    if l.cfg.asyncModule.enabled {
-        l.stopWorkers()
-        l.cfg.asyncModule.routines = newRoutines
-        l.cfg.asyncModule.buffer = newBuffer
-        l.startWorkers()
-    } else {
-        // Just update configuration for future enable
-        l.cfg.asyncModule.routines = newRoutines
-        l.cfg.asyncModule.buffer = newBuffer
-    }
+    l.cfg.async.ToggleAsync(l.slog, initialState)
 }
 ```
 
@@ -250,13 +244,13 @@ When the channel buffer is full:
 
 ```go
 select {
-case l.cfg.asyncModule.recordCh <- r:
+case m.recordCh <- r:
     // Sent successfully
 default:
     // Buffer full
-    if l.cfg.asyncModule.logOverflow {
-        // Log overflow notification (via original handler, not async)
-        // This prevents infinite recursion
+    if m.logOverflow {
+        l.Warn("log overflow") // Log via original handler to prevent recursion
+        return false
     }
 }
 ```
@@ -312,18 +306,18 @@ logger.AsyncReconfigure(0, 8192)  // Keep 8 routines, increase buffer
 
 ## Implementation Checklist
 
-- [ ] Add `asyncModule` struct to `config.go`
-- [ ] Add `asyncModule` field to `modulesConfiguration` struct in `config.go`
-- [ ] Add `WithAsync` option function in `options.go`
-- [ ] Implement `startWorkers()` method in `baseLogger.go`
-- [ ] Implement `stopWorkers()` method in `baseLogger.go`
-- [ ] Implement `worker()` method in `baseLogger.go`
-- [ ] Modify `log()` to support async mode in `baseLogger.go`
-- [ ] Modify `logAttrs()` to support async mode in `baseLogger.go`
-- [ ] Implement `ToggleAsync()` method in `baseLogger.go`
-- [ ] Implement `AsyncReconfigure()` method in `baseLogger.go`
-- [ ] Add tests for async functionality
-- [ ] Update documentation
+- [x] Add `asyncModule` struct to `config.go`
+- [x] Add `asyncModule` field to `modulesConfiguration` struct in `config.go`
+- [x] Add `WithAsync` option function in `options.go`
+- [x] Implement `startWorkers()` method
+- [x] Implement `stopWorkers()` method
+- [x] Implement `worker()` method
+- [x] Modify `log()` to support async mode
+- [x] Modify `logAttrs()` to support async mode
+- [x] Implement `ToggleAsync()` method in `control.go`
+- [x] Implement `AsyncReconfigure()` method in `control.go`
+- [x] Add tests for async functionality
+- [x] Update documentation
 
 ## Notes
 
@@ -332,4 +326,3 @@ logger.AsyncReconfigure(0, 8192)  // Keep 8 routines, increase buffer
 - The buffer size of 0 (unbuffered) provides the lowest latency but workers must keep up with the rate
 - Larger buffer sizes can handle burst traffic but may increase memory usage
 - When disabled, all pending records in the channel are processed before switching to blocking mode
-- The asyncModule is placed at the modulesConfiguration level to allow for future module additions

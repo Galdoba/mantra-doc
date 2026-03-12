@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
+                "file": "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,49 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Паттерны конкурентности в Go. Worker pool"
-            }
-          },
-          {
-            "id": "bb690b97c5e6e3c5",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://habr.com/ru/articles/1003418/",
-                "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool / Хабр"
-            }
-          },
-          {
-            "id": "34afadb85ed59b54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Buying Ship"
+              "title": "Ship Internal Storage"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#route_grouping",
+                "query": "tag:#logging",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -244,13 +205,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Buying Ship"
+              "title": "Outline"
             }
           },
           {
@@ -259,7 +219,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -287,10 +246,11 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Buying Ship"
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -311,37 +271,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34afadb85ed59b54",
+  "active": "8cc34219505a541f",
   "lastOpenFiles": [
+    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
+    "Prjojects/Traveller/Rules/Spaceships/Materials.md",
+    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
+    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
+    "Prjojects/Traveller/Rules/Spaceships/Jump Travel.md",
     "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
+    "Prjojects/Programming/middleware.md",
+    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
+    "Prjojects/Programming/molog/Deepseek.md",
+    "home/Стиралка.md",
+    "home",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
+    "Untitled.md",
+    "Prjojects/Contentcom/lazyam/Tree.md",
+    "Prjojects/Programming/molog/TODO (molog).md",
+    "Prjojects/Programming/molog/molog.md",
+    "Prjojects/Programming/molog/base.md",
+    "Prjojects/Programming/molog/asyncModule.md",
+    "Resources/Articles/SLAY-ASR, или как я перестал волноваться и полюбил тренировать модели.md",
     "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
     "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
     "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
     "Prjojects/Traveller/Rules/Spaceships/Components.md",
     "Resources/Articles/Development of REST-servers in Go (MOC).md",
     "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
-    "Untitled.md",
     "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
-    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
-    "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool.md",
     "Pasted image 20260306202402.png",
-    "Prjojects/Contentcom/lazyam/Tree.md",
-    "Structured Logging.md",
-    "Serialization.md",
-    "Prjojects/Programming/gslog.md",
-    "Prjojects/Traveller/Lore/IISS Procedural.md",
-    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
-    "Prjojects/Programming/molog/molog.md",
-    "Prjojects/Programming/molog/base.md",
-    "Prjojects/Programming/molog/asyncModule.md",
-    "handlers.md",
     "Prjojects/Programming/molog",
     "deepseek_mermaid_20260220_eb23a6.png",
-    "Development of REST-servers in Go (MOC).md",
-    "Prjojects/Traveller/trv_chars.md",
-    "Prjojects/Traveller/trv_encounter.md",
-    "Prjojects/Traveller/High Guard.md",
-    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
     "Prjojects/Contentcom/lazyam",
     "Resources/Articles",
     "CI",
@@ -352,7 +313,6 @@
     "Prjojects/Traveller/_img",
     "Prjojects/Traveller/Survey",
     "Prjojects/Traveller/Worlds",
-    "Prjojects/Traveller/Rules",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",

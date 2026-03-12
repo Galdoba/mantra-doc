@@ -1,7 +1,8 @@
 ---
-updated_at: 2026-03-05T04:44:21.790+10:00
+updated_at: 2026-03-13T08:13:34.411+10:00
 tags:
-  - logging
+  - logger
+  - modular
 ---
 # molog - MOdular LOGger
 
@@ -9,8 +10,17 @@ Molog is a modular wrapper around the standard library's `log/slog` package for 
 
 ## Overview
 
-The project is under active development. The current implementation represents a base layer with full coverage of `*slog.Logger` functionality and extended configuration capabilities.
+The project provides full coverage of `*slog.Logger` functionality with extended configuration capabilities and an extensible module system.
 
 ## Modules
-[[base]] - main wrapler object
-[[asyncModule|async]] - module for asynchronous handling
+
+| Module | Status | Description |
+|--------|--------|-------------|
+| [base](base.md) | ✅ Stable | Core logger with full slog compatibility |
+| [async](asyncModule.md) | ✅ Prototype | Non-blocking async logging |
+
+## Quick Links
+
+- [README](../README.md) - Installation and quick start
+- [Base Module](base.md) - Core functionality
+- [Async Module](asyncModule.md) - Non-blocking logging

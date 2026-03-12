@@ -1,25 +1,34 @@
 ---
-updated_at: 2026-03-05T04:47:11.592+10:00
+updated_at: 2026-03-13T08:13:28.470+10:00
 tags:
+  - logger
+  - modular
 ---
-# base
+# Base Module
 
-Molog base is a wrapper around the standard library's `log/slog` package for Go. The library provides a convenient and flexible logger constructor with various configuration options.
+The base module is the core of molog, providing a wrapper around the standard library's `log/slog` package with extended configuration capabilities.
 
 ## Overview
 
-The project is under active development. The current implementation represents a base layer with full coverage of `*slog.Logger` functionality and extended configuration capabilities.
+The base module provides full compatibility with `*slog.Logger` API and adds flexible configuration options through the `New()` constructor.
 
 ## Project Structure
 
 ```
 molog/
-├── baseLogger.go   # Logger interface, implementation, constructors
-├── config.go       # Data types, constants, configuration structures
-├── options.go      # Option functions for logger configuration
-├── log_test.go    # Tests
-└── log.go         # Empty package file
+├── base.go        # Logger interface, implementation, constructors
+├── config.go      # Types, constants, configuration structures
+├── options.go     # Option functions for configuration
+├── control.go     # Runtime control methods (ToggleAsync, AsyncReconfigure)
+└── base_test.go   # Tests
 ```
+
+## Current Modules
+
+| Module | Status | Description |
+|--------|--------|-------------|
+| base | ✅ Stable | Core logger functionality |
+| async | ✅ Prototype | Non-blocking async logging |
 
 ## Available Functionality
 
@@ -148,11 +157,12 @@ Allows passing a completely custom handler. **Note: Currently not implemented.**
 
 ```go
 type modulesConfiguration struct {
-    base base
+    base  base
+    async *asyncm.Module
 }
 ```
 
-This structure contains the nested `base` structure and is designed for extensibility with a modular system. Additional structures (one for each module) are planned to be added in the future.
+This structure contains the nested `base` structure and the async module. The modular design allows easy addition of new modules.
 
 ### base Structure
 
@@ -266,6 +276,6 @@ go test -v ./...
 
 ## Future Plans
 
-1. **Module System** - Adding additional structures to modulesConfiguration for each module
-2. **Custom Handlers** - Implementing HANDLER_CUSTOM support
+1. **Custom Handlers** - Implementing HANDLER_CUSTOM support
+2. **Additional Modules** - See doc/TODO.md for proposed new modules
 3. **Extended Features** - Filtering, formatting, additional attributes

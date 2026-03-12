@@ -1,7 +1,7 @@
 ---
 updated_at: 2026-02-13T12:42:19.535+10:00
 tags:
-  - Corebook
+  - Core_Rulebook
   - Deepnight
   - brewed
 ---

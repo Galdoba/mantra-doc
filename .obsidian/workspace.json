@@ -30,8 +30,23 @@
               "icon": "lucide-file",
               "title": "Ship Internal Storage"
             }
+          },
+          {
+            "id": "29763bb4baa0d808",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -273,6 +288,11 @@
   },
   "active": "8cc34219505a541f",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Prjojects/Traveller/Books/INTRODUCTION.md",
+    "Prjojects/Traveller/Books",
+    "Prjojects/Contentcom/Нужно доустановить.md",
     "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
     "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
     "Prjojects/Traveller/Rules/Spaceships/Materials.md",
@@ -296,10 +316,6 @@
     "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
     "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
     "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
-    "Prjojects/Traveller/Rules/Spaceships/Components.md",
-    "Resources/Articles/Development of REST-servers in Go (MOC).md",
-    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
-    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
     "Pasted image 20260306202402.png",
     "Prjojects/Programming/molog",
     "deepseek_mermaid_20260220_eb23a6.png",
@@ -312,7 +328,6 @@
     "Prjojects/Traveller/Rules/Spaceships",
     "Prjojects/Traveller/_img",
     "Prjojects/Traveller/Survey",
-    "Prjojects/Traveller/Worlds",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",

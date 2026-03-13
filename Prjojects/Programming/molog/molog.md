@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-03-13T08:13:34.411+10:00
+updated_at: 2026-03-13T10:00:00.027+10:00
 tags:
   - logger
   - modular
@@ -21,6 +21,9 @@ The project provides full coverage of `*slog.Logger` functionality with extended
 
 ## Quick Links
 
-- [README](../README.md) - Installation and quick start
-- [Base Module](base.md) - Core functionality
-- [Async Module](asyncModule.md) - Non-blocking logging
+- [README] - Installation and quick start
+- [Base Module] - Core functionality
+- [Async Module] - Non-blocking logging
+---
+
+Дальнейшие планы: [[TODO (molog)]]

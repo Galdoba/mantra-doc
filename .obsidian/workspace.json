@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "74e7ec5016071e5c",
+            "id": "34afadb85ed59b54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+                "file": "Prjojects/Traveller/Survey/golang structs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,25 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ship Internal Storage"
-            }
-          },
-          {
-            "id": "29763bb4baa0d808",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "title": "golang structs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#logging",
+                "query": "tag:#route_grouping",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -234,6 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Prjojects/Traveller/Survey/golang structs.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -261,7 +247,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of golang structs"
             }
           }
         ],
@@ -288,37 +274,37 @@
   },
   "active": "8cc34219505a541f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Prjojects/Traveller/Survey/IISS Forms json.md",
+    "Prjojects/Traveller/Survey/golang structs.md",
+    "Prjojects/Traveller/Survey/Star System Profile.md",
     "Prjojects/Traveller/Books/INTRODUCTION.md",
-    "Prjojects/Traveller/Books",
-    "Prjojects/Contentcom/Нужно доустановить.md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
-    "Prjojects/Traveller/Rules/Spaceships/Materials.md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
-    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
-    "Prjojects/Traveller/Rules/Spaceships/Jump Travel.md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
-    "Prjojects/Programming/middleware.md",
-    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
+    "Prjojects/Traveller/Survey/Секторальный Hex код.md",
     "Prjojects/Programming/molog/Deepseek.md",
+    "Prjojects/Programming/molog/asyncModule.md",
+    "Prjojects/Programming/molog/molog.md",
+    "Prjojects/Programming/molog/TODO (molog).md",
+    "Prjojects/Programming/molog/base.md",
+    "Prjojects/Traveller/Worlds/orbit.md",
+    "Prjojects/Contentcom/Нужно доустановить.md",
     "home/Стиралка.md",
     "home",
+    "Resources/Articles/SLAY-ASR, или как я перестал волноваться и полюбил тренировать модели.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Prjojects/Traveller/Books",
+    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
     "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
     "Untitled.md",
-    "Prjojects/Contentcom/lazyam/Tree.md",
-    "Prjojects/Programming/molog/TODO (molog).md",
-    "Prjojects/Programming/molog/molog.md",
-    "Prjojects/Programming/molog/base.md",
-    "Prjojects/Programming/molog/asyncModule.md",
-    "Resources/Articles/SLAY-ASR, или как я перестал волноваться и полюбил тренировать модели.md",
-    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
-    "Pasted image 20260306202402.png",
-    "Prjojects/Programming/molog",
+    "Resources/Articles/Development of REST-servers in Go (MOC).md",
     "deepseek_mermaid_20260220_eb23a6.png",
+    "handlers.md",
+    "Pasted image 20260306202402.png",
+    "Prjojects/Traveller/Rules/Spaceships/Components.md",
+    "Prjojects/Traveller/Rules/Spaceships/Crew Effectiveness Index (CEI) - Compiled.md",
+    "Prjojects/Traveller/Rules/Spaceships/Constructing and Upgrading Vessels.md",
+    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
+    "Паттерны конкурентности в Go. Подробный разбор. Часть 1. Worker pool.md",
+    "Prjojects/Contentcom/lazyam/Tree.md",
+    "Prjojects/Programming/molog",
     "Prjojects/Contentcom/lazyam",
     "Resources/Articles",
     "CI",

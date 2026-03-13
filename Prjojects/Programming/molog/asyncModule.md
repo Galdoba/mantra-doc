@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-03-13T08:13:20.680+10:00
+updated_at: 2026-03-13T09:59:10.204+10:00
 tags:
   - logger
   - modular
@@ -326,3 +326,5 @@ logger.AsyncReconfigure(0, 8192)  // Keep 8 routines, increase buffer
 - The buffer size of 0 (unbuffered) provides the lowest latency but workers must keep up with the rate
 - Larger buffer sizes can handle burst traffic but may increase memory usage
 - When disabled, all pending records in the channel are processed before switching to blocking mode
+---
+Беседа о композиции пакетов: [[Deepseek]]

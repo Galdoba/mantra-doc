@@ -1,26 +1,37 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Prjojects/Traveller  ",
+      "color": {
+        "a": 1,
+        "rgb": 13341799
+      }
+    },
+    {
+      "query": "[\"tags\":logger]",
+      "color": {
+        "a": 1,
+        "rgb": 6608476
+      }
+    }
+  ],
+  "collapse-display": true,
   "showArrow": true,
-  "textFadeMultiplier": -0.5,
+  "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-<<<<<<< HEAD
-  "scale": 0.6316046762907215,
-=======
-  "scale": 0.2554324418349148,
->>>>>>> origin/main
+  "centerStrength": 0.502604166666667,
+  "repelStrength": 10.0520833333333,
+  "linkStrength": 0.497395833333333,
+  "linkDistance": 30,
+  "scale": 0.7132754626224344,
   "close": true
 }

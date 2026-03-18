@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 updated_at: 2026-03-15T09:58:26.011+10:00
+=======
+updated_at: 2026-03-13T10:00:00.027+10:00
+>>>>>>> origin/main
 tags:
   - logging
   - logger
@@ -39,7 +43,16 @@ logger, err := molog.New(
 
 ## Quick Links
 
+<<<<<<< HEAD
 - [README](../README.md) - Installation and quick start
 - [Base Module](base.md) - Core functionality
 - [Async Module](asyncModule.md) - Non-blocking logging
 - [Rotate Module](rotateModule.md) - Log file rotation
+=======
+- [README] - Installation and quick start
+- [Base Module] - Core functionality
+- [Async Module] - Non-blocking logging
+---
+
+Дальнейшие планы: [[TODO (molog)]]
+>>>>>>> origin/main

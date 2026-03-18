@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 updated_at: 2026-03-15T09:58:02.028+10:00
+=======
+updated_at: 2026-03-13T09:59:10.204+10:00
+>>>>>>> origin/main
 tags:
   - logger
   - modular
@@ -272,6 +276,7 @@ lb.AsyncReconfigure(asyncmod.Config{
 - Buffer size of 0 (unbuffered) provides lowest latency but workers must keep up with rate
 - Larger buffer sizes handle burst traffic but increase memory usage
 - When disabled, all pending records in the channel are processed before switching to blocking mode
+<<<<<<< HEAD
 
 ## Test Coverage
 
@@ -292,3 +297,7 @@ Run tests:
 ```bash
 go test -v ./modules/asyncmod/...
 ```
+=======
+---
+Беседа о композиции пакетов: [[Deepseek]]
+>>>>>>> origin/main

@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-16T00:32:57.069+10:00
+updated_at: 2026-03-13T14:04:49.986+10:00
 ---
 Полный профиль системы описывающий орбиты и взаимоотношения небесных тел.
 
@@ -34,9 +34,377 @@ Regardless of the type of system, the forms displayed for public use are actuall
 - Other
 
 # Используемые поля:
-- Name
-- UWP
-- Sector | Location
-- Initial Survey Date
-- Last Update Date
-- 
+## IISS Class 0 Sector Survey
+FORM 0398D-0
+
+- [Sector | Grid] - ex: "Core | S0T0"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [IISS Designation] - system name: location based or name "2223-436" "Drinax" 
+- [Stellar objects]
+	-  [Location] - Hex coordinates ("2223")
+	- [Primary] - stellar TSC code
+	- [Primary+] - stellar TSC code
+	- [Close] - stellar TSC code
+	- [Close+] - stellar TSC code
+	- [Near] - stellar TSC code
+	- [Near+] - stellar TSC code
+	- [Far] - stellar TSC code
+	- [Far+] - stellar TSC code
+	- [GG] - quantity of Gas Giants
+	- [Notes] - free text about stars in the system
+- [Comments] - free text about systemwide things
+
+
+## IISS Class 0/I Sector Survey
+FORM 0421B-0I
+- [Sector | Grid] - ex: "Core | S0T0"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [IISS Designation] - system name: location based or name "2223-436" 
+- [System Age (Gyr)] - 6.3
+- [Objects]
+	- [Stellar] - number of stars (int)
+	- [Planetary Detections] - number of confirmed planets (int of n/a)
+	- [Class 1 Status] - bool
+- [Stars]
+	- [Star Characteristics]
+		- [Star Designation] - string
+		- [Component] - "Aa", "Ab", etc...
+		- [Class] - "G7 V" 
+		- [Mass] - 0.929
+		- [Temp] - 5440
+		- [Diameter] - 0.967
+		- [Luminocity] - 0.738
+		- [Orbit#] - 0.09
+		- [AU] - 0.036
+		- [Ecc] - 0.11
+		- [Period] - 0.005y
+		- [HZCO] - 3.0
+	- [Notes]
+- [Comments]
+
+## IISS Class II/III Survey
+FORM 0421B-II.III
+- [Sector | Grid] - ex: "Core | S0T0"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [IISS Designation] - system name: location based or name "2223-436" 
+- [System Age (Gyr)] - 6.3
+- [Objects]
+	- [Stellar]
+	- [Gas Giants]
+	- [Planetoid Belts]
+	- [Terrestrials]
+	- [Class III Status]
+- [Stars] - many
+	- [Star Designation] - string
+	- [Component] - "Aa", "Ab", etc...
+	- [Class] - "G7 V" 
+	- [Mass] - 0.929
+	- [Temp] - 5440
+	- [Diameter] - 0.967
+	- [Luminocity] - 0.738
+	- [Orbit#] - 0.09
+	- [AU] - 0.036
+	- [Ecc]
+	- [Period]
+	- [MAO]
+	- [HZCO]
+- [Objects]
+	- [Object name]
+	- [Primary] - component object rotating around
+	- [Object Designation]
+	- [Orbit#]
+	- [AU]
+	- [Ecc]
+	- [Period]
+	- [SAH/UWP]
+	- [Sub] - how many satellites or notable asteroids?
+	- [Notes] - free text about object
+- [Comments] - free text about star system
+
+## IISS Class IV Survey
+FORM 0407K-IV PART P.B
+- [World] - Name or designation
+- [SAH/UWP]
+- [Sector | Location] - ex: "Core | 0140"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [Primary Object(s)] - list things world is orbiting around
+- [System Age]
+- [Travel Zone]
+- [Belt Composition]
+	- [m-type(%)]
+	- [s-type(%)]
+	- [c-type(%)]
+	- [other(%)]
+	- [Bulk]
+- [Major Bodies]
+	- [Size 1] - list of bodies
+	- [Size S] - list of bodies
+- [Notes]
+- [Resources]
+	- [Rating]
+	- [Notes]
+- [Major Bodies]
+	- [Body] - array
+		- [Body designation]
+		- [SAH/UWP]
+		- [Orbit#]
+		- [Orbit (AU)]
+		- [Ecc]
+		- [Period]
+		- [Type]
+		- [Diameter]
+		- [Density]
+		- [Mass]
+	- [Notes]
+- [Comments]
+
+## IISS Class IV Survey
+FORM 0407K-IV PART P
+- [World] - Name or designation
+- [SAH/UWP]
+- [Sector | Location] - ex: "Core | 0140"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [Primary Object(s)] - list things world is orbiting around
+- [System Age]
+- [Travel Zone]
+- [Orbit]
+	- [O#]
+	- [AU]
+	- [Ecc]
+	- [Period]
+	- [Notes]
+- [Size]
+	- [Diameter]
+	- [Composition]
+	- [Density]
+	- [Gravity]
+	- [Mass]
+	- [Esc v (kps)]
+	- [Notes]
+- [Atmosphere]
+	- [Pressure (bar)]
+	- [Composition]
+	- [Oxygen (bar)]
+	- [Taints]
+	- [Scale Height]
+	- [Notes]
+- [Hydrographics]
+	- [Coverage (%)]
+	- [Composition]
+	- [Distribution]
+	- [Major bodies] - ex: "2 major continents"
+	- [Minor bodies] - ex: "9 minor continents"
+	- [Other]
+	- [Notes]
+- [Rotation]
+	- [Sidereal] - ex: "84h 44m 30s (84.74)"
+	- [Solar] - ex: "85h 46m 12s (85.77)"
+	- [Solar days/year] - ex: 82.2739
+	- [Axial Tilt] - ex: "73° 39’ (73.65°)"
+	- [Tidal Lock] - bool
+	- [Tides] - ex: "30.6m from primary, 0.24m from stars"
+	- [Notes]
+- [Temperature]
+	- [High] - ex: "346K | 73°C"
+	- [Mean]
+	- [Low]
+	- [Luminosity]
+	- [Albedo]
+	- [Greenhouse]
+	- [Notes]
+	- [Seismic Stress]
+	- [Residual Stress]
+	- [Tidal Stress]
+	- [Tidal Heating]
+	- [Major Tectonic Plates]
+- [Life]
+	- [Biomass]
+	- [Biocomplexity]
+	- [Sophonts]
+	- [Biodiversity]
+	- [Compatibility]
+	- [Notes]
+- [Resources]
+	- [Rating]
+	- [Notes]
+- [Habitability]
+	- [Rating]
+	- [Notes]
+- [Subordinated]
+	- [Satelite] - list of satelites
+		- [Designation]
+		- [SAH/UWP]
+		- [Orbit (PD)]
+		- [Orbit (km)]
+		- [Ecc]
+		- [Diameter]
+		- [Density]
+		- [Mass]
+		- [Period (h)]
+		- [Size(°)]
+	- [Notes]
+- [Comments]
+
+## IISS Class IV Survey
+FORM 0407F-IV PART C
+- [World] - Name or designation
+- [UWP]
+- [Sector | Location] - ex: "Core | 0140"
+- [Initial Survey] - Date
+- [Last Updated] - Date
+- [Primary Object(s)] - list things world is orbiting around
+- [System Age]
+- [Travel Zone]
+- [Population]
+	- [Total]
+	- [Demographics]
+	- [PCR]
+	- [Urbanisation%]
+	- [Major Cities] - number
+	- [Capital/Port]
+	- [Major Cities List]
+		- [City Profile]
+	- [Notes]
+- [Government]
+	- [Type]
+	- [Centralization]
+	- [Authority]
+	- [Profile]
+	- [Notes]
+	- [Factions] - list
+		- [Faction]
+			- [Profile]
+			- [Designation]
+			- [Description]
+		- [Relationships]
+		- [Faction notes]
+- [Law Level]
+	- [Primary]
+	- [Secondary]
+	- [Uniformity]
+	- [Presumption of Innocence]
+	- [Death Penalty]
+	- [Categories]
+		- [Overall]
+		- [Weapons]
+		- [Economics]
+		- [Criminal]
+		- [Private]
+		- [Personal Rights]
+	- [Notes]
+- [Technology]
+	- [Common High]
+	- [Common Low]
+	- [Energy]
+	- [Electronics]
+	- [Manufacturing]
+	- [Medical]
+	- [Land]
+	- [Water]
+	- [Air]
+	- [Space]
+	- [Personal Military]
+	- [Heavy Military]
+	- [Novelty]
+	- [Environmental]
+	- [Notes]
+- [Culture]
+	- [Diversity]
+	- [Cohesion]
+	- [Xenophilia]
+	- [Proggressiveness]
+	- [Uniquiness]
+	- [Expansionism]
+	- [Symbology]
+	- [Militancy]
+	- [Notes]
+- [Economics]
+	- [Trade Codes]
+	- [Importance]
+	- [Resources]
+	- [Labour]
+	- [Infrastructure]
+	- [Efficiency]
+	- [GWP per capita]
+	- [WTN]
+	- [Inequality Rating]
+	- [Development Score]
+	- [GWP (MCr)]
+	- [Tarrifs]
+	- [Notes]
+- [Starport]
+	- [Class]
+	- [Highport]
+	- [Expected Weekly Traffic]
+	- [Berthing Fees]
+	- [Docking]
+	- [Shipyard]
+	- [Anual Output]
+	- [Navy Base]
+	- [Scout Base]
+	- [Military Base]
+	- [Other]
+	- [Notes]
+- [Military]
+	- [Effective Budget %]
+	- [Structure]
+	- [Enforcement]
+	- [Militia]
+	- [Army]
+	- [Wet Navy]
+	- [Air Force]
+	- [System Defence]
+	- [Navy]
+	- [Marines]
+	- [Notes]
+- [Comments]
+
+
+## IISS Class IV Survey
+FORM 0407F-IV PART CSPF
+- [Subunit]
+- [PGL]
+- [World] - Name or designation
+- [UWP]
+- [Description] - ex: "Core | 0140"
+- [Population]
+	- [Total]
+	- [Demographics]
+	- [PCR]
+	- [Urbanisation%]
+	- [Major Cities] - number
+	- [Capital/Port]
+	- [Notes]
+- [Government]
+	- [Profile]
+	- [Factions]
+	- [Notes]
+- [Law Level]
+	- [Primary]
+	- [Profile]
+	- [Notes]
+- [Technology]
+	- [Profile]
+	- [Notes]
+- [Culture]
+	- [Profile]
+	- [Notes]
+- [Economics]
+	- [GWP per capita]
+	- [Inequality Rating]
+	- [Development Score]
+	- [GWP (MCr)]
+	- [Notes]
+- [Military]
+	- [Effective Budget %]
+	- [Profile]
+	- [Notes]
+- [Comments]
+
+
+

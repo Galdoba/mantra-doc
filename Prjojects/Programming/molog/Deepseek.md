@@ -1,5 +1,8 @@
 ---
-updated_at: 2026-03-13T08:02:05.606+10:00
+updated_at: 2026-03-13T09:58:03.569+10:00
+tags:
+  - logger
+  - modular
 ---
 Based on a thorough review of your `molog` codebase, I can provide a detailed evaluation and a concrete proposal for a new log rotation module, following the established patterns of your project.
 

@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-03-13T08:13:28.470+10:00
+updated_at: 2026-03-15T09:58:12.105+10:00
 tags:
   - logger
   - modular
@@ -16,19 +16,23 @@ The base module provides full compatibility with `*slog.Logger` API and adds fle
 
 ```
 molog/
-├── base.go        # Logger interface, implementation, constructors
-├── config.go      # Types, constants, configuration structures
-├── options.go     # Option functions for configuration
-├── control.go     # Runtime control methods (ToggleAsync, AsyncReconfigure)
-└── base_test.go   # Tests
+├── base.go              # Logger interface, implementation, constructors
+├── config.go            # Types, constants, configuration structures
+├── options.go           # Option functions for configuration
+├── control.go           # Runtime control methods (ToggleAsync, AsyncReconfigure, TryRotate)
+├── base_test.go         # Tests
+└── modules/
+    ├── asyncmod/        # Async logging module
+    └── rotatemod/       # Rotation module
 ```
 
-## Current Modules
+## Available Modules
 
 | Module | Status | Description |
 |--------|--------|-------------|
 | base | ✅ Stable | Core logger functionality |
-| async | ✅ Prototype | Non-blocking async logging |
+| async | ✅ Stable | Non-blocking async logging |
+| rotate | 🔧 In Development | Automatic log file rotation |
 
 ## Available Functionality
 
@@ -53,14 +57,6 @@ The `Logger` interface fully covers the public API of `*slog.Logger`:
 | `With(args)` | Create a new logger with added attributes |
 | `WithGroup(name)` | Create a new logger with attribute group |
 
-### Constructors
-
-| Function | Description |
-|----------|-------------|
-| `New(opts ...Option) (Logger, error)` | Create logger with options |
-| `Default() (Logger, error)` | Get wrapper around slog.Default() |
-| `NewWithHandler(h slog.Handler) *loggerBase` | Create logger with custom handler |
-
 ### Available Types and Aliases
 
 ```go
@@ -72,21 +68,23 @@ const (
     LevelDebug Level = slog.LevelDebug  // Debug level
     LevelInfo  Level = slog.LevelInfo    // Info level
     LevelWarn  Level = slog.LevelWarn    // Warning level
-    LevelError Level = slog.LevelError    // Error level
+    LevelError Level = slog.LevelError   // Error level
 )
 
 type handlerType string
 
 const (
     HANDLER_JSON   handlerType = "json"   // JSON output format
-    HANDLER_TEXT   handlerType = "text"   // Text output format
+    HANDLER_TEXT   handlerType = "text"  // Text output format
     HANDLER_CUSTOM handlerType = "custom" // Custom handler (not implemented)
 )
 ```
 
 ## Constructor New() Options
 
-### WithWriter(writerKey string, writer io.Writer) Option
+### Base Options (With*)
+
+#### WithWriter(writerKey string, writer io.Writer) Option
 
 Adds a writer for log output. The key cannot be empty.
 
@@ -98,7 +96,7 @@ logger, _ := molog.New(
 
 When multiple writers are specified, they are all combined via `io.MultiWriter`.
 
-### WithHandlerType(ht handlerType) Option
+#### WithHandlerType(ht handlerType) Option
 
 Sets the handler type (JSON or TEXT). Default is JSON.
 
@@ -108,7 +106,7 @@ logger, _ := molog.New(
 )
 ```
 
-### WithAddSource(addSource bool) Option
+#### WithAddSource(addSource bool) Option
 
 Enables/disables adding source information (file:line). Default is false.
 
@@ -118,7 +116,7 @@ logger, _ := molog.New(
 )
 ```
 
-### WithLevel(level Level) Option
+#### WithLevel(level Level) Option
 
 Sets the minimum log level. Default is LevelDebug.
 
@@ -128,7 +126,7 @@ logger, _ := molog.New(
 )
 ```
 
-### WithReplaceAttr(key string, fn func([]string, slog.Attr) slog.Attr) Option
+#### WithReplaceAttr(key string, fn func([]string, slog.Attr) slog.Attr) Option
 
 Adds a function for attribute transformation. Functions are stored in a map by key.
 
@@ -143,7 +141,7 @@ logger, _ := molog.New(
 )
 ```
 
-### WithCustomHandler(h slog.Handler) Option
+#### WithCustomHandler(h slog.Handler) Option
 
 Allows passing a completely custom handler. **Note: Currently not implemented.**
 
@@ -151,30 +149,100 @@ Allows passing a completely custom handler. **Note: Currently not implemented.**
 // Currently not available
 ```
 
+### Module Options (WithModule*)
+
+#### WithModuleAsync(cfg asyncmod.Config) Option
+
+Enables async logging with specified configuration.
+
+```go
+logger, _ := molog.New(
+    molog.WithModuleAsync(asyncmod.Config{
+        Routines:    2,
+        Buffer:      1024,
+        LogOverflow: true,
+    }),
+)
+```
+
+See [asyncModule.md](asyncModule.md) for details.
+
+#### WithModuleRotate(cfg rotatemod.Config) Option
+
+Enables automatic log file rotation with specified configuration.
+
+```go
+logger, _ := molog.New(
+    molog.WithWriter("file", logFile),
+    molog.WithModuleRotate(rotatemod.Config{
+        SizeMB:   100,
+        AgeHours: 24,
+    }),
+)
+```
+
+See [rotateModule.md](rotateModule.md) for details.
+
+## Runtime Control Methods
+
+### ToggleAsync(enabled bool)
+
+Toggle async mode at runtime.
+
+```go
+logger.(*loggerBase).ToggleAsync(true)  // Enable async
+logger.(*loggerBase).ToggleAsync(false) // Disable async
+```
+
+**Note**: Requires type assertion to access the method.
+
+### AsyncReconfigure(cfg asyncmod.Config) error
+
+Reconfigure async module at runtime.
+
+```go
+logger.(*loggerBase).AsyncReconfigure(asyncmod.Config{
+    Routines: 4,
+    Buffer:   2048,
+})
+```
+
+### TryRotate()
+
+Forces an immediate rotation check (rotate module). Worker will wake up and perform full sweep.
+
+```go
+logger.(*loggerBase).TryRotate()
+```
+
+**Note**: Requires type assertion to access the method.
+
 ## Internal Architecture
 
 ### modulesConfiguration Structure
 
 ```go
 type modulesConfiguration struct {
-    base  base
-    async *asyncm.Module
+    base   base
+    async  *asyncmod.Module
+    rotate *rotatemod.Module
 }
 ```
 
-This structure contains the nested `base` structure and the async module. The modular design allows easy addition of new modules.
+This structure contains the nested `base` structure and module pointers. The modular design allows easy addition of new modules.
 
 ### base Structure
 
 ```go
 type base struct {
-    writers              map[string]io.Writer
-    designatedWriter    io.Writer
-    handler             handlerType
-    addSource           bool
-    level               Level
-    replaceAttrFuncs    map[string]func([]string, slog.Attr) slog.Attr
-    customHandler       slog.Handler
+    writers          map[string]io.Writer
+    designatedWriter io.Writer
+    handler          handlerType
+    addSource        bool
+    level            Level
+    replaceAttrFuncs map[string]func([]string, slog.Attr) slog.Attr
+    customHandler    slog.Handler
+    logFiles         []*os.File
 }
 ```
 
@@ -182,10 +250,12 @@ type base struct {
 
 All exported logging methods (Debug, Info, Warn, Error, etc.) use internal methods `log()` and `logAttrs()`, which:
 
-1. Validate context
-2. Check if the log level is enabled via `Enabled()`
-3. Obtain the program counter (PC) for determining the call source
-4. Create a slog.Record and pass it to the handler
+1. Check if async module should handle the log (if enabled)
+2. Validate context
+3. Check if the log level is enabled via `Enabled()`
+4. Obtain the program counter (PC) for determining the call source
+5. Create a slog.Record and pass it to the handler
+6. Check if rotation is needed (if enabled)
 
 This ensures correct file and line number determination for the call.
 
@@ -223,6 +293,7 @@ package main
 import (
     "os"
     "github.com/Galdoba/molog"
+    "github.com/Galdoba/molog/modules/asyncmod"
 )
 
 func main() {
@@ -231,6 +302,10 @@ func main() {
         molog.WithLevel(molog.LevelInfo),
         molog.WithAddSource(true),
         molog.WithWriter("file", os.Stdout),
+        molog.WithModuleAsync(asyncmod.Config{
+            Routines: 2,
+            Buffer:   1024,
+        }),
     )
     if err != nil {
         panic(err)
@@ -267,6 +342,7 @@ The project contains a test suite covering the core functionality:
 - With() and WithGroup() methods
 - Level and handler type constants
 - Working with io.Discard
+- Async module functionality
 
 Running tests:
 

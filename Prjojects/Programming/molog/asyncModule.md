@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-03-13T08:13:20.680+10:00
+updated_at: 2026-03-15T09:58:02.028+10:00
 tags:
   - logger
   - modular
@@ -10,9 +10,59 @@ tags:
 
 The async module provides non-blocking logging for molog. When enabled, log records are sent to a channel and processed by background worker routines instead of blocking the main thread.
 
-## Status: ✅ Prototype
+## Status: ✅ Stable
 
-The async module is at prototype level with comprehensive test coverage.
+The async module is fully implemented with comprehensive test coverage.
+
+## Configuration
+
+### Config Structure
+
+```go
+type Config struct {
+    Routines    int  // Number of worker routines (1-10)
+    Buffer      int  // Channel buffer size (0 = unbuffered)
+    LogOverflow bool // Log warning when buffer is full
+}
+```
+
+### Validation Rules
+
+- `Routines`: Must be between 1 and 10
+- `Buffer`: Must be non-negative
+
+## Module Setup
+
+### WithModuleAsync(cfg asyncmod.Config) Option
+
+Enables async logging with specified configuration.
+
+```go
+logger, err := molog.New(
+    molog.WithModuleAsync(asyncmod.Config{
+        Routines:    2,
+        Buffer:      1024,
+        LogOverflow: true,
+    }),
+)
+```
+
+**Examples:**
+
+```go
+// Minimal config (1 routine, unbuffered)
+molog.WithModuleAsync(asyncmod.Config{Routines: 1, Buffer: 0})
+
+// Multiple workers with buffer
+molog.WithModuleAsync(asyncmod.Config{Routines: 4, Buffer: 1024})
+
+// With overflow logging
+molog.WithModuleAsync(asyncmod.Config{
+    Routines:    2,
+    Buffer:      100,
+    LogOverflow: true,
+})
+```
 
 ## Architecture
 
@@ -24,104 +74,53 @@ When async mode is enabled:
 3. The main thread returns immediately without blocking
 
 When async mode is disabled:
-1. The main logging call returns `false` to indicate async should not be used
+1. The async module returns `false` to indicate async should not be used
 2. The base logger processes the record synchronously
 
-## Data Structures
-
-### Module Structure (asyncm.Module)
+### Module Structure
 
 ```go
 type Module struct {
     enabled      bool             // whether async mode is active
-    routines     int              // number of worker routines (default: 1)
-    buffer      int              // channel buffer size (default: 0 - unbuffered)
-    logOverflow bool             // log when channel buffer is full
-    mu          sync.Mutex       // protects enabled state
-    recordCh    chan slog.Record // channel for passing records to workers
-    stopCh      chan struct{}    // signal to stop workers
-    wg          sync.WaitGroup   // waits workers to finish
+    routines     int              // number of worker routines
+    buffer       int              // channel buffer size
+    logOverflow  bool             // log when channel buffer is full
+    mu           sync.Mutex       // protects enabled state
+    recordCh     chan slog.Record // channel for passing records to workers
+    stopCh       chan struct{}    // signal to stop workers
+    wg           sync.WaitGroup   // waits workers to finish
 }
 ```
-
-### Placement
-
-The `asyncm.Module` is a pointer in `modulesConfiguration`:
-
-```go
-type modulesConfiguration struct {
-    base  base
-    async *asyncm.Module
-}
-```
-
-The module is located in `internal/modules/asyncm/async.go`.
-
-## Options API
-
-### WithAsync
-
-```go
-// WithAsync enables non-blocking (async) mode with optional parameters.
-// This option starts worker routines that process log records in the background,
-// allowing the main thread to return immediately without waiting for I/O.
-//
-// Parameters (all optional):
-//   - First: number of worker routines (default: 1, minimum: 1)
-//   - Second: channel buffer size (default: 0 - unbuffered)
-//   - Third+: ignored
-//
-// Examples:
-//   - WithAsync()                    - 1 routine, unbuffered
-//   - WithAsync(4)                  - 4 routines, unbuffered
-//   - WithAsync(4, 1024)            - 4 routines, buffered with 1024 capacity
-func WithAsync(routinesAndBuffer ...int) Option
-```
-
-**Default values:**
-- `routines`: 1 (minimum 1 when enabled)
-- `buffer`: 0 (unbuffered channel)
 
 ## Runtime API
 
-### ToggleAsync
+### ToggleAsync(enabled bool)
+
+Toggle async mode at runtime. Must type-assert to access:
 
 ```go
-// ToggleAsync enables or disables async mode at runtime.
-// When enabling: starts worker routines if not already running
-// When disabling: stops worker routines and waits for channel to drain
-//
-// Parameters:
-//   - enabled: true to enable async mode, false to disable
-//
-// Note: When disabling, all pending records in the channel 
-// will be processed before switching to blocking mode.
-func (l *loggerBase) ToggleAsync(enabled bool)
+lb := logger.(*molog.loggerBase)
+lb.ToggleAsync(true)   // Enable async
+lb.ToggleAsync(false) // Disable async
 ```
 
-### AsyncReconfigure
+**Behavior:**
+- When enabling: starts worker routines if not already running
+- When disabling: stops worker routines and waits for channel to drain
+
+### AsyncReconfigure(cfg asyncmod.Config) error
+
+Reconfigure async module at runtime:
 
 ```go
-// AsyncReconfigure allows changing async module parameters at runtime.
-// Can modify:
-//   - Number of worker routines
-//   - Channel buffer size
-//
-// Parameters:
-//   - First: new number of routines (0 or negative = keep current)
-//   - Second: new buffer size (0 or negative = keep current)
-//   - Third+: ignored
-//
-// Note: Changing parameters will restart workers to apply new settings.
-// Any pending records in the channel may be lost.
-//
-// Examples:
-//   - AsyncReconfigure()                - no changes
-//   - AsyncReconfigure(8)              - change to 8 routines
-//   - AsyncReconfigure(8, 2048)        - 8 routines, buffer 2048
-//   - AsyncReconfigure(0, 4096)         - keep routines, change buffer to 4096
-func (l *loggerBase) AsyncReconfigure(params ...int)
+lb := logger.(*molog.loggerBase)
+lb.AsyncReconfigure(asyncmod.Config{
+    Routines: 4,
+    Buffer:   2048,
+})
 ```
+
+**Note:** Changing parameters will restart workers to apply new settings.
 
 ## Behavior
 
@@ -161,16 +160,6 @@ User call (Debug/Info/Warn/Error)
 ## Worker Routine Behavior
 
 ```go
-func (m *Module) startWorkers(l *slog.Logger) {
-    m.recordCh = make(chan slog.Record, m.buffer)
-    m.stopCh = make(chan struct{})
-
-    for i := 0; i < m.routines; i++ {
-        m.wg.Add(1)
-        go m.worker(l)
-    }
-}
-
 func (m *Module) worker(l *slog.Logger) {
     defer m.wg.Done()
 
@@ -190,49 +179,6 @@ func (m *Module) worker(l *slog.Logger) {
             }
         }
     }
-}
-```
-
-## ToggleAsync Implementation
-
-```go
-func (m *Module) ToggleAsync(l *slog.Logger, enabled bool) {
-    m.mu.Lock()
-    defer m.mu.Unlock()
-
-    if enabled == m.enabled {
-        return
-    }
-    m.enabled = enabled
-
-    if m.enabled {
-        m.startWorkers(l)
-    } else {
-        m.stopWorkers()
-    }
-}
-```
-
-## AsyncReconfigure Implementation
-
-```go
-func (l *loggerBase) AsyncReconfigure(params ...int) {
-    if l.cfg.async == nil {
-        return
-    }
-    initialState := l.cfg.async.IsEnabled()
-    l.cfg.async.ToggleAsync(l.slog, false)
-    for i, value := range params {
-        switch i {
-        case 0:
-            l.cfg.async.SetRoutines(value)
-        case 1:
-            l.cfg.async.SetBuffer(value)
-        case 2:
-            l.cfg.async.SetLogOverflow(asyncm.LogOverflowSetting(value))
-        }
-    }
-    l.cfg.async.ToggleAsync(l.slog, initialState)
 }
 ```
 
@@ -260,9 +206,12 @@ default:
 ### Basic async usage
 
 ```go
-logger, _ := molog.New(
-    molog.WithLevel(molog.LevelInfo),
-    molog.WithAsync(),  // 1 routine, unbuffered
+logger, err := molog.New(
+    molog.WithWriter("console", os.Stderr),
+    molog.WithModuleAsync(asyncmod.Config{
+        Routines: 1,
+        Buffer:   0,
+    }),
 )
 
 logger.Info("this returns immediately")
@@ -273,8 +222,13 @@ logger.Error("this also returns immediately")
 
 ```go
 logger, _ := molog.New(
-    molog.WithLevel(molog.LevelDebug),
-    molog.WithAsync(4, 1024),  // 4 routines, buffer 1024
+    molog.WithWriter("file", logFile),
+    molog.WithHandlerType(molog.HANDLER_TEXT),
+    molog.WithModuleAsync(asyncmod.Config{
+        Routines:    4,
+        Buffer:      1024,
+        LogOverflow: true,
+    }),
 )
 ```
 
@@ -283,46 +237,58 @@ logger, _ := molog.New(
 ```go
 logger, _ := molog.New(molog.WithLevel(molog.LevelInfo))
 
+lb := logger.(*molog.loggerBase)
+
 // Later, enable async mode
-logger.ToggleAsync(true)
+lb.ToggleAsync(true)
 
 // Or disable
-logger.ToggleAsync(false)
+lb.ToggleAsync(false)
 ```
 
 ### Reconfigure at runtime
 
 ```go
 logger, _ := molog.New(
-    molog.WithAsync(2, 512),  // Start with 2 routines, buffer 512
+    molog.WithWriter("file", logFile),
+    molog.WithModuleAsync(asyncmod.Config{
+        Routines: 2,
+        Buffer:   512,
+    }),
 )
 
 // Later, increase capacity
-logger.AsyncReconfigure(8, 4096)
-
-// Or just change one parameter
-logger.AsyncReconfigure(0, 8192)  // Keep 8 routines, increase buffer
+lb := logger.(*molog.loggerBase)
+lb.AsyncReconfigure(asyncmod.Config{
+    Routines: 8,
+    Buffer:   4096,
+})
 ```
 
-## Implementation Checklist
+## Implementation Notes
 
-- [x] Add `asyncModule` struct to `config.go`
-- [x] Add `asyncModule` field to `modulesConfiguration` struct in `config.go`
-- [x] Add `WithAsync` option function in `options.go`
-- [x] Implement `startWorkers()` method
-- [x] Implement `stopWorkers()` method
-- [x] Implement `worker()` method
-- [x] Modify `log()` to support async mode
-- [x] Modify `logAttrs()` to support async mode
-- [x] Implement `ToggleAsync()` method in `control.go`
-- [x] Implement `AsyncReconfigure()` method in `control.go`
-- [x] Add tests for async functionality
-- [x] Update documentation
-
-## Notes
-
-- The async mode is designed for high-throughput scenarios where logging should not block the main thread
+- Async mode is designed for high-throughput scenarios where logging should not block the main thread
 - With multiple workers, log records may be written out of order
-- The buffer size of 0 (unbuffered) provides the lowest latency but workers must keep up with the rate
-- Larger buffer sizes can handle burst traffic but may increase memory usage
+- Buffer size of 0 (unbuffered) provides lowest latency but workers must keep up with rate
+- Larger buffer sizes handle burst traffic but increase memory usage
 - When disabled, all pending records in the channel are processed before switching to blocking mode
+
+## Test Coverage
+
+The module includes tests for:
+
+- Config validation
+- Module creation and configuration
+- Start/stop toggle behavior
+- Record processing
+- Level filtering
+- Overflow handling
+- Multiple concurrent routines
+- Nil context handling
+- Drain on stop
+
+Run tests:
+
+```bash
+go test -v ./modules/asyncmod/...
+```

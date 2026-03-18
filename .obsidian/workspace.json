@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+                "file": "Careers MOC.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,21 +28,55 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ship Internal Storage"
+              "title": "Careers MOC"
             }
           },
           {
-            "id": "29763bb4baa0d808",
+            "id": "9aa09231621c76ec",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Agent.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Agent"
+            }
+          },
+          {
+            "id": "e9d619f684a24679",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ergohaven Remnant programmable ergonomic keyboard"
             }
           }
         ],
@@ -220,12 +254,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Agent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Agent"
             }
           },
           {
@@ -234,6 +269,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Agent.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -261,11 +297,10 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Agent"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -286,36 +321,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8cc34219505a541f",
+  "active": "9aa09231621c76ec",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Prjojects/Traveller/Books/Traveller Creation.md",
-    "Prjojects/Traveller/Books/INTRODUCTION.md",
-    "Prjojects/Traveller/Books",
-    "Prjojects/Contentcom/Нужно доустановить.md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Smelter.md",
-    "Prjojects/Traveller/Rules/Spaceships/Materials.md",
-    "Prjojects/Traveller/Rules/Spaceships/Repair (Spaceship).md",
-    "Prjojects/Traveller/Rules/Spaceships/Buying Ship.md",
-    "Prjojects/Traveller/Rules/Spaceships/Jump Travel.md",
-    "Prjojects/Traveller/Rules/Spaceships/Ship Operations - MOC.md",
-    "Prjojects/Programming/middleware.md",
-    "Resources/Articles/Паттерны конкурентности в Go. Worker pool.md",
-    "Prjojects/Programming/molog/Deepseek.md",
-    "home/Стиралка.md",
-    "home",
-    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
+    "Agent.md",
+    "Careers MOC.md",
     "Untitled.md",
-    "Prjojects/Contentcom/lazyam/Tree.md",
-    "Prjojects/Programming/molog/TODO (molog).md",
+    "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Prjojects/Traveller/Survey/World Creation.md",
+    "Prjojects/Traveller/Worlds/t5ss.md",
+    "Prjojects/Programming/molog/TODO.md",
+    "Prjojects/Programming/molog/rotationRoadmap.md",
+    "Prjojects/Programming/molog/rotateModule.md",
     "Prjojects/Programming/molog/molog.md",
     "Prjojects/Programming/molog/base.md",
     "Prjojects/Programming/molog/asyncModule.md",
-    "Resources/Articles/SLAY-ASR, или как я перестал волноваться и полюбил тренировать модели.md",
-    "Prjojects/Traveller/Rules/Spaceships/Fuel.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Processor.md",
-    "Prjojects/Traveller/Rules/Spaceships/components/Fuel Scoop.md",
+    "Prjojects/Programming/molog/TODO (molog).md",
+    "Prjojects/Traveller/trv_chars.md",
+    "Prjojects/Traveller/trv_encounter.md",
+    "Prjojects/Traveller/Worlds/Экономика.md",
+    "Prjojects/Traveller/Worlds/WorldDTO.md",
+    "Prjojects/Traveller/Worlds/World.md",
+    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
+    "Prjojects/Traveller/Worlds/orbit.md",
+    "Prjojects/Programming/middleware.md",
+    "Prjojects/Programming/molog/Deepseek.md",
+    "home/Стиралка.md",
+    "Prjojects/Traveller/Rules/Spaceships/Ship Internal Storage.md",
+    "conflict-files-obsidian-git.md",
+    "Prjojects/Traveller/Books",
+    "home",
     "Pasted image 20260306202402.png",
     "Prjojects/Programming/molog",
     "deepseek_mermaid_20260220_eb23a6.png",

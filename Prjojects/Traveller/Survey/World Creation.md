@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-02-16T00:12:04.569+10:00
+updated_at: 2026-04-03T01:18:21.500+10:00
 ---
 # Master Checklist
 Упорядоченное техническое задание для полной генерации звездной системы.
@@ -23,9 +23,9 @@ updated_at: 2026-02-16T00:12:04.569+10:00
   - [x] b. Determine planetoid belt (PB) presence and quantity from table
   - [x] c. Determine terrestrial planet (TP) quantity
   - [x] d. Record total worlds (GG + PB + TP)
-- [ ] 4. **Determine allowable planetary Orbit#s**
-  - [ ] a. Determine a star's minimum allowable Orbit# from table
-  - [ ] b. In multiple star systems, follow process to exclude orbital ranges
+- [x] 4. **Determine allowable planetary Orbit#s**
+  - [x] a. Determine a star's minimum allowable Orbit# from table
+  - [x] b. In multiple star systems, follow process to exclude orbital ranges
 - [ ] 5. **For each star or star and Companion pair, determine the habitable zone centre Orbit# (HZCO)**
   - [ ] a. Use formula or table for AU value
   - [ ] b. Convert AUs into Orbit#s using the table

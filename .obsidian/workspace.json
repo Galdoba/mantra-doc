@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "74e7ec5016071e5c",
+            "id": "36668c6104bf24f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Careers MOC.md",
+                "file": "Prjojects/Traveller/Survey/World Creation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,93 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Careers MOC"
-            }
-          },
-          {
-            "id": "9aa09231621c76ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Agent.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Agent"
-            }
-          },
-          {
-            "id": "4b4ecc618eb8505d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
-          },
-          {
-            "id": "5910cff00eab9f73",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "e9d619f684a24679",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Ergohaven Remnant programmable ergonomic keyboard"
+              "title": "World Creation"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -273,6 +190,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "96d2046f4c669e2b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
         "currentTab": 6
@@ -288,12 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "testing/agent_fix.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of agent_fix"
             }
           },
           {
@@ -302,6 +230,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "out.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -329,7 +258,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of out"
             }
           }
         ]
@@ -350,37 +279,38 @@
       "markdown-importer:Open format converter": false,
       "timethings:Activate view": false,
       "obisidian-note-linker:Note Linker": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5910cff00eab9f73",
+  "active": "80a8dc3f74496ca9",
   "lastOpenFiles": [
+    "testing/agent.md",
+    "Untitled.md",
+    "Prjojects/Traveller/Survey/World Creation.md",
+    "Prjojects/Traveller/Survey/Импортируемые данные.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Resources/Articles/Result and Error Codes.md",
+    "Agent.md",
+    "output.md",
+    "Copy (2) output.md",
+    "Copy (3) output.md",
+    "Copy (1) output.md",
+    "Careers MOC.md",
+    "out.md",
+    "test_page.md",
+    "table.md",
+    "test_page_4.md",
+    "test_page_3.md",
+    "test_page_2.md",
     "Resources/Programming/Tips/Что такое Trie и когда его использовать.md",
     "conflict-files-obsidian-git.md",
-    "Agent.md",
     "Prjojects/Traveller/Survey/golang structs.md",
     "Prjojects/Traveller/Survey/IISS Forms json.md",
-    "Careers MOC.md",
     "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
-    "Prjojects/Traveller/Books/Traveller Creation.md",
-    "Prjojects/Traveller/Survey/World Creation.md",
     "Prjojects/Traveller/Worlds/t5ss.md",
     "Prjojects/Programming/molog/TODO.md",
     "Prjojects/Programming/molog/rotationRoadmap.md",
-    "Prjojects/Programming/molog/rotateModule.md",
-    "Prjojects/Programming/molog/molog.md",
-    "Prjojects/Programming/molog/base.md",
-    "Prjojects/Programming/molog/asyncModule.md",
-    "Prjojects/Programming/molog/TODO (molog).md",
-    "Prjojects/Traveller/trv_chars.md",
-    "Prjojects/Traveller/trv_encounter.md",
-    "Prjojects/Traveller/Worlds/Экономика.md",
-    "Prjojects/Traveller/Worlds/WorldDTO.md",
-    "Prjojects/Traveller/Worlds/World.md",
-    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
-    "Prjojects/Traveller/Worlds/orbit.md",
-    "Prjojects/Programming/middleware.md",
-    "Prjojects/Programming/molog/Deepseek.md",
     "Prjojects/Traveller/Books",
     "home",
     "Pasted image 20260306202402.png",

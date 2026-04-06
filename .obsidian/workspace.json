@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "file": "Prjojects/Programming/go/packages/immutable map.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "common conceipt"
+              "title": "immutable map"
             }
           }
         ],
@@ -136,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#logging",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -288,13 +288,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "file": "Prjojects/Programming/go/packages/immutable map.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of common conceipt"
+              "title": "Outline of immutable map"
             }
           },
           {
@@ -356,8 +356,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2fce6365a0540eaa",
+  "active": "8cc34219505a541f",
   "lastOpenFiles": [
+    "Prjojects/Programming/go/packages",
+    "Prjojects/Programming/go/concurency/common conceipt.md",
     "Prjojects/Programming/go/concurency/FAN-OUT.md",
     "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
     "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",
@@ -366,12 +368,11 @@
     "Prjojects/Programming/go/concurency/fan-in.goMeA9nf.bck",
     "Prjojects/Programming/go/concurency/fan-in.goE2maHL.bck",
     "Prjojects/Programming/go/concurency/fan-in.goKaNs0r.bck",
-    "Prjojects/Programming/go/concurency/common conceipt.md",
     "Prjojects/Programming/go/concurency/FAN-IN.md",
     "Prjojects/Programming/go/concurency/fan-in.goFHkep9.bck",
     "Prjojects/Programming/go/concurency/fan-in.gosWX88G.bck",
     "Prjojects/Programming/go/concurency/fan-in.goFJE0aO.bck",
-    "Untitled.md",
+    "Prjojects/Programming/go/packages/immutable map.md",
     "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
     "Prjojects/Programming/middleware.md",
     "Prjojects/Programming/molog/Deepseek.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/Survey/World Creation.md",
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "World Creation"
+              "title": "common conceipt"
+            }
+          },
+          {
+            "id": "1307fd3230f053f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prjojects/Programming/go/concurency/FAN-IN.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "FAN-IN"
+            }
+          },
+          {
+            "id": "fd2d008c8aa1bc53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "common conceipt"
+            }
+          },
+          {
+            "id": "2fce6365a0540eaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "common conceipt"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -215,13 +288,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "testing/agent_fix.md",
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of agent_fix"
+              "title": "Outline of common conceipt"
             }
           },
           {
@@ -283,11 +356,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "80a8dc3f74496ca9",
+  "active": "2fce6365a0540eaa",
   "lastOpenFiles": [
-    "testing/agent.md",
+    "Prjojects/Programming/go/concurency/FAN-OUT.md",
+    "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goXqJEiB.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goWdYF70.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goMeA9nf.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goE2maHL.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goKaNs0r.bck",
+    "Prjojects/Programming/go/concurency/common conceipt.md",
+    "Prjojects/Programming/go/concurency/FAN-IN.md",
+    "Prjojects/Programming/go/concurency/fan-in.goFHkep9.bck",
+    "Prjojects/Programming/go/concurency/fan-in.gosWX88G.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goFJE0aO.bck",
     "Untitled.md",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
+    "Prjojects/Programming/middleware.md",
+    "Prjojects/Programming/molog/Deepseek.md",
+    "Prjojects/Programming/molog/TODO.md",
+    "Prjojects/Contentcom/Нужно доустановить.md",
     "Prjojects/Traveller/Survey/World Creation.md",
+    "testing/agent.md",
     "Prjojects/Traveller/Survey/Импортируемые данные.md",
     "Prjojects/Traveller/Books/Traveller Creation.md",
     "Resources/Articles/Result and Error Codes.md",
@@ -302,29 +393,10 @@
     "table.md",
     "test_page_4.md",
     "test_page_3.md",
-    "test_page_2.md",
-    "Resources/Programming/Tips/Что такое Trie и когда его использовать.md",
-    "conflict-files-obsidian-git.md",
-    "Prjojects/Traveller/Survey/golang structs.md",
-    "Prjojects/Traveller/Survey/IISS Forms json.md",
-    "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
-    "Prjojects/Traveller/Worlds/t5ss.md",
-    "Prjojects/Programming/molog/TODO.md",
-    "Prjojects/Programming/molog/rotationRoadmap.md",
-    "Prjojects/Traveller/Books",
-    "home",
     "Pasted image 20260306202402.png",
-    "Prjojects/Programming/molog",
     "deepseek_mermaid_20260220_eb23a6.png",
-    "Prjojects/Contentcom/lazyam",
-    "Resources/Articles",
-    "CI",
-    "Prjojects/Traveller/Rules/Spaceships/components",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",
     "Prjojects/Traveller/_img/formula_RU.png",
-    "Prjojects/Traveller/Rules/Spaceships",
-    "Prjojects/Traveller/_img",
-    "Prjojects/Traveller/Survey",
     "_img/formula_RU.png",
     "_img/table_Trade_Codes.png",
     "Pasted image 20260126224614.png",

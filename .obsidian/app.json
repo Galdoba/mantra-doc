@@ -1,6 +1,6 @@
 {
   "showLineNumber": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "vimMode": false,
   "userIgnoreFilters": [
     "_templates/"

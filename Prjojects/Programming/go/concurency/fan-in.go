@@ -2,70 +2,45 @@ package main
 
 import (
 	"fmt"
-	"sync"
 )
 
-func SplitChannels[T any](inputChls <-chan T, n int) []<-chan T {
-	outputChls := make([]chan T, n)
-	for i := 0; i < n; i++ {
-		outputChls[i] = make(chan T)
-	}
+// преобразуем данные в канал с данными
+func generate[T any](values ...T) <-chan T {
+	outputCh := make(chan T)
 
 	go func() {
-		idx := 0
-		for value := range inputChls {
-			outputChls[idx] <- value //может быть не блокирующим
-			idx = (idx + 1) % n
-
+		defer close(outputCh)
+		for _, value := range values {
+			outputCh <- value
 		}
+	}()
 
-		for _, ch := range outputChls {
-			close(ch)
+	return outputCh
+}
+
+func process[T any](inputCh <-chan T, actionFunc func(T) T) <-chan T {
+	outputCh := make(chan T)
+
+	go func() {
+		defer close(outputCh)
+		for value := range inputCh {
+			outputCh <- actionFunc(value)
 		}
 
 	}()
 
-	//can't cast []chan T to []<-chan T
-	resultChl := make([]<-chan T, n)
-	for i := 0; i < n; i++ {
-		resultChl[i] = outputChls[i]
-	}
-
-	return resultChl
+	return outputCh
 }
 
 func main() {
-	channel := make(chan int)
+	values := []int{1, 2, 3, 4, 5}
 
-	go func() {
-		defer func() {
-			close(channel)
-		}()
+	mul := func(value int) int {
+		return value * value
+	}
 
-		for i := 0; i < 100; i += 3 {
-			channel <- i
-		}
-	}()
-
-	channels := SplitChannels(channel, 2)
-
-	var wg sync.WaitGroup
-	wg.Add(2)
-
-	go func() {
-		defer wg.Done()
-		for value := range channels[0] {
-			fmt.Println("ch1:", value)
-		}
-	}()
-
-	go func() {
-		defer wg.Done()
-		for value := range channels[1] {
-			fmt.Println("ch2:", value)
-		}
-	}()
-
-	wg.Wait()
+	for value := range process(generate(values...), mul) {
+		fmt.Println(value)
+	}
 
 }

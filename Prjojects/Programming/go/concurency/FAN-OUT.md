@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-04-06T17:39:47.093+10:00
+updated_at: 2026-04-06T20:23:49.552+10:00
 ---
 **Область применения**: Шардирование
 
@@ -21,8 +21,8 @@ func SplitChannels[T any](inputChls <-chan T, n int) []<-chan T {
 	go func() {
 		idx := 0
 		for value := range inputChls {
-			outputChls[idx] <- value //может быть не блокирующим
-			idx = (idx + 1) % n
+			outputChls[idx] <- value //может быть не блокирующим (select)
+			idx = (idx + 1) % n //или вообще выбираем по ключу
 
 		}
 

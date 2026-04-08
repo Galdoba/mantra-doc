@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "file": "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "common conceipt"
+              "title": "CHAPTER_03_PSIONICS"
             }
           },
           {
-            "id": "1307fd3230f053f6",
+            "id": "29cbe237a013dff4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/FAN-IN.md",
+                "file": "Prjojects/Programming/go/concurency/PIPELINE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,59 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FAN-IN"
-            }
-          },
-          {
-            "id": "fd2d008c8aa1bc53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "common conceipt"
-            }
-          },
-          {
-            "id": "2fce6365a0540eaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prjojects/Programming/go/packages/immutable map.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "immutable map"
+              "title": "PIPELINE"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#logging",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -288,13 +239,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Programming/go/packages/immutable map.md",
+                "file": "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of immutable map"
+              "title": "Outline of CHAPTER_03_PSIONICS"
             }
           },
           {
@@ -356,44 +307,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8cc34219505a541f",
+  "active": "36668c6104bf24f1",
   "lastOpenFiles": [
-    "Prjojects/Programming/go/packages",
+    "Prjojects/Traveller/Worlds/World.md",
+    "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
+    "Prjojects/Traveller/Cepheus_Engine_SRD.pdf_combined.md",
+    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
+    "Prjojects/Traveller/Generic/ehex.md",
     "Prjojects/Programming/go/concurency/common conceipt.md",
+    "Prjojects/Programming/go/concurency/PIPELINE.md",
+    "Prjojects/Programming/go/concurency/fan-in.goazD0DE.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goFuke7Y.bck",
+    "Prjojects/Programming/go/concurency/fan-in.go8SKgmP.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goljid5z.bck",
+    "Prjojects/Programming/go/concurency/fan-in.gogOPvfl.bck",
+    "Prjojects/Programming/go/concurency/fan-in.godttwo7.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goGHgEV0.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goFPF2hY.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goaPzlg7.bck",
+    "Prjojects/Programming/go/concurency/TRANSFORMER.md",
+    "Prjojects/Programming/go/concurency/FILTER.md",
+    "Prjojects/Programming/go/concurency/fan-in.goet6DfB.bck",
+    "Prjojects/Programming/go/concurency/TEE.md",
     "Prjojects/Programming/go/concurency/FAN-OUT.md",
-    "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goXqJEiB.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goWdYF70.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goMeA9nf.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goE2maHL.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goKaNs0r.bck",
-    "Prjojects/Programming/go/concurency/FAN-IN.md",
-    "Prjojects/Programming/go/concurency/fan-in.goFHkep9.bck",
-    "Prjojects/Programming/go/concurency/fan-in.gosWX88G.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goFJE0aO.bck",
+    "home/Стиралка.md",
+    "Untitled.md",
     "Prjojects/Programming/go/packages/immutable map.md",
-    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
-    "Prjojects/Programming/middleware.md",
-    "Prjojects/Programming/molog/Deepseek.md",
-    "Prjojects/Programming/molog/TODO.md",
-    "Prjojects/Contentcom/Нужно доустановить.md",
+    "Prjojects/Programming/go/concurency/FAN-IN.md",
+    "Prjojects/Traveller/Books/Traveller Creation.md",
+    "Careers MOC.md",
+    "Prjojects/Traveller/Books/INTRODUCTION.md",
     "Prjojects/Traveller/Survey/World Creation.md",
+    "testing/agent_fix.md",
     "testing/agent.md",
     "Prjojects/Traveller/Survey/Импортируемые данные.md",
-    "Prjojects/Traveller/Books/Traveller Creation.md",
     "Resources/Articles/Result and Error Codes.md",
     "Agent.md",
     "output.md",
     "Copy (2) output.md",
-    "Copy (3) output.md",
-    "Copy (1) output.md",
-    "Careers MOC.md",
-    "out.md",
-    "test_page.md",
-    "table.md",
-    "test_page_4.md",
-    "test_page_3.md",
     "Pasted image 20260306202402.png",
     "deepseek_mermaid_20260220_eb23a6.png",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",

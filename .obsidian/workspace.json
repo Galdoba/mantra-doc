@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CHAPTER_03_PSIONICS"
-            }
-          },
-          {
-            "id": "29cbe237a013dff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prjojects/Programming/go/concurency/PIPELINE.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "PIPELINE"
+              "title": "common conceipt"
             }
           }
         ]
@@ -87,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#logging",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -239,13 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
+                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CHAPTER_03_PSIONICS"
+              "title": "Outline of common conceipt"
             }
           },
           {
@@ -309,42 +285,42 @@
   },
   "active": "36668c6104bf24f1",
   "lastOpenFiles": [
-    "Prjojects/Traveller/Worlds/World.md",
-    "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
+    "CHAPTER_05_PERSONAL_COMBAT.md",
+    "Prjojects/Contentcom/postgresql.md",
+    "CHAPTER_04_EQUIPMENT.md",
     "Prjojects/Traveller/Cepheus_Engine_SRD.pdf_combined.md",
-    "Prjojects/Traveller/Worlds/UWP (Universal World Profile).md",
-    "Prjojects/Traveller/Generic/ehex.md",
-    "Prjojects/Programming/go/concurency/common conceipt.md",
-    "Prjojects/Programming/go/concurency/PIPELINE.md",
-    "Prjojects/Programming/go/concurency/fan-in.goazD0DE.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goFuke7Y.bck",
-    "Prjojects/Programming/go/concurency/fan-in.go8SKgmP.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goljid5z.bck",
-    "Prjojects/Programming/go/concurency/fan-in.gogOPvfl.bck",
-    "Prjojects/Programming/go/concurency/fan-in.godttwo7.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goGHgEV0.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goFPF2hY.bck",
-    "Prjojects/Programming/go/concurency/fan-in.goaPzlg7.bck",
-    "Prjojects/Programming/go/concurency/TRANSFORMER.md",
-    "Prjojects/Programming/go/concurency/FILTER.md",
-    "Prjojects/Programming/go/concurency/fan-in.goet6DfB.bck",
-    "Prjojects/Programming/go/concurency/TEE.md",
-    "Prjojects/Programming/go/concurency/FAN-OUT.md",
-    "home/Стиралка.md",
-    "Untitled.md",
+    "CHAPTER_16_REFEREEING_THE_GAME.md",
+    "CHAPTER_15_STARSHIP_ENCOUNTERS.md",
+    "CHAPTER_14_SOCIAL_ENCOUNTERS.md",
+    "CHAPTER_13_PLANETARY_WILDERNESS_ENCOUNTERS.md",
+    "CHAPTER_12_WORLDS.md",
+    "CHAPTER_11_ENVIRONMENTS_AND_HAZARDS.md",
+    "CHAPTER_10_SPACE_COMBAT.md",
+    "CHAPTER_09_COMMON_VESSELS.md",
+    "CHAPTER_08_SHIP_DESIGN_AND_CONSTRUCTION.md",
+    "CHAPTER_07_TRADE_AND_COMMERCE.md",
+    "CHAPTER_06_OFF-WORLD_TRAVEL.md",
+    "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
     "Prjojects/Programming/go/packages/immutable map.md",
+    "Prjojects/Programming/go/concurency/TRANSFORMER.md",
+    "Prjojects/Programming/go/concurency/TEE.md",
+    "Prjojects/Programming/go/concurency/PIPELINE.md",
+    "Prjojects/Programming/go/concurency/FILTER.md",
+    "Prjojects/Programming/go/packages",
+    "Prjojects/Programming/go/concurency/common conceipt.md",
+    "Prjojects/Programming/go/concurency/FAN-OUT.md",
+    "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goXqJEiB.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goWdYF70.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goMeA9nf.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goE2maHL.bck",
+    "Prjojects/Programming/go/concurency/fan-in.goKaNs0r.bck",
     "Prjojects/Programming/go/concurency/FAN-IN.md",
-    "Prjojects/Traveller/Books/Traveller Creation.md",
-    "Careers MOC.md",
-    "Prjojects/Traveller/Books/INTRODUCTION.md",
-    "Prjojects/Traveller/Survey/World Creation.md",
-    "testing/agent_fix.md",
-    "testing/agent.md",
-    "Prjojects/Traveller/Survey/Импортируемые данные.md",
-    "Resources/Articles/Result and Error Codes.md",
-    "Agent.md",
-    "output.md",
-    "Copy (2) output.md",
+    "Prjojects/Programming/go/concurency/fan-in.goFHkep9.bck",
+    "Prjojects/Programming/go/concurency/fan-in.gosWX88G.bck",
+    "Prjojects/Contentcom/lazyam/Lazyam DDD Rewrite Plan.md",
+    "Prjojects/Programming/middleware.md",
     "Pasted image 20260306202402.png",
     "deepseek_mermaid_20260220_eb23a6.png",
     "Prjojects/Traveller/_img/table_Trade_Codes.png",

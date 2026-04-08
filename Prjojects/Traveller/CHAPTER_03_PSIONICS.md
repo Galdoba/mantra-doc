@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-04-08T01:29:32.296+10:00
+updated_at: 2026-04-08T13:16:32.920+10:00
 ---
 # CHAPTER 3: PSIONICS
 
@@ -52,7 +52,7 @@ Using a talent in combat is a significant action.
 
 Many abilities are ranged. The Psionic Range table lists the number of points to project psionic abilities out to a given range – these must be paid as well as any points to activate the ability. Each talent has a different set of costs, with the exception of Awareness – all Awareness abilities apply to the Psion only.
 
-## Range
+### Range
 
 Psionic range costs are paid based on range bands based on those used in personal combat or communication devices. These are defined in the Psionic Range Costs table.
 
@@ -84,21 +84,21 @@ Awareness is the psionic talent which allows control of one’s own body. Awaren
 | Psionically Enhanced Endurance | Average (+0)        | 1D6 seconds | 1/Point |
 | Regeneration                   | Very Difficult (-4) | 1D6 rounds  | 1/Point |
 
-## Suspended Animation
+### Suspended Animation
 
 Personal body activity may be suspended for varying periods of time. A character with Awareness may enter a suspended animation state (similar to cold sleep but without the intrinsic danger of death) by willing himself into it. Such a state continues for 7 days without need for food or water and with minimal air needs. Such a person could effectively travel in a low passage berth without actually undergoing cold sleep and its dangers.
 
 Suspended animation may be stopped at any time previous to its duration expiring, provided external stimulus is given to awaken the sleeper (such as a friend or a mechanical alarm).
 
-## Psionically Enhanced Strength
+### Psionically Enhanced Strength
 
 Psionic Strength points may be converted to normal Strength points on a temporary basis. The character makes the commitment, reduces his Psionic Strength by a specific number of points, and increases his physical Strength characteristic by that number. In no case may the number of Strength points gained exceed the character’s current level in Awareness, and Strength may not be increased beyond the character’s racial maximum. Psionically enhanced strength reaches its new level immediately, remains at that peak for ten minutes, and then declines at the rate of 1 Strength point per minute until the normal Strength level is reached. This power works as normal on wounded characters but their Strength returns to the wounded level rather than the normal value. It cannot be used as a ‘quick heal’.
 
-## Psionically Enhanced Endurance
+### Psionically Enhanced Endurance
 
 Psionically enhanced endurance works in exactly the same way as psionically enhanced strength except the characteristic boosted is Endurance rather than Strength, including its lack of healing ability.
 
-## Regeneration
+### Regeneration
 
 Wounds and injuries may be healed rapidly. Strength, Dexterity and Endurance lost to injury, disease, poison or other trauma may be healed by the application of this ability, exchanging one Psionic Strength point to regenerate one characteristic point. Any amount of Psionic Strength may be expended with a single use of regeneration but it may not be used again until all expended Psionic Strength is recovered. Regeneration may also be applied to the growing of new limbs or organs to replace lost ones or to heal unrecovered old wounds suffered prior to psionic training. Regeneration may not be used to counteract aging. Awareness is not capable of affecting others and may not be used for healing or enhancing other characters.
 
@@ -115,19 +115,19 @@ Clairvoyance is the general talent which allows a person to sense events at some
 | Clairaudience  | Average (+0)   | 1D6 rounds | 2+Range |
 | Clairsentience | Difficult (-2) | 1D6 rounds | 3+Range |
 
-## Sense
+### Sense
 
 This is the basic ability to sense things at some point in the distance. A character will become aware of the most rudimentary characteristics of a location when applying this ability. For example, the Referee will give a basic description, without detail: ‘a room containing four dogs’ or ‘an open plain with a tree, and no animals or men present’. The clairvoyant character must state the range at which he is applying his talent, and will generally sense the most interesting or important feature at that range. The Effect of the check determines the level of accuracy and clarity.
 
-## Clairvoyance
+### Clairvoyance
 
 This specific ability allows actual remote viewing of a situation at some displaced point. Rather than the ‘snapshot’ that sense gives, clairvoyance allows the psion to observe as if he was there in person. The clairvoyant character must state the range at which he is applying his talent. The Effect of the check determines the level of detail perceived and the duration in rounds the vision can be maintained for.
 
-## Clairaudience
+### Clairaudience
 
 This ability is identical to clairvoyance, with the exception that it allows hearing instead of seeing.
 
-## Clairsentience
+### Clairsentience
 
 This power combines the effects of clairvoyance and clairaudience. The character is capable of both seeing and hearing a specific situation.
 
@@ -162,45 +162,45 @@ Telepathy is the talent of mind-to-mind contact. It is subtle by nature but can 
 | Assault               | Formidable (-6)     | 1D6 seconds | 8+Range |
 | Shield                | --                  | --          | --      |
 
-# Life Detection
+### Life Detection
 
 The most elementary form of telepathy is the ability to detect the presence of other minds. Life detection enables a character to sense the presence of other minds, the number of minds present, the general type of minds (animal, human, and so on) and their approximate location.
 
 Life detection is reasonably sophisticated, and can distinguish intelligent beings from bacteria or unimportant animals in the area. It functions best at detecting intelligent minds. Shielded minds are undetectable (whether the shield is natural or artificial in origin). If an individual whom the telepath knows is ‘life detected’ he or she will be recognized.
 
-# Telepathy
+### Telepathy
 
 The communication of emotions and basic feelings is accomplished by telepathy. This ability serves well in the handling of animals and beasts of burden but may also be applied as a psychological weapon against humans. Sending of emotions such as love, hate, fear, and others may influence other beings (although not necessarily in the manner desired). Telepathy also allows the emotions and feelings of others to be read by a character. The Effect of the check determines the strength of the projected emotion.
 
 Telepaths will always recognize when someone is using telepathy to bend their emotions but others will not. The change in mood may be dramatic and inexplicable but most people will simply ascribe it to the mercurial nature of human emotions. Shielded individuals are immune to telepathy as they are all other Telepathy powers.
 
-# Read Surface Thoughts
+### Read Surface Thoughts
 
 The most widely known feature of Telepathy is the ability to read the thoughts of other individuals. Only active, current thoughts are read by this ability, with the subject (if himself not a telepath) unaware of the activity. Individuals with telepathic ability cannot be read due to the presence of their natural shields, unless they willingly lower their shielding. The Effect of the check determines the clarity of the telepath’s perceptions.
 
-# Send Thoughts
+### Send Thoughts
 
 Complementary to the ability to read surface thoughts is the ability to send thoughts to others. Such individuals need not themselves be telepathic to receive such thoughts. Telepathic individuals are normally open to such transmissions, but may close their shields against them if they become bothersome or threatening.
 
-# Probe
+### Probe
 
 The application of great psionic strength will enable a telepath to delve deep into the mind of a subject and to then read his innermost thoughts. Questioning can be used in the procedure to force the subject to divulge specific information. The prober can easily determine deliberate untruths told (thought) by the subject. Probe cannot be used against a shielded mind. Again, the Effect of the check determines the clarity of the telepath’s perceptions.
 
-# Assault
+### Assault
 
 Violence may be dealt by a telepath. An unshielded mind, when assaulted telepathically, is rendered unconscious immediately and the character suffers 2D6 + Effect damage. Unlike normal damage, assault damage is applied to Psionic Strength (if the victim has it), then Intelligence, then Endurance. Psionic Strength and Endurance return as normal. Intelligence returns at the rate of one point per day.
 
 When a shielded mind is assaulted the two telepaths make opposed Telepathy checks. If the attacker wins, the victim suffers damage as normal.
 
-# Shield
+### Shield
 
 All telepathically able characters learn how to create a mental shield which protects the mind against unwanted telepathic interference. Shield is automatically in force at all times and requires no Psionic Strength point expenditure to maintain. However, while a telepath has his shield up he cannot use any telepathic powers either. Shield can be lowered to allow telepathic contact or to use telepathic powers – this takes a mere thought (a free action in combat).
 
-# Teleportation
+## Teleportation
 
 Teleportation is a talent which allows effectively instantaneous movement from one point to another point without regard to intervening matter. Psionic teleportation is limited to the movement of the teleported character’s body and (for highly skilled teleporters) his or her clothing and other possessions.
 
-## Table: Teleportation
+### Table: Teleportation
 
 | Ability                      | Difficulty          | Timing      | Cost    |
 |------------------------------|---------------------|-------------|---------|
@@ -223,19 +223,19 @@ Changes in altitude (actually all movement to locations of differing gravitation
 
 Characters may feel driven to invent such materials, commission their invention, or seek them out from those who already have them.
 
-# Psionic Technology
+## Psionic Technology
 
 In a Cepheus Engine universe where psionic abilities are possible, the following psionic-related technology may be available, either legally or on the black market.
 
-## Inhibitor Drug (TL 9)
+### Inhibitor Drug (TL 9)
 
 Psionic inhibitors dampen the brain’s ability to generate psychic effects. A character who takes (or, more often, is forcibly injected with) an inhibitor drug suffers a –4 DM to all Psionic Strength checks and cannot regain Psionic Strength points. Each hour the character may make an Endurance check to throw off the effects of the drug with a +1 DM for every previous check. Inhibitor drugs have no effect on non-psionic individuals. The drugs cost Cr500 per dose.
 
-## Psi-Drugs (TL 8+)
+### Psi-Drugs (TL 8+)
 
 These drugs restore Psionic Strength if taken when the character has already spent Psionic Strength points, or temporarily increase the character’s Psionic Strength if taken when he is at full Psionic Strength, as given in the Psi-Drug Effects and Cost table.
 
-### Table: Psi-Drug Effects and Cost
+#### Table: Psi-Drug Effects and Cost
 
 | Drug     | TL  | Psionic Strength Restored | Psionic Strength Boosted | Cost (Cr) |
 |----------|-----|---------------------------|--------------------------|-----------|
@@ -245,23 +245,23 @@ These drugs restore Psionic Strength if taken when the character has already spe
 
 A character who takes more than one dose of Standard or Double Psi-Drug, or a single dose of the Special drug must make an Endurance check, with a –1 DM per dose of psi-drug taken in the last week (not including the one just taken). If the check is failed the character falls ill with a serious fever, suffering 3D6 damage and permanently reducing his Psionic Strength by one.
 
-## Psionic Shield (TL 12)
+### Psionic Shield (TL 12)
 
 Any armor incorporating a helmet or hood can be outfitted with a psionic shield, blocking Telepathy. Unlike the Telepathy power shield a technological shield is invulnerable to assault and blocks send thoughts. It cannot be lowered without removing the helmet or hood containing the shield. Cr40,000. Buildings and vehicles can also be psionically shielded, but this is much more costly, increasing the cost by 10%.
 
-## Teleportation Suit (TL 12)
+### Teleportation Suit (TL 12)
 
 This device can be integrated into a suit of armor or worn as a form-hugging body-suit. It rapidly cools or warms the body after a teleport, minimizing the damage from sudden energy gains or losses. The suit costs Cr50,000 and allows a character to jump up to 600 meters up or down in a single teleport, or up to ten kilometers in a single hour when using successive jumps.
 
-## Psionic Interface (TL 14)
+### Psionic Interface (TL 14)
 
 Any weapon or technological device can be outfitted with a psionic interface. A character using a device with a psionic interface can use his Psionic Strength DM instead of his Dexterity DM when using the weapon or device; a character without psionic ability cannot use the device. The character must either touch the device or use telekinesis to interact with it at range. Adding a psionic interface increases the cost of the device by 20%.
 
-# Psionics in Society
+## Psionics in Society
 
 The Cepheus Engine assumes that there are generally three different mindsets in which a society might view psionics. In generic terms, these categories are called Psi-Hostile, Psi-Neutral and Psi-Friendly.
 
-## Psi-Hostile Societies
+### Psi-Hostile Societies
 
 Humanity fears what it doesn’t understand. In Psi-Hostile societies, some precipitating event has brought that fear into the court of public opinion, and as a result, psionics became banned. In the least offensive case, the use of psionics is forbidden and violations are punished as a capital crime. In the worst cases, governments and
 
@@ -269,10 +269,10 @@ angry mobs often go on witch hunts, looking for psions and generally lynching, l
 
 This type of society is the most commonly encountered in Cepheus Engine campaigns, because the world it creates is closest to the “real world” experiences shared by most Cepheus Engine players, and the rules tend to operate as if this were the standard.
 
-## Psi-Neutral Societies
+### Psi-Neutral Societies
 
 In Psi-Neutral societies, psionics does not have the stigma that they do in Psi-Hostile societies. The general populace recognizes the existence of psions, and considers it just another set of talents one can possess, much like athletic prowess or superior marksmanship. The use of psionics is fairly regulated by law level, as the public is aware that psionics have great potential for abuse, but such a culture generally holds a stronger view of personal responsibility and punishes abusers accordingly. Training in such a culture is easier to come by, but is treated much like a vocational school, in that only those who can pay for it are tested and trained. Psionic technology is more likely to be available in such a society, at the discretion of the Referee. Telepaths figure prominently in major corporate and government negotiations. Teleporters are used for quick and sometimes clandestine courier work. Corporate and foreign espionage require another layer of security to address psionic abilities. The accepted use of psionics in such a culture can cause some dramatic changes.
 
-## Psi-Friendly Societies
+### Psi-Friendly Societies
 
 In Psi-Friendly societies, psions are revered and psionic abilities are often considered a mark of the socially elite. It is likely that children are tested at various points during their childhood, and those with potential are taught to use their gifts from a very young age. Psionics are integrated at every level of society, and may even lead to a highly structured or caste-like culture where the upper classes are comprised of psionically-gifted individuals. These classes may be further stratified based on an individual’s psionic strength and/or mastery of psionic skills. Non-psions may even be persecuted as second-class citizens without voting or personal rights, in extreme cases. The actual culture of such a society, like anything else, is ultimately up to the Referee to determine and present.

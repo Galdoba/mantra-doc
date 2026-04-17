@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "file": "chat-Google Sheets CLI Tool.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "common conceipt"
+              "title": "chat-Google Sheets CLI Tool"
             }
           }
         ]
@@ -215,13 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prjojects/Programming/go/concurency/common conceipt.md",
+                "file": "chat-Google Sheets CLI Tool.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of common conceipt"
+              "title": "Outline of chat-Google Sheets CLI Tool"
             }
           },
           {
@@ -285,6 +285,7 @@
   },
   "active": "36668c6104bf24f1",
   "lastOpenFiles": [
+    "Prjojects/Programming/go/concurency/common conceipt.md",
     "CHAPTER_05_PERSONAL_COMBAT.md",
     "Prjojects/Contentcom/postgresql.md",
     "CHAPTER_04_EQUIPMENT.md",
@@ -307,7 +308,6 @@
     "Prjojects/Programming/go/concurency/PIPELINE.md",
     "Prjojects/Programming/go/concurency/FILTER.md",
     "Prjojects/Programming/go/packages",
-    "Prjojects/Programming/go/concurency/common conceipt.md",
     "Prjojects/Programming/go/concurency/FAN-OUT.md",
     "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
     "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",

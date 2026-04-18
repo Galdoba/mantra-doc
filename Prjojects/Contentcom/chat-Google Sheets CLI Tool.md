@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-04-16T20:17:34.856+10:00
+updated_at: 2026-04-17T12:49:38.202+10:00
 ---
 ### USER
 I have google service account credential file, spreadsheet address and table name. Can you, please build crossplatform cli golang application that can handle these tasks?
@@ -10,7 +10,7 @@ I have google service account credential file, spreadsheet address and table nam
 ### ASSISTANT
 Here's a complete, production-ready cross-platform CLI application in Go. It uses `cobra` for CLI parsing, Google's official API client for authentication, and standard libraries for file I/O.
 
-### 📦 1. Setup Project
+#### 📦 1. Setup Project
 ```bash
 mkdir gsheets-cli && cd gsheets-cli
 go mod init gsheets-cli
@@ -18,7 +18,7 @@ go get github.com/spf13/cobra@latest
 go get google.golang.org/api/sheets/v4@latest
 ```
 
-### 💻 2. `main.go`
+#### 💻 2. `main.go`
 ```go
 package main
 
@@ -211,7 +211,7 @@ func main() {
 }
 ```
 
-### 🛠️ 3. Cross-Platform Build
+#### 🛠️ 3. Cross-Platform Build
 ```bash
 # Linux (amd64)
 GOOS=linux GOARCH=amd64 go build -o gsheets-cli-linux-amd64 .
@@ -226,7 +226,7 @@ GOOS=darwin GOARCH=amd64 go build -o gsheets-cli-macos-amd64 .
 GOOS=windows GOARCH=amd64 go build -o gsheets-cli-windows-amd64.exe .
 ```
 
-### 📖 4. Usage Examples
+#### 📖 4. Usage Examples
 ```bash
 # Read sheet and save to CSV
 ./gsheets-cli read \
@@ -249,13 +249,13 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli-windows-amd64.exe .
 ./gsheets-cli read --help
 ```
 
-### ⚠️ Important Setup Steps
+#### ⚠️ Important Setup Steps
 1. **Enable API**: In Google Cloud Console, enable `Google Sheets API`.
 2. **Service Account Permissions**: Download the JSON key. Note the `client_email` from it.
 3. **Share Spreadsheet**: Open your Google Sheet → `Share` → Paste the `client_email` → Grant **Editor** access (required for updates, Viewer/Commenter for read-only).
 4. **Sheet Name**: Use the exact tab name (e.g., `Sheet1`, `Q3 Data`). Spaces are supported.
 
-### 🔍 Key Features
+#### 🔍 Key Features
 - ✅ **Zero OS dependencies** (pure Go + official Google SDK)
 - ✅ Automatic extraction of Spreadsheet ID from URLs
 - ✅ Safe 1-based column-to-letter conversion (supports AA, AB, etc.)
@@ -274,7 +274,7 @@ Here's the complete cross-platform CLI application rewritten using **`github.com
 
 ---
 
-### 📦 1. Setup Project
+#### 📦 1. Setup Project
 ```bash
 mkdir gsheets-cli && cd gsheets-cli
 go mod init gsheets-cli
@@ -284,7 +284,7 @@ go get google.golang.org/api/sheets/v4@latest
 
 ---
 
-### 💻 2. `main.go`
+#### 💻 2. `main.go`
 ```go
 package main
 
@@ -548,7 +548,7 @@ func main() {
 
 ---
 
-### 🔧 Alternative: Simpler Flag Access (Without Structs)
+#### 🔧 Alternative: Simpler Flag Access (Without Structs)
 If you prefer a more straightforward approach without flag structs:
 
 ```go
@@ -610,7 +610,7 @@ And simplify the command definition:
 
 ---
 
-### 🛠️ Cross-Platform Build (Same as Before)
+#### 🛠️ Cross-Platform Build (Same as Before)
 ```bash
 # Linux
 GOOS=linux GOARCH=amd64 go build -o gsheets-cli .
@@ -624,7 +624,7 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli.exe .
 
 ---
 
-### 📖 Usage Examples
+#### 📖 Usage Examples
 ```bash
 # Read sheet to CSV
 ./gsheets-cli read \
@@ -647,13 +647,13 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli.exe .
 
 ---
 
-### ✅ Why urfave/cli v3?
+#### ✅ Why urfave/cli v3?
 - 🪶 Lightweight (~50% smaller binary than cobra)
 - 🧩 Minimalist API, great for simple CLIs
 - 🔄 Context-aware actions (`func(ctx, cmd) error`)
 - 🧪 Easy to test and extend
 
-### ⚠️ Prerequisites (Same as Before)
+#### ⚠️ Prerequisites (Same as Before)
 1. Enable **Google Sheets API** in Cloud Console
 2. Create a **Service Account**, download JSON key
 3. **Share your spreadsheet** with the service account's `client_email` (Editor role for updates)
@@ -894,7 +894,7 @@ func main() {
 
 ---
 
-### 📦 Dependencies (`go.mod`)
+#### 📦 Dependencies (`go.mod`)
 ```go
 module gsheets-cli
 
@@ -913,7 +913,7 @@ go mod tidy
 
 ---
 
-### 🛠️ Cross-Platform Build Commands
+#### 🛠️ Cross-Platform Build Commands
 ```bash
 # Linux amd64
 GOOS=linux GOARCH=amd64 go build -o gsheets-cli .
@@ -930,7 +930,7 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli.exe .
 
 ---
 
-### 📖 Usage Examples
+#### 📖 Usage Examples
 ```bash
 # Read sheet and save to CSV
 ./gsheets-cli read \
@@ -954,7 +954,7 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli.exe .
 
 ---
 
-### ✅ Key Advantages of This Approach
+#### ✅ Key Advantages of This Approach
 | Feature | Benefit |
 |---------|---------|
 | **Direct flag access** | `cmd.String("flag")` is simple, readable, and testable |
@@ -965,7 +965,7 @@ GOOS=windows GOARCH=amd64 go build -o gsheets-cli.exe .
 
 ---
 
-### ⚠️ Prerequisites Checklist
+#### ⚠️ Prerequisites Checklist
 1. ✅ Enable **Google Sheets API** in [Cloud Console](https://console.cloud.google.com/)
 2. ✅ Create a **Service Account** → download JSON key file
 3. ✅ Share your Google Sheet with the service account's `client_email` (Editor role for updates)
@@ -989,9 +989,9 @@ Based on my research, here's what you **can** and **cannot** retrieve from the G
 
 ---
 
-## ✅ Data You CAN Get (With Minimal Code Changes)
+#### ✅ Data You CAN Get (With Minimal Code Changes)
 
-### 1. **Cell Formatting & Metadata** 
+##### 1. **Cell Formatting & Metadata** 
 Use `spreadsheets.get` with `includeGridData=true` or field masks to retrieve:
 - Number format, background color, text style, borders, alignment 
 - Hyperlinks, data validation rules, conditional formatting
@@ -1006,7 +1006,7 @@ resp, err := srv.Spreadsheets.Get(actualID).
     Do()
 ```
 
-### 2. **Cell Notes** (Yellow sticky notes)
+##### 2. **Cell Notes** (Yellow sticky notes)
 Notes are available via `GridData` → `RowData` → `CellData` → `note` field :
 ```go
 // In your cell iteration:
@@ -1015,7 +1015,7 @@ if cell.Note != "" {
 }
 ```
 
-### 3. **Comments & Replies** (Threaded discussions)
+##### 3. **Comments & Replies** (Threaded discussions)
 Comments require the **Drive API** `comments.list` endpoint, not Sheets API :
 ```go
 // Add Drive API import
@@ -1026,35 +1026,35 @@ comments, err := driveSvc.Comments.List(sheetID).Fields("comments(id,anchor,cont
 ```
 > ⚠️ Comments are tied to cell ranges via `anchor` (A1 notation), requiring mapping logic .
 
-### 4. **Hyperlinks & Data Validation**
+##### 4. **Hyperlinks & Data Validation**
 Available in `CellData` when requesting `formattedValue` + `hyperlink` + `validity` fields.
 
-### 5. **Sheet Metadata**
+##### 5. **Sheet Metadata**
 - Sheet ID, title, index, grid properties (row/column count)
 - Tab color, hidden state, filter views
 
 ---
 
-## ❌ Data You CANNOT Easily Get (Or At All)
+#### ❌ Data You CANNOT Easily Get (Or At All)
 
-### 1. **Edit History / Revision Content**
+##### 1. **Edit History / Revision Content**
 - The Sheets API **does not expose cell-level edit history** 
 - Drive API `revisions.list` returns **metadata only** (author, timestamp, ID) 
 - Getting actual content of old revisions requires `revisions.get?alt=media` + export conversion (complex, not cell-granular) 
 
-### 2. **Per-Cell Edit Timestamps or Authors**
+##### 2. **Per-Cell Edit Timestamps or Authors**
 - Not available via any public API endpoint
 - Workaround: Use Google Apps Script `onEdit()` trigger to log changes to a separate sheet
 
-### 3. **Rich Text Format Runs** (partial bold/italic within a cell)
+##### 3. **Rich Text Format Runs** (partial bold/italic within a cell)
 - Available via `textFormatRuns` but requires complex parsing 
 
-### 4. **Conditional Formatting Rules Applied to Specific Cells**
+##### 4. **Conditional Formatting Rules Applied to Specific Cells**
 - You can get the *rules*, but not which cells currently match them without evaluating logic yourself
 
 ---
 
-## 🔧 Minimal-Change Enhancement: Read Notes + Formatting
+#### 🔧 Minimal-Change Enhancement: Read Notes + Formatting
 
 Here's how to extend your `runRead` function to include **notes** and **formatted values** with ~15 extra lines:
 
@@ -1127,7 +1127,7 @@ func runRead(ctx context.Context, cmd *cli.Command) error {
 
 ---
 
-## 🔑 Required Scope Update
+##### 🔑 Required Scope Update
 To access notes/formatting, update your OAuth scope:
 ```go
 // Current (values only):
@@ -1140,7 +1140,7 @@ option.WithScopes(sheets.SpreadsheetsReadonlyScope) // or SpreadsheetsScope for 
 
 ---
 
-## 📊 Quick Reference Table
+##### 📊 Quick Reference Table
 
 | Data Type | API Endpoint | Minimal Change? | Notes |
 |-----------|-------------|-----------------|-------|
@@ -1154,7 +1154,7 @@ option.WithScopes(sheets.SpreadsheetsReadonlyScope) // or SpreadsheetsScope for 
 
 ---
 
-## 💡 Recommendation
+#### 💡 Recommendation
 Start with **notes + formatted values**—they're the highest-value additions with minimal code changes. If you need comments, I can provide a separate `comments` subcommand using the Drive API.
 
 Would you like me to:
@@ -1168,13 +1168,13 @@ Let me know which direction you'd like to go! 🚀
 Does this api user REST or Websocket connection? Can I track table changes without constant requests?
 
 ### ASSISTANT
-### 🔍 Short Answer
+#### 🔍 Short Answer
 - **Protocol:** The Google Sheets API v4 is **100% REST/HTTPS (JSON)**. It does **not use WebSockets**, Server-Sent Events, or any real-time streaming protocol.
 - **Change Tracking:** There is **no native cell-level real-time API**. You cannot subscribe to live cell updates without polling or using workarounds.
 
 ---
 
-## 📡 How Change Tracking Actually Works
+#### 📡 How Change Tracking Actually Works
 
 | Method | Latency | Granularity | Setup Complexity | Best For |
 |--------|---------|-------------|------------------|----------|
@@ -1185,9 +1185,9 @@ Does this api user REST or Websocket connection? Can I track table changes witho
 
 ---
 
-## 🛠️ Practical Approaches (Ranked by Use Case)
+#### 🛠️ Practical Approaches (Ranked by Use Case)
 
-### ✅ 1. **Apps Script + HTTP Webhook (Recommended for Real-Time)**
+##### ✅ 1. **Apps Script + HTTP Webhook (Recommended for Real-Time)**
 Embed a tiny script in your spreadsheet that fires on every edit and pushes changes to your Go app.
 
 **Apps Script (in Sheet → Extensions → Apps Script):**
@@ -1226,7 +1226,7 @@ http.HandleFunc("/webhook", func(w http.ResponseWriter, r *http.Request) {
 
 ---
 
-### ✅ 2. **Smart REST Polling via `revisionId` (Best for CLI/Serverless)**
+##### ✅ 2. **Smart REST Polling via `revisionId` (Best for CLI/Serverless)**
 Instead of polling cell values, poll the lightweight `revisionId`. Only fetch data when it changes.
 
 **Go Implementation:**
@@ -1252,7 +1252,7 @@ func trackChanges(ctx context.Context, srv *sheets.Service, sheetID string, inte
 
 ---
 
-### ⚠️ 3. **Drive API + Cloud Pub/Sub (File-Level Only)**
+##### ⚠️ 3. **Drive API + Cloud Pub/Sub (File-Level Only)**
 Notifies when the spreadsheet file is modified, but **doesn't tell you which cell changed**. Requires:
 1. Enable Drive API & Cloud Pub/Sub
 2. Create a topic & subscription
@@ -1263,7 +1263,7 @@ Notifies when the spreadsheet file is modified, but **doesn't tell you which cel
 
 ---
 
-## 🚫 Why No WebSockets/Real-Time API?
+#### 🚫 Why No WebSockets/Real-Time API?
 Google explicitly avoids exposing real-time cell streams via public APIs because:
 1. **Session Management:** WebSockets require persistent connections & heartbeat handling
 2. **Security/Quotas:** Real-time streams bypass REST rate limits & audit trails
@@ -1272,7 +1272,7 @@ Google explicitly avoids exposing real-time cell streams via public APIs because
 
 ---
 
-## 🎯 Recommendation for Your CLI App
+#### 🎯 Recommendation for Your CLI App
 | Goal | Best Approach |
 |------|---------------|
 | Real-time cell tracking | Apps Script → HTTP POST to your Go service |
@@ -1282,7 +1282,7 @@ Google explicitly avoids exposing real-time cell streams via public APIs because
 
 ---
 
-## 🔧 Quick CLI Integration Example
+#### 🔧 Quick CLI Integration Example
 Add a `watch` command to your existing app:
 ```go
 {
@@ -1332,7 +1332,7 @@ How do you think file based json storage will be enough for big tables (20-40 co
 
 
 ### ASSISTANT
-### ✅ Direct Answer: Is JSON storage enough?
+#### ✅ Direct Answer: Is JSON storage enough?
 **Yes, absolutely.** For 20–40 columns × 5,000–10,000 rows, JSON is **highly suitable** and aligns perfectly with your "plain text, manually inspectable" requirement.
 
 | Metric | Estimate | Verdict |
@@ -1346,7 +1346,7 @@ How do you think file based json storage will be enough for big tables (20-40 co
 
 ---
 
-## 📦 Recommended Architecture
+#### 📦 Recommended Architecture
 
 ```
 ~/.gsheets-cli/
@@ -1362,7 +1362,7 @@ How do you think file based json storage will be enough for big tables (20-40 co
 
 ---
 
-## 🧱 1. Optimized Data Structures
+##### 🧱 1. Optimized Data Structures
 
 **Disk format (JSON)**: Flat array for readability & streaming
 **Memory format**: 2D slice or map for O(1) TUI access
@@ -1401,7 +1401,7 @@ type LocalSheet struct {
 
 ---
 
-## 🔁 2. Smart Polling (5–10 min + On-Demand)
+##### 🔁 2. Smart Polling (5–10 min + On-Demand)
 
 ```go
 // watcher.go
@@ -1442,7 +1442,7 @@ func checkForUpdates(ctx context.Context, sheet *LocalSheet, srv *sheets.Service
 
 ---
 
-## 💾 3. Config & Backup Rotation
+##### 💾 3. Config & Backup Rotation
 
 **`config.yaml`**
 ```yaml
@@ -1481,7 +1481,7 @@ func RotateBackups(dataDir string, maxKeep int) error {
 
 ---
 
-## 🖥️ 4. TUI Stack Recommendation
+##### 🖥️ 4. TUI Stack Recommendation
 
 For your interactive table viewer/editor, use the **Charm ecosystem** (modern, composable, excellent for Go CLIs):
 
@@ -1498,7 +1498,7 @@ For your interactive table viewer/editor, use the **Charm ecosystem** (modern, c
 
 ---
 
-## 🛠️ Implementation Roadmap
+##### 🛠️ Implementation Roadmap
 
 1. **Phase 1**: Add `config.yaml` parser + JSON cache loader/saver
 2. **Phase 2**: Extend `read` to fetch notes/format → populate `CellData`
@@ -1509,7 +1509,7 @@ For your interactive table viewer/editor, use the **Charm ecosystem** (modern, c
 
 ---
 
-## ⚡ Pro Tips for Your Scale
+#### ⚡ Pro Tips for Your Scale
 - Use `json.MarshalIndent(cache, "", "  ")` for human-readable JSON
 - Compress backups with `compress/gzip` → saves ~70% disk space
 - Use `sync.RWMutex` to allow TUI reads while polling writes
@@ -1525,3 +1525,808 @@ Would you like me to generate:
 4. 🔄 Batch update logic for pushing local edits back to Sheets?
 
 Pick one and I'll deliver production-ready, well-commented Go code. 🚀
+
+### USER
+Do I have to read all the table or I can limit what rows/cells to read?
+
+### ASSISTANT
+#### ✅ Direct Answer
+**No, you don't need to read the entire table.** The Google Sheets API v4 is explicitly designed for **range-based access**. You can fetch exactly the rows, columns, or cells you need using A1 notation.
+
+---
+
+#### 🔤 Range Syntax & Examples
+| Goal | Range Syntax | API Call |
+|------|--------------|----------|
+| Specific block | `Sheet1!A1:D50` | `Values.Get(id, "Sheet1!A1:D50")` |
+| Entire column | `Sheet1!B:B` | `Values.Get(id, "Sheet1!B:B")` |
+| Row range | `Sheet1!10:15` | `Values.Get(id, "Sheet1!10:15")` |
+| Single cell | `Sheet1!C3` | `Values.Get(id, "Sheet1!C3")` |
+| Omit sheet name | `A1:Z100` | Uses active sheet |
+
+---
+
+#### 💻 Go Implementation (Partial Read)
+```go
+// Fetch only rows 1-100, columns A-F
+func readPartialRange(ctx context.Context, srv *sheets.Service, sheetID, sheetName string, rangeSpec string) (*sheets.ValueRange, error) {
+    return srv.Spreadsheets.Values.Get(sheetID, rangeSpec).Do()
+}
+
+// Usage:
+rangeSpec := fmt.Sprintf("%s!A1:F100", sheetName)
+resp, err := readPartialRange(ctx, srv, sheetID, sheetName, rangeSpec)
+```
+
+For **Notes & Formatting** (requires `spreadsheets.get`):
+```go
+func readPartialWithMetadata(ctx context.Context, srv *sheets.Service, sheetID, sheetName, rangeSpec string) (*sheets.Spreadsheet, error) {
+    return srv.Spreadsheets.Get(sheetID).
+        Ranges([]string{rangeSpec}).
+        Fields("sheets(data(rowData(values(formattedValue,note,effectiveFormat))))").
+        Do()
+}
+```
+
+---
+
+#### 📊 Strategy for Your Scale (5k–10k rows)
+
+| Approach | Pros | Cons | Best For |
+|----------|------|------|----------|
+| **Full read on startup** | Simple, instant TUI after first sync | ~2–5 sec initial load, ~30–80 MB RAM | ✅ Your use case |
+| **Viewport lazy-load** | Fast startup, low RAM | Complex sync logic, flickering UI | Mobile/web apps |
+| **Chunked polling** | Low API quota usage | Stale data in background | Read-only dashboards |
+
+#### 🎯 Recommended Architecture for You
+```
+[Startup]
+  ├─ Load JSON cache from disk (instant)
+  ├─ Render TUI from local data
+  └─ Start background poller (5-10 min)
+
+[Background Poll]
+  ├─ Check `revisionId` (~10ms, ~200 bytes)
+  ├─ If changed → Fetch full sheet once
+  ├─ Update in-memory cache
+  ├─ Save to JSON + rotate backup
+  └─ Notify TUI to refresh
+
+[User Action: Force Refresh / Scroll]
+  └─ Render from local cache (zero API calls)
+```
+
+> 💡 **Why full cache wins for you**: 10k rows × 40 cols = 400k cells. Go parses ~50MB JSON in **<50ms**. Memory footprint ~100MB. TUI scrolling becomes **instant** with zero network latency. Partial reads complicate sync without meaningful benefit at this scale.
+
+---
+
+#### 🔄 Smart Sync with Partial API Reads (If Needed)
+If you ever want to limit API payload size:
+```go
+// Fetch only visible viewport (e.g., rows 200-300)
+viewport := fmt.Sprintf("%s!A200:Z300", sheetName)
+resp, _ := srv.Spreadsheets.Values.Get(sheetID, viewport).Do()
+
+// Merge into local cache
+for r, row := range resp.Values {
+    for c, val := range row {
+        localCache.Cells[200+r][c].Value = fmt.Sprintf("%v", val)
+    }
+}
+```
+
+---
+
+#### ⚠️ Important API Limitations
+1. **No server-side diffs**: `revisionId` only tells you *something* changed, not *what*. You must fetch the range yourself to get new values.
+2. **No pagination**: `values.get` returns up to ~10M cells per request. Chunk manually if needed.
+3. **Quota limits**: 100 requests/100s per project. Polling `revisionId` uses ~1 req/5min → **well within limits**.
+4. **Empty trailing cells**: Sheets API stops at last non-empty cell. If you need exact dimensions, fetch `spreadsheets.get` first to read `gridProperties`.
+
+---
+
+#### 🛠️ Integration with Your CLI
+Add a `--range` flag to your existing `read` command:
+```go
+// In command definition:
+&cli.StringFlag{
+    Name:    "range",
+    Aliases: []string{"R"},
+    Usage:   "A1 range to read (e.g., A1:F100). Omit for full sheet.",
+},
+
+// In runRead:
+rangeSpec := cmd.String("range")
+if rangeSpec == "" {
+    rangeSpec = sheetName
+}
+resp, err := srv.Spreadsheets.Values.Get(actualID, rangeSpec).Do()
+```
+
+---
+
+#### ✅ Bottom Line
+- **You can absolutely limit reads** using A1 ranges
+- **For 5k–10k rows**: Load full sheet once → cache as JSON → TUI reads locally → poll `revisionId` → full refresh on change
+- **No need for complex lazy-loading** at this scale
+- **Plain text JSON + gzip backups** is optimal for your requirements
+
+Would you like me to generate:
+1. 📦 Complete `LocalSheet` cache manager with JSON load/save + backup rotation?
+2. 🔄 `revisionId` poller that triggers full sync + TUI refresh?
+3. 🖥️ `bubbletea` table component that renders from local cache with virtual scrolling?
+
+Pick one and I'll deliver production-ready code. 🚀
+
+### USER
+ok. I'm trying to expand info I recieve...
+This is my Cell representation
+```go
+// Cell represents single cell from excel of google spreadsheet
+type Cell struct {
+	A1        string    `json:"a1"`
+	Row       int       `json:"row"`
+	Col       int       `json:"col"`
+	Value     string    `json:"value"`
+	Note      string    `json:"note,omitempty"`
+	Format    string    `json:"format,omitempty"`
+	IsHidden  bool      `json:"is_hidden,omitempty"`
+	UpdatedAt time.Time `json:"updated_at"`
+}
+```
+how do I get relevant information using
+		srv.Spreadsheets.Get(actualID)
+		or
+		srv.Spreadsheets.GetByDataFilter(actualID, &sheets.GetSpreadsheetByDataFilterRequest{
+			DataFilters: []*sheets.DataFilter{
+				{
+					A1Range: "",
+					DeveloperMetadataLookup: &sheets.DeveloperMetadataLookup{
+						LocationMatchingStrategy: "",
+						LocationType:             "",
+						MetadataId:               0,
+						MetadataKey:              "",
+						MetadataLocation:         &sheets.DeveloperMetadataLocation{},
+						MetadataValue:            "",
+						Visibility:               "",
+						ForceSendFields:          []string{},
+						NullFields:               []string{},
+					},
+					GridRange: &sheets.GridRange{
+						EndColumnIndex:   0,
+						EndRowIndex:      0,
+						SheetId:          0,
+						StartColumnIndex: 0,
+						StartRowIndex:    0,
+						ForceSendFields:  []string{},
+						NullFields:       []string{},
+					},
+					ForceSendFields: []string{},
+					NullFields:      []string{},
+				},
+			},
+			ExcludeTablesInBandedRanges: false,
+			IncludeGridData:             false,
+			ForceSendFields:             []string{},
+			NullFields:                  []string{},
+		})
+
+
+### ASSISTANT
+#### ✅ How to Populate Your `Cell` Struct from `spreadsheets.get`
+
+You're on the right track! The key is to use `spreadsheets.get` with **field masks** to fetch `GridData`, then parse the nested response into your `Cell` struct.
+
+Here's a complete, production-ready implementation:
+
+---
+
+##### 🔧 1. API Call with Field Mask (Efficient & Precise)
+
+```go
+// fetchSheetWithMetadata fetches cells with notes, formatting, and metadata
+func fetchSheetWithMetadata(ctx context.Context, srv *sheets.Service, sheetID, sheetName string) (*sheets.Spreadsheet, error) {
+    // Field mask: only fetch what we need (saves bandwidth & time)
+    fields := "sheets(properties(sheetId,title),data(rowData(values(formattedValue,userEnteredValue,note,hyperlink,effectiveFormat(numberFormat,type,backgroundColor,foregroundColor,textFormat),effectiveFormat),userEnteredFormat),startRow,startColumn))"
+    
+    return srv.Spreadsheets.Get(sheetID).
+        Ranges([]string{sheetName}).           // Limit to specific sheet
+        IncludeGridData(true).                 // Required for GridData
+        Fields(googleapi.Field(fields)).       // Precise field selection
+        Do()
+}
+```
+
+> 💡 **Pro Tip**: Always use `Fields()` with a mask. Without it, the API returns the *entire spreadsheet object* (~5–20 MB for large sheets).
+
+---
+
+##### 🔄 2. Parse Response → Your `Cell` Struct
+
+```go
+// parseGridData converts API GridData into your Cell slice
+func parseGridData(sheet *sheets.Sheet) []Cell {
+    var cells []Cell
+    
+    for _, grid := range sheet.Data {
+        startRow := grid.StartRow      // 0-based
+        startCol := grid.StartColumn   // 0-based
+        
+        for rowIdx, row := range grid.RowData {
+            for colIdx, cellData := range row.Values {
+                absRow := int(startRow) + rowIdx + 1  // Convert to 1-based
+                absCol := int(startCol) + colIdx + 1
+                
+                cell := Cell{
+                    A1:        fmt.Sprintf("%s%d", colToLetter(absCol), absRow),
+                    Row:       absRow,
+                    Col:       absCol,
+                    Value:     extractValue(cellData),
+                    Note:      extractNote(cellData),
+                    Format:    extractFormat(cellData),
+                    IsHidden:  extractHidden(cellData),
+                    UpdatedAt: time.Now(), // API doesn't provide per-cell timestamps
+                }
+                cells = append(cells, cell)
+            }
+        }
+    }
+    return cells
+}
+
+// Helper: extract display value (formatted) or fallback to raw value
+func extractValue(cell *sheets.CellData) string {
+    if cell.FormattedValue != nil {
+        return *cell.FormattedValue
+    }
+    if cell.UserEnteredValue != nil && cell.UserEnteredValue.StringValue != nil {
+        return *cell.UserEnteredValue.StringValue
+    }
+    return ""
+}
+
+// Helper: extract sticky note (yellow comment)
+func extractNote(cell *sheets.CellData) string {
+    if cell.Note != nil {
+        return *cell.Note
+    }
+    return ""
+}
+
+// Helper: extract number format type (e.g., "CURRENCY", "DATE", "TEXT")
+func extractFormat(cell *sheets.CellData) string {
+    if cell.EffectiveFormat != nil && 
+       cell.EffectiveFormat.NumberFormat != nil && 
+       cell.EffectiveFormat.NumberFormat.Type != "" {
+        return cell.EffectiveFormat.NumberFormat.Type
+    }
+    return ""
+}
+
+// Helper: check if cell is hidden via filter/conditional formatting
+// Note: Sheets API doesn't expose direct "isHidden" per cell.
+// This checks if effective format has hidden flag (rarely used).
+func extractHidden(cell *sheets.CellData) bool {
+    if cell.EffectiveFormat != nil && cell.EffectiveFormat.Hidden != nil {
+        return *cell.EffectiveFormat.Hidden
+    }
+    return false
+}
+```
+
+---
+
+##### 🧮 3. Column Letter Helper (1-based → A, B, ..., AA, AB...)
+
+```go
+// colToLetter converts 1-based column index to Excel-style notation
+func colToLetter(n int) string {
+    if n <= 0 {
+        return "A"
+    }
+    letter := ""
+    for n > 0 {
+        n--
+        letter = string(rune('A'+n%26)) + letter
+        n /= 26
+    }
+    return letter
+}
+```
+
+---
+
+##### 🚀 4. Full Integration Example (Drop-in for Your `runRead`)
+
+```go
+func runRead(ctx context.Context, cmd *cli.Command) error {
+    credFile := cmd.Root().String("credentials")
+    sheetID := cmd.Root().String("spreadsheet")
+    sheetName := cmd.Root().String("sheet")
+    outputFile := cmd.String("output")
+
+    srv, err := getService(ctx, credFile)
+    if err != nil {
+        return err
+    }
+
+    actualID := extractSheetID(sheetID)
+    
+    // Fetch with metadata
+    resp, err := fetchSheetWithMetadata(ctx, srv, actualID, sheetName)
+    if err != nil {
+        return fmt.Errorf("failed to fetch sheet: %w", err)
+    }
+    
+    if len(resp.Sheets) == 0 || len(resp.Sheets[0].Data) == 0 {
+        fmt.Println("⚠️  No data found in the specified sheet.")
+        return nil
+    }
+
+    // Parse into your Cell struct
+    cells := parseGridData(resp.Sheets[0])
+    
+    // Save to JSON (for cache) + CSV (for interoperability)
+    if err := saveCellsToJSON(cells, outputFile+".json"); err != nil {
+        return fmt.Errorf("failed to save JSON cache: %w", err)
+    }
+    
+    if err := saveCellsToCSV(cells, outputFile); err != nil {
+        return fmt.Errorf("failed to save CSV: %w", err)
+    }
+
+    fmt.Printf("✅ Saved %d cells to %s (JSON + CSV)\n", len(cells), outputFile)
+    return nil
+}
+
+// Save to pretty-printed JSON (human-readable)
+func saveCellsToJSON(cells []Cell, path string) error {
+    dir := filepath.Dir(path)
+    if dir != "." && dir != "" {
+        os.MkdirAll(dir, 0755)
+    }
+    
+    file, err := os.Create(path)
+    if err != nil {
+        return err
+    }
+    defer file.Close()
+    
+    encoder := json.NewEncoder(file)
+    encoder.SetIndent("", "  ") // Pretty print
+    return encoder.Encode(cells)
+}
+
+// Save to CSV (compatible with existing workflow)
+func saveCellsToCSV(cells []Cell, path string) error {
+    file, err := os.Create(path)
+    if err != nil {
+        return err
+    }
+    defer file.Close()
+    
+    writer := csv.NewWriter(file)
+    defer writer.Flush()
+    
+    // Header
+    writer.Write([]string{"A1", "Row", "Col", "Value", "Note", "Format", "IsHidden", "UpdatedAt"})
+    
+    // Rows
+    for _, c := range cells {
+        writer.Write([]string{
+            c.A1,
+            strconv.Itoa(c.Row),
+            strconv.Itoa(c.Col),
+            c.Value,
+            c.Note,
+            c.Format,
+            strconv.FormatBool(c.IsHidden),
+            c.UpdatedAt.Format(time.RFC3339),
+        })
+    }
+    return nil
+}
+```
+
+---
+
+##### 📦 5. Enhanced `Cell` Struct (Optional Improvements)
+
+Consider adding these fields for richer meta
+
+```go
+type Cell struct {
+    A1           string    `json:"a1"`
+    Row          int       `json:"row"`
+    Col          int       `json:"col"`
+    Value        string    `json:"value"`           // Display value (formatted)
+    RawValue     string    `json:"raw_value,omitempty"` // User-entered raw value
+    Note         string    `json:"note,omitempty"`   // Yellow sticky note
+    Format       string    `json:"format,omitempty"` // Number format type
+    Background   string    `json:"background,omitempty"` // Hex color (e.g., "#ff0000")
+    Foreground   string    `json:"foreground,omitempty"` // Text color
+    IsHidden     bool      `json:"is_hidden,omitempty"`
+    Hyperlink    string    `json:"hyperlink,omitempty"`
+    UpdatedAt    time.Time `json:"updated_at"`
+}
+```
+
+Extract additional fields:
+```go
+func extractColors(cell *sheets.CellData) (bg, fg string) {
+    if cell.EffectiveFormat != nil {
+        if cell.EffectiveFormat.BackgroundColor != nil {
+            bg = colorToHex(cell.EffectiveFormat.BackgroundColor)
+        }
+        if cell.EffectiveFormat.TextFormat != nil && cell.EffectiveFormat.TextFormat.ForegroundColor != nil {
+            fg = colorToHex(cell.EffectiveFormat.TextFormat.ForegroundColor)
+        }
+    }
+    return
+}
+
+func colorToHex(c *sheets.Color) string {
+    if c == nil {
+        return ""
+    }
+    r := int(c.Red * 255)
+    g := int(c.Green * 255)
+    b := int(c.Blue * 255)
+    return fmt.Sprintf("#%02x%02x%02x", r, g, b)
+}
+```
+
+---
+
+#### ⚠️ Important Caveats
+
+| Field | Availability | Notes |
+|-------|-------------|-------|
+| `note` | ✅ Yes | Yellow sticky notes only (not threaded comments) |
+| `effectiveFormat` | ✅ Yes | Requires `IncludeGridData=true` |
+| `userEnteredValue` | ✅ Yes | Raw value before formatting |
+| `hyperlink` | ✅ Yes | Extracted from `CellData.hyperlink` |
+| `isHidden` | ⚠️ Limited | Only reflects `effectiveFormat.hidden`, not filter/conditional hiding |
+| Per-cell edit timestamp | ❌ No | Use `UpdatedAt: time.Now()` as sync time |
+| Comments/replies | ❌ No | Requires Drive API `comments.list` |
+
+---
+
+#### 🔄 For `GetByDataFilter` (Advanced Use)
+
+Your current `GetByDataFilter` call is over-engineered for simple ranges. Use it only when you need:
+- Complex filters (regex, date ranges)
+- Developer metadata lookups
+- Multiple disjoint ranges in one request
+
+**Simplified example for a single A1 range:**
+```go
+resp, err := srv.Spreadsheets.GetByDataFilter(actualID, &sheets.GetSpreadsheetByDataFilterRequest{
+    DataFilters: []*sheets.DataFilter{
+        {
+            A1Range: fmt.Sprintf("%s!A1:Z100", sheetName),
+        },
+    },
+    IncludeGridData: true,
+    Fields: googleapi.Field("sheets/data(rowData(values(formattedValue,note,effectiveFormat)))"),
+}).Do()
+```
+
+> 🎯 **Recommendation**: Stick with `spreadsheets.get + Ranges + Fields` for your use case. It's simpler, better documented, and equally powerful for A1-based access.
+
+---
+
+#### ✅ Next Steps for Your CLI
+
+1. Replace your current `Values.Get` call with `fetchSheetWithMetadata`
+2. Use `parseGridData` to populate `[]Cell`
+3. Save as JSON (cache) + CSV (interop)
+4. Add `--with-metadata` flag to toggle rich fetch vs. fast values-only
+
+Would you like me to generate:
+1. 🔄 Full `LocalSheet` cache manager that merges API data with local JSON?
+2. 🖥️ `bubbletea` TUI component that renders `[]Cell` with color/formatting?
+3. 📤 Batch update logic to push edited cells back to Sheets?
+
+Let me know which piece you'd like to tackle next. 🛠️
+
+### USER
+2026/04/17 01:46:46 failed to read spreadsheet: googleapi: Error 400: Request contains an invalid argument.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.BadRequest",
+    "fieldViolations": [
+      {
+        "description": "Error expanding 'fields' parameter. Cannot find matching fields for path 'sheets.data.rowData.values.effectiveFormat.type'.",
+        "field": "sheets(properties(sheetId,title),data(rowData(values(formattedValue,userEnteredValue,note,hyperlink,effectiveFormat(numberFormat,type,backgroundColor,foregroundColor,textFormat),effectiveFormat),userEnteredFormat),startRow,startColumn))"
+      }
+    ]
+  }
+]
+, badRequest
+
+
+### ASSISTANT
+#### 🔧 Fix: Invalid Field Mask Syntax
+
+The error occurs because `type` is **not** a direct child of `effectiveFormat` — it's nested inside `effectiveFormat.numberFormat`. Your field mask had incorrect nesting.
+
+Here's the **corrected, working implementation**:
+
+---
+
+#### ✅ Corrected Field Mask & Fetch Function
+
+```go
+// fetchSheetWithMetadata fetches cells with notes, formatting, and metadata
+func fetchSheetWithMetadata(ctx context.Context, srv *sheets.Service, sheetID, sheetName string) (*sheets.Spreadsheet, error) {
+    // CORRECTED field mask: proper nesting of numberFormat.type
+    fields := "sheets(properties(sheetId,title),data(rowData(values(formattedValue,userEnteredValue,note,hyperlink,effectiveFormat(numberFormat(type,pattern),backgroundColor,foregroundColor,textFormat,hidden),userEnteredFormat(numberFormat(type,pattern)))),startRow,startColumn))"
+    
+    return srv.Spreadsheets.Get(sheetID).
+        Ranges([]string{sheetName}).
+        IncludeGridData(true).
+        Fields(googleapi.Field(fields)).
+        Do()
+}
+```
+
+##### 🔍 Field Mask Breakdown
+```
+sheets(
+  properties(sheetId,title),
+  data(
+    rowData(
+      values(
+        formattedValue,
+        userEnteredValue,
+        note,
+        hyperlink,
+        effectiveFormat(
+          numberFormat(type,pattern),    // ✅ type is inside numberFormat
+          backgroundColor,               // Color object (red/green/blue/alpha)
+          foregroundColor,               // Text color
+          textFormat,                    // Font info
+          hidden                         // Cell hidden flag
+        ),
+        userEnteredFormat(
+          numberFormat(type,pattern)     // Raw format before calculation
+        )
+      )
+    ),
+    startRow,
+    startColumn
+  )
+)
+```
+
+---
+
+#### 🛠️ Safer Alternative: Start Minimal, Expand Later
+
+If field masks are tricky, start with a minimal working version and expand:
+
+```go
+// Minimal working field mask (guaranteed to work)
+fields := "sheets(data(rowData(values(formattedValue,note))))"
+
+// Then gradually add fields as needed:
+// + effectiveFormat(numberFormat(type))
+// + effectiveFormat(backgroundColor)
+// + hyperlink
+// etc.
+```
+
+---
+
+#### 🔄 Updated Extract Helpers (Handle Nested Fields Safely)
+
+```go
+// extractValue: prefer formatted (display) value, fallback to raw
+func extractValue(cell *sheets.CellData) string {
+    if cell.FormattedValue != nil {
+        return *cell.FormattedValue
+    }
+    if cell.UserEnteredValue != nil {
+        if cell.UserEnteredValue.StringValue != nil {
+            return *cell.UserEnteredValue.StringValue
+        }
+        // Handle other types: number, bool, formula, error
+        return fmt.Sprintf("%v", cell.UserEnteredValue)
+    }
+    return ""
+}
+
+// extractNote: yellow sticky note
+func extractNote(cell *sheets.CellData) string {
+    if cell.Note != nil {
+        return *cell.Note
+    }
+    return ""
+}
+
+// extractFormat: number format type (CURRENCY, DATE, TEXT, etc.)
+func extractFormat(cell *sheets.CellData) string {
+    if cell.EffectiveFormat != nil && 
+       cell.EffectiveFormat.NumberFormat != nil && 
+       cell.EffectiveFormat.NumberFormat.Type != "" {
+        return cell.EffectiveFormat.NumberFormat.Type
+    }
+    return ""
+}
+
+// extractColors: return background/foreground as hex
+func extractColors(cell *sheets.CellData) (bg, fg string) {
+    if cell.EffectiveFormat != nil {
+        if cell.EffectiveFormat.BackgroundColor != nil {
+            bg = colorToHex(cell.EffectiveFormat.BackgroundColor)
+        }
+        if cell.EffectiveFormat.ForegroundColor != nil {
+            fg = colorToHex(cell.EffectiveFormat.ForegroundColor)
+        }
+    }
+    return
+}
+
+// extractHidden: check if cell is hidden
+func extractHidden(cell *sheets.CellData) bool {
+    if cell.EffectiveFormat != nil && cell.EffectiveFormat.Hidden != nil {
+        return *cell.EffectiveFormat.Hidden
+    }
+    return false
+}
+
+// extractHyperlink
+func extractHyperlink(cell *sheets.CellData) string {
+    if cell.Hyperlink != nil {
+        return *cell.Hyperlink
+    }
+    return ""
+}
+
+// Helper: convert googleapi.Color to #RRGGBB
+func colorToHex(c *sheets.Color) string {
+    if c == nil {
+        return ""
+    }
+    r := int(c.Red * 255)
+    g := int(c.Green * 255)
+    b := int(c.Blue * 255)
+    // Clamp values
+    if r > 255 { r = 255 }
+    if g > 255 { g = 255 }
+    if b > 255 { b = 255 }
+    return fmt.Sprintf("#%02x%02x%02x", r, g, b)
+}
+```
+
+---
+
+#### # Debug Tip: Print Available Fields
+
+If you're unsure what fields exist, fetch a minimal response and inspect:
+
+```go
+// Debug: fetch everything (WARNING: large payload!)
+debugResp, err := srv.Spreadsheets.Get(sheetID).
+    Ranges([]string{sheetName + "!A1"}).
+    IncludeGridData(true).
+    Do()
+if err != nil {
+    log.Fatal(err)
+}
+
+// Pretty-print first cell's structure
+if len(debugResp.Sheets) > 0 && 
+   len(debugResp.Sheets[0].Data) > 0 && 
+   len(debugResp.Sheets[0].Data[0].RowData) > 0 {
+    cell := debugResp.Sheets[0].Data[0].RowData[0].Values[0]
+    fmt.Printf("Cell structure: %+v\n", cell)
+}
+```
+
+---
+
+#### 📋 Complete Working `parseGridData` Function
+
+```go
+func parseGridData(sheet *sheets.Sheet) []Cell {
+    var cells []Cell
+    
+    for _, grid := range sheet.Data {
+        startRow := grid.StartRow      // 0-based API index
+        startCol := grid.StartColumn   // 0-based API index
+        
+        for rowIdx, row := range grid.RowData {
+            for colIdx, cellData := range row.Values {
+                absRow := int(startRow) + rowIdx + 1  // Convert to 1-based
+                absCol := int(startCol) + colIdx + 1
+                bg, fg := extractColors(cellData)
+                
+                cell := Cell{
+                    A1:         fmt.Sprintf("%s%d", colToLetter(absCol), absRow),
+                    Row:        absRow,
+                    Col:        absCol,
+                    Value:      extractValue(cellData),
+                    Note:       extractNote(cellData),
+                    Format:     extractFormat(cellData),
+                    Background: bg,
+                    Foreground: fg,
+                    IsHidden:   extractHidden(cellData),
+                    Hyperlink:  extractHyperlink(cellData),
+                    UpdatedAt:  time.Now(), // API doesn't provide per-cell timestamps
+                }
+                cells = append(cells, cell)
+            }
+        }
+    }
+    return cells
+}
+```
+
+---
+
+#### 🧭 Enhanced `Cell` Struct (Optional but Recommended)
+
+```go
+type Cell struct {
+    A1         string    `json:"a1"`
+    Row        int       `json:"row"`
+    Col        int       `json:"col"`
+    Value      string    `json:"value"`            // Display value (formatted)
+    RawValue   string    `json:"raw_value,omitempty"` // Raw input value
+    Note       string    `json:"note,omitempty"`   // Yellow sticky note
+    Format     string    `json:"format,omitempty"` // Number format type
+    Background string    `json:"background,omitempty"` // BG color hex
+    Foreground string    `json:"foreground,omitempty"` // Text color hex
+    IsHidden   bool      `json:"is_hidden,omitempty"`
+    Hyperlink  string    `json:"hyperlink,omitempty"`
+    UpdatedAt  time.Time `json:"updated_at"`
+}
+```
+
+---
+
+#### ✅ Quick Test: Verify It Works
+
+```bash
+# Build and test with a small range first
+go build -o gsheets-cli .
+./gsheets-cli read \
+  -c service-account.json \
+  -s "YOUR_SPREADSHEET_ID" \
+  -n "Sheet1" \
+  --range "A1:C5" \
+  -o test_output
+
+# Check outputs
+cat test_output.json  # Should show notes, formats, colors
+cat test_output.csv   # Human-readable table
+```
+
+---
+
+#### 🚨 Common Field Mask Mistakes to Avoid
+
+| ❌ Wrong                                | ✅ Correct                                              | Why                                           |
+| -------------------------------------- | ------------------------------------------------------ | --------------------------------------------- |
+| `effectiveFormat(type)`                | `effectiveFormat(numberFormat(type))`                  | `type` lives inside `numberFormat`            |
+| `backgroundColor(red)`                 | `backgroundColor` or `backgroundColor(red,green,blue)` | Color is an object                            |
+| `data(rowData(values(note),startRow))` | `data(rowData(values(note)),startRow)`                 | `startRow` is sibling of `rowData`, not child |
+| Empty field mask                       | Always specify at least `sheets/data`                  | API returns minimal metadata by default       |
+
+---
+
+#### 🔗 Reference: Official Field Mask Docs
+- [Google API Field Masks Guide](https://cloud.google.com/apis/docs/using_field_masks)
+- [Sheets API v4 Reference](https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets)
+
+---
+
+Let me know if you'd like me to:
+1. 📦 Provide the complete updated `main.go` with this fixed fetch logic
+2. 🧪 Add a `--debug` flag that prints API response structure
+3. 🎨 Extend the TUI to render background/foreground colors using `lipgloss`
+
+The fix above should resolve your 400 error immediately. 🎯

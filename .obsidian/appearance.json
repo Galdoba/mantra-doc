@@ -1,9 +1,10 @@
 {
-  "cssTheme": "Material Gruvbox",
-  "theme": "moonstone",
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "obsidian",
   "nativeMenus": true,
   "accentColor": "#d9c14a",
   "textFontFamily": "Terminess Nerd Font Mono",
   "monospaceFontFamily": "Terminess Nerd Font Mono",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "interfaceFontFamily": "Terminess Nerd Font Propo"
 }

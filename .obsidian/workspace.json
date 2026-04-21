@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki skill.md",
+                "file": "Resources/Programming/Tips/Architectural Complexity Framework for CLI Applications.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "wiki skill"
+              "title": "Architectural Complexity Framework for CLI Applications"
             }
           }
         ]
@@ -215,13 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki skill.md",
+                "file": "Resources/Programming/Tips/Architectural Complexity Framework for CLI Applications.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of wiki skill"
+              "title": "Outline of Architectural Complexity Framework for CLI Applications"
             }
           },
           {
@@ -285,9 +285,16 @@
   },
   "active": "36668c6104bf24f1",
   "lastOpenFiles": [
+    "Resources/Programming/Tips/Architectural Complexity Framework for CLI Applications.md",
+    "Resources/Programming/Tips/Architectural Recommendations for CLI Applications using `urfave.cli.v3` (v 1.2).md",
+    "Prjojects/Programming/go/concurency/TEE.md",
+    "Resources/Articles/Result and Error Codes.md",
+    "Prjojects/Programming/go/concurency/FAN-OUT.md",
+    "Resources/Articles/Ergohaven Remnant programmable ergonomic keyboard.md",
+    "Resources/Articles/Routing with gorilla.mux.md",
+    "wiki skill.md",
     "Prjojects/Cepheus/Clean_Copy_UD.md",
     "Untitled.md",
-    "wiki skill.md",
     "Resources/Articles/LLM Wiki.md",
     "Prjojects/Cepheus/dice.md",
     "Prjojects/Cepheus/tables.md",
@@ -305,13 +312,6 @@
     "CHAPTER_14_SOCIAL_ENCOUNTERS.md",
     "CHAPTER_13_PLANETARY_WILDERNESS_ENCOUNTERS.md",
     "CHAPTER_12_WORLDS.md",
-    "CHAPTER_11_ENVIRONMENTS_AND_HAZARDS.md",
-    "CHAPTER_10_SPACE_COMBAT.md",
-    "CHAPTER_09_COMMON_VESSELS.md",
-    "CHAPTER_08_SHIP_DESIGN_AND_CONSTRUCTION.md",
-    "CHAPTER_07_TRADE_AND_COMMERCE.md",
-    "CHAPTER_06_OFF-WORLD_TRAVEL.md",
-    "Prjojects/Traveller/CHAPTER_03_PSIONICS.md",
     "Prjojects/Programming/go/packages",
     "Prjojects/Programming/go/concurency/fan-in.govY94ad.bck",
     "Prjojects/Programming/go/concurency/fan-in.goCFygil.bck",
